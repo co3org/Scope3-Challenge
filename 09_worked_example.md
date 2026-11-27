@@ -70,9 +70,22 @@ Not all categories get the same treatment. The GHG Protocol offers four methods,
 
 ```mermaid
 flowchart TD
-    A["Supplier-specific (primary)\n±10–20% error\nBest, rarest"] --> B["Hybrid\n±25–50% error\nPrimary + averages"] --> C["Average-data\n±50–150% error\nIndustry factors"] --> D["Spend-based\n±100–400% error\nEasiest, least accurate"]
-    style A fill:#2f9e44,color:#fff
-    style D fill:#e03131,color:#fff
+    classDef good fill:#69db7c,stroke:#2f9e44,color:#0b2e13;
+    classDef mid fill:#a9e34b,stroke:#5c940d,color:#0b2e13;
+    classDef warn fill:#ffc078,stroke:#f08c00,color:#212529;
+    classDef bad fill:#ff6b6b,stroke:#e03131,color:#fff;
+
+    A["Supplier-specific (primary)\n±10–20% error\nBest, rarest"]
+    B["Hybrid\n±25–50% error\nPrimary + averages"]
+    C["Average-data\n±50–150% error\nIndustry factors"]
+    D["Spend-based\n±100–400% error\nEasiest, least accurate"]
+
+    A --> B --> C --> D
+
+    class A good;
+    class B mid;
+    class C warn;
+    class D bad;
 ```
 
 For Aurora, a realistic (and honest) mix is:
@@ -111,10 +124,10 @@ An emission factor (EF) converts activity data into CO₂e. The core equation is
 ## Step 4: Total and the Scope 3 Share
 
 ```mermaid
-pie title Aurora Appliances — footprint by scope (illustrative)
-    "Scope 3 — use of sold products (Cat 11)" : 1080000
-    "Scope 3 — purchased goods (Cat 1)" : 495000
-    "Scope 3 — all other categories" : 76950
+pie title "Aurora Appliances — footprint by scope (illustrative)"
+    "S3 Cat 11 use of sold products" : 1080000
+    "S3 Cat 1 purchased goods" : 495000
+    "S3 other categories" : 76950
     "Scope 1 + 2" : 65000
 ```
 

@@ -18,25 +18,33 @@ The Greenhouse Gas (GHG) Protocol Corporate Standard — first published in 2001
 
 ```mermaid
 flowchart TB
+    classDef s1 fill:#ff922b,stroke:#e8590c,color:#fff;
+    classDef s2 fill:#4dabf7,stroke:#1c7ed6,color:#fff;
+    classDef up fill:#66d9e8,stroke:#0c8599,color:#0b3c44;
+    classDef down fill:#63e6be,stroke:#0ca678,color:#0b2e1d;
+    classDef muted fill:#f1f3f5,stroke:#ced4da,color:#343a40;
+
     subgraph Company["Company Operational Boundary"]
         direction TB
-        S1["🏭 SCOPE 1\nDirect Emissions\n\n• Fuel combustion (boilers, furnaces, vehicles)\n• Process emissions (cement calcination, steel smelting)\n• Fugitive emissions (refrigerant leaks, methane from pipelines)\n• Owned/controlled sources only"]
-        S2["⚡ SCOPE 2\nIndirect — Energy\n\n• Purchased electricity\n• Purchased steam, heat, cooling\n• Location-based vs market-based methods\n• Typically 10–30% of industrial footprint"]
+        S1["🏭 Scope 1 — Direct\nFuel combustion\nProcess emissions\nFugitive emissions\nOwned or controlled sources"]
+        S2["⚡ Scope 2 — Indirect (Energy)\nPurchased electricity\nPurchased steam, heat, cooling\nLocation-based vs market-based\nTypically 10–30% of footprint"]
     end
 
     subgraph VC["Value Chain (Scope 3)"]
         direction LR
-        UP["⬆️ UPSTREAM\nCat 1–8\n\nWhat you buy\nand how you buy it"]
-        DOWN["⬇️ DOWNSTREAM\nCat 9–15\n\nWhat happens after\nyou sell it"]
+        UP["⬆️ Upstream\nCat 1–8\nwhat you buy\nand how you buy it"]
+        DOWN["⬇️ Downstream\nCat 9–15\nwhat happens after\nyou sell it"]
     end
 
     Company --> VC
-    UP -.->|"Typically\n70–90%\nof total footprint"| DOWN
+    UP -.->|"Typically 70–90%\nof total footprint"| DOWN
 
-    style S1 fill:#ff6b6b,color:#fff
-    style S2 fill:#ffa94d,color:#fff
-    style UP fill:#4dabf7,color:#fff
-    style DOWN fill:#69db7c,color:#000
+    class S1 s1;
+    class S2 s2;
+    class UP up;
+    class DOWN down;
+    class Company muted;
+    class VC muted;
 ```
 
 ### Why Three Scopes?
@@ -59,19 +67,25 @@ The GHG Protocol's Scope 3 Standard (2011) defines 15 distinct categories, split
 
 ```mermaid
 flowchart LR
-    subgraph US["UPSTREAM SCOPE 3"]
-        C1["Cat 1\nPurchased Goods\n& Services"]
+    classDef up fill:#66d9e8,stroke:#0c8599,color:#0b3c44;
+    classDef down fill:#63e6be,stroke:#0ca678,color:#0b2e1d;
+    classDef s3 fill:#40c057,stroke:#2b8a3e,color:#fff;
+
+    subgraph US["Upstream Scope 3 — Cat 1–8"]
+        direction TB
+        C1["Cat 1\nPurchased Goods\nand Services"]
         C2["Cat 2\nCapital Goods"]
-        C3["Cat 3\nFuel & Energy\nRelated Activities"]
-        C4["Cat 4\nUpstream\nTransportation\n& Distribution"]
+        C3["Cat 3\nFuel and Energy\nRelated Activities"]
+        C4["Cat 4\nUpstream Transport\nand Distribution"]
         C5["Cat 5\nWaste Generated\nin Operations"]
         C6["Cat 6\nBusiness Travel"]
-        C7["Cat 7\nEmployee\nCommuting"]
+        C7["Cat 7\nEmployee Commuting"]
         C8["Cat 8\nUpstream\nLeased Assets"]
     end
 
-    subgraph DS["DOWNSTREAM SCOPE 3"]
-        C9["Cat 9\nDownstream T&D"]
+    subgraph DS["Downstream Scope 3 — Cat 9–15"]
+        direction TB
+        C9["Cat 9\nDownstream Transport\nand Distribution"]
         C10["Cat 10\nProcessing of\nSold Products"]
         C11["Cat 11\nUse of\nSold Products"]
         C12["Cat 12\nEnd-of-Life\nTreatment"]
@@ -80,21 +94,9 @@ flowchart LR
         C15["Cat 15\nInvestments\n(Financed Emissions)"]
     end
 
-    style C1 fill:#339af0,color:#fff
-    style C2 fill:#339af0,color:#fff
-    style C3 fill:#339af0,color:#fff
-    style C4 fill:#339af0,color:#fff
-    style C5 fill:#339af0,color:#fff
-    style C6 fill:#74c0fc,color:#000
-    style C7 fill:#74c0fc,color:#000
-    style C8 fill:#74c0fc,color:#000
-    style C9 fill:#51cf66,color:#000
-    style C10 fill:#51cf66,color:#000
-    style C11 fill:#2f9e44,color:#fff
-    style C12 fill:#51cf66,color:#000
-    style C13 fill:#74c0fc,color:#000
-    style C14 fill:#74c0fc,color:#000
-    style C15 fill:#2f9e44,color:#fff
+    class C1,C2,C3,C4,C5,C6,C7,C8 up;
+    class C9,C10,C12,C13,C14 down;
+    class C11,C15 s3;
 ```
 
 ### Upstream Categories (1–8) — Detailed
@@ -112,17 +114,22 @@ The single largest Scope 3 category for most companies. All emissions associated
 
 ```mermaid
 flowchart TD
-    M1["Supplier-Specific Method\n(Primary Data)\n★★★★★ Accuracy\nDirect emissions data from suppliers\nrequires supplier capacity & trust"]
-    M2["Hybrid Method\n★★★★☆ Accuracy\nCombines primary supplier data\nwith secondary emission factors\nfor remaining gaps"]
+    classDef s3 fill:#40c057,stroke:#2b8a3e,color:#fff;
+    classDef good fill:#69db7c,stroke:#2f9e44,color:#0b2e13;
+    classDef warn fill:#ffc078,stroke:#f08c00,color:#212529;
+    classDef bad fill:#ff6b6b,stroke:#e03131,color:#fff;
+
+    M1["Supplier-Specific Method\n(Primary data)\n★★★★★ Accuracy\nDirect data from suppliers\nrequires supplier capacity and trust"]
+    M2["Hybrid Method\n★★★★☆ Accuracy\nPrimary supplier data plus\nsecondary emission factors\nfor remaining gaps"]
     M3["Average-Data Method\n★★★☆☆ Accuracy\nIndustry-average emission factors\nper unit of product (kg CO₂e/kg steel)"]
     M4["Spend-Based Method\n★★☆☆☆ Accuracy\nEmission factors per $ of spend\n(kg CO₂e/$ in sector X)\nHighest error, easiest to compute"]
 
     M1 --> M2 --> M3 --> M4
 
-    style M1 fill:#2f9e44,color:#fff
-    style M2 fill:#94d82d,color:#000
-    style M3 fill:#ffa94d,color:#000
-    style M4 fill:#ff6b6b,color:#fff
+    class M1 s3;
+    class M2 good;
+    class M3 warn;
+    class M4 bad;
 ```
 
 **Spend-based error range:** A spend-based factor for "basic iron and steel manufacturing" might be 0.8–2.4 kg CO₂e per dollar, depending on geography and the emission factor database used. Actual intensity can vary **3–10x** between a coal-powered Chinese steel mill and a hydrogen-reduced Swedish steel plant — both of which look identical in a spend-based model.
@@ -196,16 +203,25 @@ For any company selling products that consume energy during their lifetime — c
 
 ```mermaid
 flowchart LR
+    classDef info fill:#d0ebff,stroke:#1971c2,color:#1864ab;
+    classDef warn fill:#ffc078,stroke:#f08c00,color:#212529;
+    classDef muted fill:#f1f3f5,stroke:#ced4da,color:#343a40;
+
     subgraph Assumptions["Assumptions Required for Cat 11 Calculation"]
+        direction TB
         A1["Product\nLifetime\n(years)"]
         A2["Annual\nEnergy Use\n(kWh/year)"]
-        A3["Grid Carbon\nIntensity\n(current & future)"]
+        A3["Grid Carbon\nIntensity\n(current and future)"]
         A4["Usage\nPatterns\n(actual vs rated)"]
         A5["Fleet\nMix\n(product variants)"]
         A6["Geographic\nDistribution\nof sales"]
     end
 
-    Assumptions --> R["Cat 11\nEmissions\nEstimate\n\n±50–200%\nuncertainty range"]
+    Assumptions --> R["Cat 11\nEmissions Estimate\n±50–200%\nuncertainty range"]
+
+    class A1,A2,A3,A4,A5,A6 info;
+    class R warn;
+    class Assumptions muted;
 ```
 
 For an automotive OEM, Cat 11 is typically **85–95% of total Scope 3** and **75–85% of the company's entire GHG footprint** (Scopes 1+2+3). Reducing Cat 11 requires transitioning to EVs — but even EVs' Cat 11 depends on grid decarbonization that is outside the manufacturer's control.
@@ -236,20 +252,29 @@ Governed primarily by the **Partnership for Carbon Accounting Financials (PCAF)*
 
 ```mermaid
 flowchart TD
+    classDef market fill:#b197fc,stroke:#7950f2,color:#fff;
+    classDef info fill:#d0ebff,stroke:#1971c2,color:#1864ab;
+    classDef bad fill:#ff6b6b,stroke:#e03131,color:#fff;
+    classDef muted fill:#f1f3f5,stroke:#ced4da,color:#343a40;
+
     Bank["Commercial Bank\n$500B loan portfolio"]
 
     subgraph Portfolio["Financed Emissions Calculation (PCAF)"]
+        direction TB
         P1["Corporate Loans\nAttribution = (Outstanding Loan / Enterprise Value) × Borrower Emissions"]
         P2["Project Finance\nAttribution = (Outstanding Loan / Total Project Costs) × Project Emissions"]
         P3["Mortgages\nAttribution = (Outstanding Mortgage / Property Value) × Property Emissions"]
-        P4["Listed Equity & Bonds\nAttribution = (Investment Value / Enterprise Value) × Investee Emissions"]
-        P5["Business Loans < $1M\nAttribution = Sector emission factor × Revenue"]
+        P4["Listed Equity and Bonds\nAttribution = (Investment Value / Enterprise Value) × Investee Emissions"]
+        P5["Business Loans under $1M\nAttribution = Sector emission factor × Revenue"]
     end
 
     Bank --> Portfolio
     Portfolio --> Total["Bank's Scope 3 Cat 15\n(Financed Emissions)\n\nTypically 100–1000x\nlarger than Scope 1+2"]
 
-    style Total fill:#e03131,color:#fff
+    class Bank market;
+    class P1,P2,P3,P4,P5 info;
+    class Total bad;
+    class Portfolio muted;
 ```
 
 For a major commercial bank, financed emissions are typically **100–1,000 times larger** than the bank's own operational emissions (Scopes 1 and 2). This means a bank's net-zero commitment is essentially meaningless without a credible plan to decarbonize its loan book.
@@ -281,18 +306,28 @@ Scope 3 is designed to be a *company-level* accounting tool, not a *system-level
 
 ```mermaid
 flowchart LR
+    classDef up fill:#66d9e8,stroke:#0c8599,color:#0b3c44;
+    classDef down fill:#63e6be,stroke:#0ca678,color:#0b2e1d;
+    classDef info fill:#d0ebff,stroke:#1971c2,color:#1864ab;
+    classDef warn fill:#ffc078,stroke:#f08c00,color:#212529;
+    classDef muted fill:#f1f3f5,stroke:#ced4da,color:#343a40;
+
     subgraph Chain["Value Chain: Iron Ore → Steel → Car"]
-        Mine["Iron Ore Mine\n\nScope 1: 100t CO₂e\n(mining operations)"]
-        Steel["Steel Mill\n\nScope 1: 800t CO₂e\n(smelting)\nScope 3 Cat 1: 100t\n(purchased ore — same\natoms as Mine Scope 1)"]
-        Auto["Auto OEM\n\nScope 1: 50t CO₂e\n(assembly)\nScope 3 Cat 1: 900t\n(steel+components — overlaps\nMine S1 + Mill S1)\nScope 3 Cat 11: 5,000t\n(lifetime vehicle use — same\nemissions as Driver S1)"]
-        Driver["Driver\n\nScope 1: 200t CO₂e\n(fuel combustion\nover vehicle life)"]
+        Mine["Iron Ore Mine\nScope 1: 100t CO₂e\n(mining operations)"]
+        Steel["Steel Mill\nScope 1: 800t CO₂e (smelting)\nScope 3 Cat 1: 100t\n(purchased ore — same atoms\nas Mine Scope 1)"]
+        Auto["Auto OEM\nScope 1: 50t CO₂e (assembly)\nScope 3 Cat 1: 900t\n(steel and components — overlaps\nMine S1 and Mill S1)\nScope 3 Cat 11: 5,000t\n(lifetime vehicle use — same\nemissions as Driver S1)"]
+        Driver["Driver\nScope 1: 200t CO₂e\n(fuel combustion\nover vehicle life)"]
     end
 
     Mine --> Steel --> Auto --> Driver
 
     Note["Physical system total (actual CO₂e emitted):\nMine 100t + Mill 800t + Assembly 50t + Driving 200t = 1,150t\n\nSum of all companies' Scope 3 disclosures:\n~6,100t — because the same physical\nemissions appear in multiple companies' accounts.\n\nThis is by design: Scope 3 is a company-level\nrisk tool, not a system-level inventory."]
 
-    style Note fill:#fff3bf,color:#000
+    class Mine up;
+    class Steel,Auto info;
+    class Driver down;
+    class Note warn;
+    class Chain muted;
 ```
 
 This is not a bug in the Protocol — it is a deliberate design choice. Scope 3 is intended to give each company visibility into its *value chain risk*, not to produce system-level accounting. But it creates enormous confusion when aggregating disclosures, setting sector-level targets, or comparing company disclosures.

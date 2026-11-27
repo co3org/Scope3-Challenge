@@ -24,6 +24,8 @@
 
 ---
 
+> **In short:** Scope 3 is **70–90% of most companies' footprint**; it is hard to measure because the data lives with suppliers who have little incentive to share it; and it cannot be "solved" by offsets — the credible fix is verified in-value-chain reduction (insetting) with attributable accounting. The single biggest near-term unknown is the **GHG Protocol revision**.
+
 ### Why does Scope 3 matter more than Scopes 1 and 2?
 
 Because for most companies, **Scope 3 is 70–90% of the real footprint** — and Scope 1 + 2 combined cover only 10–30%. An automotive OEM's tailpipe emissions, a bank's loan book, an apparel brand's cotton fields and dyeing mills: none appear in Scope 1 or 2. A climate pledge that ignores Scope 3 addresses, at best, a third of the problem. ([01 Fundamentals](01_scope3_fundamentals.md))

@@ -29,20 +29,25 @@ Scope 3 accounting is not merely difficult — it is *structurally* difficult. T
 Every supply chain has a data quality pyramid. Data gets worse as you move upstream.
 
 ```mermaid
-flowchart TB
+    flowchart TB
+    classDef good fill:#69db7c,stroke:#2f9e44,color:#0b2e13;
+    classDef info fill:#d0ebff,stroke:#1971c2,color:#1864ab;
+    classDef warn fill:#ffc078,stroke:#f08c00,color:#212529;
+    classDef bad fill:#ff6b6b,stroke:#e03131,color:#fff;
+
     subgraph Pyramid["Data Quality Across the Supply Chain"]
-        T1["🏢 Tier 0: The Reporting Company\n\nHas: Invoices, financial records, energy bills, travel logs\nData quality: ★★★★★\nCoverage: 100% of own operations"]
-        T2["🏭 Tier 1: Direct Suppliers\n\nHas: Some have sustainability reports; many have nothing\nData quality: ★★★☆☆ (at best)\nCoverage: 30–60% of spend with adequate data"]
-        T3["⚙️ Tier 2: Suppliers' Suppliers\n\nHas: Rarely disclosed; requires Tier-1 cooperation\nData quality: ★★☆☆☆\nCoverage: <10% of typical companies"]
-        T4["🌾 Tier 3+: Raw Material Producers\n\nHas: Almost never disclosed; highly geographically variable\nData quality: ★☆☆☆☆\nCoverage: <2% of typical companies"]
+        T0["Tier 0: The Reporting Company\nHas: invoices, energy bills, travel logs\nQuality ★★★★★ · Coverage 100%"]
+        T1["Tier 1: Direct Suppliers\nHas: some reports; many have none\nQuality ★★★☆☆ · Coverage 30–60%"]
+        T2["Tier 2: Suppliers' Suppliers\nHas: rarely disclosed; needs Tier-1 cooperation\nQuality ★★☆☆☆ · Coverage <10%"]
+        T3["Tier 3+: Raw Material Producers\nHas: almost never disclosed; geographically variable\nQuality ★☆☆☆☆ · Coverage <2%"]
     end
 
-    T1 --> T2 --> T3 --> T4
+    T0 --> T1 --> T2 --> T3
 
-    style T1 fill:#2f9e44,color:#fff
-    style T2 fill:#94d82d,color:#000
-    style T3 fill:#ffa94d,color:#000
-    style T4 fill:#e03131,color:#fff
+    class T0 good;
+    class T1 info;
+    class T2 warn;
+    class T3 bad;
 ```
 
 ### Why this matters quantitatively
@@ -73,29 +78,34 @@ A company using spend-based methods — as most do — may report Scope 3 Cat 1 
 The parties who hold the most valuable Scope 3 data — suppliers — have the least incentive to share it.
 
 ```mermaid
-flowchart LR
+    flowchart LR
+    classDef info fill:#d0ebff,stroke:#1971c2,color:#1864ab;
+    classDef warn fill:#ffc078,stroke:#f08c00,color:#212529;
+    classDef dark fill:#212529,stroke:#101113,color:#fff;
+
     subgraph Buyer["Buyer (Large Brand)"]
-        B1["Needs supplier\nemissions data for\nScope 3 reporting"]
+        B1["Needs supplier emissions\ndata for Scope 3"]
         B2["Wants to meet\nSBTi targets"]
         B3["Faces regulatory\ndisclosure pressure"]
     end
 
     subgraph Supplier["Supplier (SME Manufacturer)"]
-        S1["Providing data exposes\ncarbon intensity → competitive risk"]
-        S2["Measurement costs\nmoney they don't have"]
+        S1["Disclosing data exposes\ncarbon intensity → risk"]
+        S2["Measurement costs\nmoney they lack"]
         S3["No direct financial\nbenefit for disclosure"]
-        S4["Risk of being\n'voted off' supply chain"]
+        S4["Risk of being\n'voted off' the chain"]
     end
 
     B1 -->|"Requests data"| S1
-    B2 -->|"Sets targets\nthat depend on\nsupplier performance"| S2
+    B2 -->|"Targets depend on\nsupplier performance"| S2
     B3 -->|"Creates urgency"| S3
 
-    Result["⚠️ Result: Suppliers\nprovide estimates, averages,\nor silence. Buyers accept this\nbecause alternatives are worse."]
-
+    Result["⚠️ Result: suppliers provide estimates,\naverages, or silence — buyers accept it\nbecause alternatives are worse"]
     Supplier --> Result
 
-    style Result fill:#fff3bf,color:#000
+    class B1,B2,B3 info;
+    class S1,S2,S3,S4 warn;
+    class Result dark;
 ```
 
 ### The Asymmetric Burden
@@ -126,26 +136,31 @@ Even when companies have spend and activity data, they must translate that data 
 The problem: emission factor databases are inconsistent, geographically crude, and often years out of date.
 
 ```mermaid
-flowchart TD
+    flowchart TD
+    classDef info fill:#d0ebff,stroke:#1971c2,color:#1864ab;
+    classDef warn fill:#ffc078,stroke:#f08c00,color:#212529;
+    classDef bad fill:#ff6b6b,stroke:#e03131,color:#fff;
+
     subgraph EFDatabases["Major Emission Factor Databases"]
-        EEIO["US EPA USEEIO\n(US economy-wide I/O model)\nLast updated: 2021\nGeography: US only"]
-        Exio["Exiobase 3.8\n(Multiregional I/O model)\nData through 2022 (v3.8)\n43 countries + 5 RoW\nAnnual updates ongoing"]
-        Ecoinvent["Ecoinvent\n(Process-based LCA database)\n18,000+ process entries\nExpensive license; expert required"]
-        DEFRA["UK DEFRA Factors\nAnnually updated\nUK-centric; widely used globally"]
-        GHGProt["GHG Protocol\nCross-sector tools\nLimited scope; process-dependent"]
+        EEIO["US EPA USEEIO\nUS economy-wide I/O\nUpdated 2021 · US only"]
+        Exio["Exiobase 3.8\nMultiregional I/O\n43 countries + 5 RoW\nData through 2022"]
+        Ecoinvent["Ecoinvent\nProcess-based LCA\n18,000+ processes\nLicensed; expert required"]
+        DEFRA["UK DEFRA Factors\nUpdated annually\nUK-centric · used globally"]
+        GHGProt["GHG Protocol\nCross-sector tools\nLimited scope"]
     end
 
     subgraph Problems["Key Problems"]
-        P1["No single database\ncovers all sectors,\nall geographies"]
-        P2["Databases use different\nsystem boundaries → results\nnot directly comparable"]
-        P3["Steel EF from USEEIO\nvs. Ecoinvent can differ\nby 2–3x for same process"]
-        P4["Geographic granularity:\n'Rest of World' buckets\nhide 3x intensity variations"]
+        P1["No single database covers\nall sectors and geographies"]
+        P2["Different system boundaries\n→ results not comparable"]
+        P3["Steel EF: USEEIO vs Ecoinvent\ncan differ 2–3x for same process"]
+        P4["'Rest of World' buckets hide\n3x intensity variations"]
     end
 
     EFDatabases --> Problems
 
-    style P3 fill:#ff6b6b,color:#fff
-    style P4 fill:#ff6b6b,color:#fff
+    class EEIO,Exio,Ecoinvent,DEFRA,GHGProt info;
+    class P1,P2 warn;
+    class P3,P4 bad;
 ```
 
 ### A Concrete Example: Ocean Freight
@@ -183,22 +198,27 @@ Pre-COVID: Employee commuting = Scope 3 Cat 7. Post-COVID, remote workers use ho
 The Protocol distinguishes Cat 1 (purchased goods: recurring) from Cat 2 (capital goods: equipment and infrastructure). But a cloud provider's servers are simultaneously: recurring purchases (Cat 1, updated hardware), capital goods (Cat 2, infrastructure), and potentially Scope 2 (if co-located)? The categorization affects materiality assessments and comparability across disclosure regimes.
 
 ```mermaid
-flowchart LR
+    flowchart LR
+    classDef info fill:#d0ebff,stroke:#1971c2,color:#1864ab;
+    classDef warn fill:#ffc078,stroke:#f08c00,color:#212529;
+
     subgraph Question["Is this transaction Cat 1 or Cat 2?"]
-        T["Company buys 10,000 laptops\nfor employee use\nAnnually refreshed"]
+        T["Company buys 10,000 laptops\nfor employee use\nrefreshed annually"]
     end
 
-    A1["Argument for Cat 1\n(Purchased Goods)\n\nRecurring purchase\nOperating expense\nProduct of manufacturing sector"]
-    A2["Argument for Cat 2\n(Capital Goods)\n\nMulti-year use\nCapitalized on balance sheet\nGHG Protocol says: items\nwith useful life >1 year"]
+    A1["Argument for Cat 1\nPurchased Goods\nRecurring purchase\nOperating expense\nManufacturing product"]
+    A2["Argument for Cat 2\nCapital Goods\nMulti-year use\nCapitalized on balance sheet\nUseful life > 1 year"]
 
     T --> A1
     T --> A2
 
-    Outcome["Different companies choose differently.\nNo comparability possible."]
+    Outcome["Different companies choose differently\n→ no comparability possible"]
     A1 --> Outcome
     A2 --> Outcome
 
-    style Outcome fill:#fff3bf,color:#000
+    class T info;
+    class A1,A2 info;
+    class Outcome warn;
 ```
 
 ---
@@ -214,20 +234,25 @@ A steel mill processes iron ore into steel slabs. Those slabs are sold to: an au
 The mill's process emissions: 1,000 tonnes CO₂e.
 
 ```mermaid
-flowchart TD
-    Mill["Steel Mill\n1,000t CO₂e process emissions"]
+    flowchart TD
+    classDef dark fill:#212529,stroke:#101113,color:#fff;
+    classDef info fill:#d0ebff,stroke:#1971c2,color:#1864ab;
+    classDef good fill:#69db7c,stroke:#2f9e44,color:#0b2e13;
 
-    Auto["Auto OEM\n60% of output\nClaims 600t CO₂e\n(Scope 3 Cat 1)"]
-    Const["Construction Co.\n30% of output\nClaims 300t CO₂e\n(Scope 3 Cat 1)"]
-    Appl["Appliance Mfg.\n10% of output\nClaims 100t CO₂e\n(Scope 3 Cat 1)"]
+    Mill["Steel Mill\n1,000 t CO₂e process emissions"]
+    Auto["Auto OEM\n60% of output\nclaims 600 t CO₂e\n(Scope 3 Cat 1)"]
+    Const["Construction Co.\n30% of output\nclaims 300 t CO₂e\n(Scope 3 Cat 1)"]
+    Appl["Appliance Mfg.\n10% of output\nclaims 100 t CO₂e\n(Scope 3 Cat 1)"]
 
     Mill --> Auto
     Mill --> Const
     Mill --> Appl
 
-    Note["Total claimed by buyers: 1,000t ✓\n(Mass allocation — works here)"]
+    Note["Total claimed by buyers: 1,000 t ✓\nMass allocation works here"]
 
-    style Note fill:#d3f9d8,color:#000
+    class Mill dark;
+    class Auto,Const,Appl info;
+    class Note good;
 ```
 
 Mass allocation works cleanly when products are physical and homogeneous. It breaks down in:
@@ -256,22 +281,26 @@ Category 11 (Use of Sold Products) requires estimating:
 For an appliance manufacturer selling refrigerators in 50 countries:
 
 ```mermaid
-flowchart LR
-    subgraph Inputs["Required Inputs for Cat 11 Calculation"]
-        I1["Active fleet:\n~25M units globally"]
-        I2["Annual kWh:\n400–600 kWh/unit\ndepending on model, age, climate"]
-        I3["Grid intensity:\n0.02 kg CO₂e/kWh (Norway)\n→ 0.85 kg CO₂e/kWh (Poland)\n= 42x variation"]
-        I4["Lifetime:\n10–15 years\nHeavily geography-dependent"]
-        I5["Retirement curve:\nLinear? Bathtub? Unknown"]
+    flowchart LR
+    classDef info fill:#d0ebff,stroke:#1971c2,color:#1864ab;
+    classDef warn fill:#ffc078,stroke:#f08c00,color:#212529;
+
+    subgraph Inputs["Required Inputs for Cat 11"]
+        I1["Active fleet\n~25M units globally"]
+        I2["Annual kWh\n400–600 kWh/unit\nvaries by model, age, climate"]
+        I3["Grid intensity\n0.02–0.85 kg CO₂e/kWh\n(Norway → Poland) = 42x"]
+        I4["Lifetime\n10–15 years\ngeography-dependent"]
+        I5["Retirement curve\nlinear? bathtub? unknown"]
     end
 
     subgraph Output["Cat 11 Estimate"]
-        O1["Range: 4.5–18 MtCO₂e/year\n= 4x uncertainty range\n\nFrom grid intensity alone:\n40% of variance"]
+        O1["4.5–18 MtCO₂e/year\n4x uncertainty range\ngrid intensity = 40% of variance"]
     end
 
     Inputs --> Output
 
-    style O1 fill:#fff3bf,color:#000
+    class I1,I2,I3,I4,I5 info;
+    class O1 warn;
 ```
 
 This uncertainty is not a failure of the accounting team — it is inherent to the calculation. The company *cannot* know what grid carbon intensity will be in the countries where its products are in use in 2030. They must choose an assumption.
@@ -285,19 +314,19 @@ Regulators and rating agencies have not converged on how this uncertainty should
 Companies face a harsh choice when assembling a Scope 3 disclosure:
 
 ```mermaid
-quadrantChart
-    title Scope 3 Disclosure Trade-offs
-    x-axis "Coverage (Completeness of Categories)" 
-    y-axis "Data Quality (Accuracy of Estimates)"
-    quadrant-1 "Ideal: Full Coverage + High Quality"
-    quadrant-2 "Dangerous: High coverage, low quality — false precision"
-    quadrant-3 "Useless: Low coverage, low quality"
-    quadrant-4 "Common: Partial coverage, reasonable quality"
-    "Most Fortune 500 Companies": [0.4, 0.5]
-    "Leading Practice Companies": [0.75, 0.7]
-    "Regulatory Minimum (current)": [0.2, 0.4]
-    "Theoretical Ideal": [0.95, 0.9]
-    "Spend-based only approach": [0.85, 0.25]
+    quadrantChart
+        title Scope 3 Disclosure Trade-offs
+        x-axis "Coverage (Completeness of Categories)"
+        y-axis "Data Quality (Accuracy of Estimates)"
+        quadrant-1 "Ideal: full coverage + high quality"
+        quadrant-2 "Honest but incomplete: low coverage, high quality"
+        quadrant-3 "Useless: low coverage, low quality"
+        quadrant-4 "False precision: high coverage, low quality"
+        "Most Fortune 500 Companies": [0.4, 0.5]
+        "Leading Practice Companies": [0.75, 0.7]
+        "Regulatory Minimum (current)": [0.2, 0.4]
+        "Theoretical Ideal": [0.95, 0.9]
+        "Spend-based only approach": [0.85, 0.25]
 ```
 
 - **High coverage, low quality:** A company that uses spend-based methods for all 15 categories will have numbers for everything — but those numbers may be wrong by 200–400%. This creates an illusion of completeness.

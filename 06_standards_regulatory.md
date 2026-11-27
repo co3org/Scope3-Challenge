@@ -33,35 +33,45 @@ The Scope 3 standards landscape is simultaneously over-complicated and under-enf
 
 ```mermaid
 flowchart TD
-    subgraph Measurement["Measurement & Accounting Standards"]
-        GHG["GHG Protocol\nCorporate Standard (2004)\n+ Scope 3 Standard (2011)\n+ Land Sector (2022)\n\nThe dominant framework.\nNot regulatory; voluntary.\nUsed by 90%+ of Fortune 500."]
-        PCAF["PCAF Standard\n(Partnership for Carbon\nAccounting Financials)\n(2020, updated 2022)\n\nExtends GHG Protocol\nfor financial institutions.\nFinanced emissions (Cat 15)."]
-        ISO["ISO 14064 Series\n14064-1: Organizational\n14064-2: Project-level\n14064-3: Verification\n\nInternational standard.\nCompatible with GHG Protocol.\nUsed for third-party verification."]
+    classDef info fill:#d0ebff,stroke:#1971c2,color:#1864ab;
+    classDef s3 fill:#40c057,stroke:#2b8a3e,color:#fff;
+    classDef market fill:#b197fc,stroke:#7950f2,color:#fff;
+    classDef warn fill:#ffc078,stroke:#f08c00,color:#212529;
+
+    subgraph Measurement["Measurement and Accounting Standards"]
+        GHG["GHG Protocol\n\nCorporate Standard (2004)\n+ Scope 3 Standard (2011)\n+ Land Sector (2022)\n\nDominant, voluntary framework\nused by 90%+ of Fortune 500"]
+        PCAF["PCAF Standard\n\n(Partnership for Carbon\nAccounting Financials)\n(2020, updated 2022)\n\nExtends GHG Protocol for\nfinancial institutions —\nfinanced emissions (Cat 15)"]
+        ISO["ISO 14064 Series\n\n14064-1: Organizational\n14064-2: Project-level\n14064-3: Verification\n\nInternational, compatible with\nGHG Protocol; used for\nthird-party verification"]
     end
 
     subgraph Targets["Target-Setting Frameworks"]
-        SBTi["Science Based Targets\ninitiative (SBTi)\n\nValidates corporate targets\nagainst 1.5°C pathway.\nCorporate Net-Zero Standard.\nFLAG guidance for land sector.\nFinancial sector standard."]
-        PCAF2["PCAF Target\nSetting Protocol\n\nFor financial institutions\naligning loan/investment\nbooks with net-zero."]
+        SBTi["Science Based Targets\ninitiative (SBTi)\n\nValidates corporate targets\nagainst a 1.5°C pathway.\nCorporate Net-Zero Standard.\nFLAG guidance for land sector.\nFinancial sector standard."]
+        PCAF2["PCAF Target-Setting\nProtocol\n\nFor financial institutions\naligning loan/investment\nbooks with net-zero"]
     end
 
     subgraph Disclosure["Disclosure Frameworks"]
-        TCFD["TCFD\n(Task Force on\nClimate-related Financial\nDisclosures)\n\nScenario analysis,\nrisk & opportunity\ndisclosure. Now folded\ninto ISSB S2."]
-        CDP["CDP\n(formerly Carbon\nDisclosure Project)\n\nAnnual questionnaire.\nUsed by 23,000+ companies.\nAligned with TCFD/ISSB."]
+        TCFD["TCFD\n\n(Task Force on Climate-related\nFinancial Disclosures)\n\nScenario analysis and\nrisk and opportunity disclosure.\nNow folded into ISSB S2"]
+        CDP["CDP\n\n(formerly Carbon\nDisclosure Project)\n\nAnnual questionnaire used\nby 23,000+ companies.\nAligned with TCFD/ISSB"]
     end
 
     subgraph Regulation["Mandatory Regulation"]
-        CSRD["EU CSRD\n(Corporate Sustainability\nReporting Directive)\n\nEffective: FY2024 (large EU cos.)\nCovers Scope 1, 2, 3.\nESRS E1 mandatory.\nDouble materiality."]
-        SEC["US SEC Climate Rule\n(2024)\n\nScope 1+2 mandatory.\nScope 3 if material\nor in targets.\nSubject to legal challenge."]
-        ISSB["ISSB S2\n(IFRS S2)\n\nInternational standard.\nAdopted by 20+ jurisdictions.\nFinancial materiality.\nCompatible with TCFD."]
+        CSRD["EU CSRD\n\n(Corporate Sustainability\nReporting Directive)\n\nEffective FY2024 for large\nEU companies. Covers Scope\n1, 2, 3; ESRS E1 mandatory;\ndouble materiality"]
+        SEC["US SEC Climate Rule\n(2024)\n\nScope 1+2 mandatory;\nScope 3 if material\nor in targets.\nSubject to legal challenge"]
+        ISSB["ISSB S2\n(IFRS S2)\n\nInternational standard\nadopted by 20+ jurisdictions.\nFinancial materiality.\nCompatible with TCFD"]
     end
 
     GHG --> SBTi
     PCAF --> PCAF2
-    ISO --> GHG
-    TCFD --> ISSB
+    ISO -->|"compatible with"| GHG
+    TCFD -->|"folded into"| ISSB
     GHG --> CSRD
     GHG --> ISSB
     SBTi --> CSRD
+
+    class Measurement,GHG,PCAF,ISO info;
+    class Targets,SBTi,PCAF2 s3;
+    class Disclosure,TCFD,CDP market;
+    class Regulation,CSRD,SEC,ISSB warn;
 ```
 
 ---
@@ -106,15 +116,21 @@ Financial institutions are unique: their Scope 1 and 2 emissions are trivially s
 
 ```mermaid
 flowchart LR
+    classDef market fill:#b197fc,stroke:#7950f2,color:#fff;
+    classDef info fill:#d0ebff,stroke:#1971c2,color:#1864ab;
+
     subgraph PCAF["PCAF Standard Coverage"]
-        AL["Listed Equity\n& Corporate Bonds\n\nAttribution factor =\nEquity/bond value\n÷ Enterprise value\n× Investee Scope 1+2+3"]
-        BL["Business Loans\n& Unlisted Equity\n\nSame attribution.\nUnlisted: use alternative\nenterprise value methods."]
+        AL["Listed Equity\nand Corporate Bonds\n\nAttribution factor =\nEquity/bond value\n÷ Enterprise value\n× Investee Scope 1+2+3"]
+        BL["Business Loans\nand Unlisted Equity\n\nSame attribution.\nUnlisted: use alternative\nenterprise value methods."]
         PF["Project Finance\n\nAttribution =\nOutstanding balance\n÷ Total project cost\n× Project emissions"]
         CO["Commercial Real\nEstate Loans\n\nAttribution =\nOutstanding balance\n÷ Property value\n× CRREM intensity × floor area"]
         MO["Mortgages\n\nSame as CRE.\nResidential emission\nfactors by country."]
         VL["Vehicle Loans\n\nAttribution =\nOutstanding balance\n÷ Vehicle value\n× Fleet emissions"]
-        SME["SME & Retail\nLoans\n\nSpend-based fallback.\nHigher uncertainty."]
+        SME["SME and Retail\nLoans\n\nSpend-based fallback.\nHigher uncertainty."]
     end
+
+    class PCAF market;
+    class AL,BL,PF,CO,MO,VL,SME info;
 ```
 
 ### PCAF's Known Weaknesses
@@ -139,18 +155,24 @@ For companies where Scope 3 > 40% of total footprint (which is most companies):
 
 ```mermaid
 flowchart TD
+    classDef dark fill:#212529,stroke:#101113,color:#fff;
+    classDef warn fill:#ffc078,stroke:#f08c00,color:#212529;
+    classDef info fill:#d0ebff,stroke:#1971c2,color:#1864ab;
+    classDef muted fill:#f1f3f5,stroke:#ced4da,color:#343a40;
+    classDef good fill:#69db7c,stroke:#2f9e44,color:#0b2e13;
+    classDef bad fill:#ff6b6b,stroke:#e03131,color:#fff;
+
     START["Company submits target\nfor SBTi validation"]
-
     CHECK["Is Scope 3 > 40%\nof total (S1+S2+S3)?"]
+    YES["YES → Scope 3\ntarget required"]
+    NO["NO → Scope 3 target\noptional but encouraged"]
+    OPTIONS["Two target\ntypes available"]
 
-    YES["YES → Scope 3 target required"]
-    NO["NO → Scope 3 target optional\nbut encouraged"]
+    ABS["Absolute Reduction\n(near-term)\n\nSBTi Scope 3 near-term:\n~42% reduction by 2030\n(1.5°C pathway)\n\nLong-term (2050):\n90% absolute reduction\nfor Net-Zero\n\nNote: 67% figure applies to\nScope 1+2, not S3 — verify\nagainst current SBTi Criteria.\n\nProblem: requires actual\nreductions; growth companies\nstruggle with absolute\ncontraction"]
 
-    OPTIONS["Two Target Types Available"]
+    ENG["Engagement Target\n\n'X% of suppliers by spend\nhave SBTi targets by 20XX'\n\nProblem: engagement ≠ reduction.\nA supplier can set a target\nwithout achieving it; not\nverifiable against actual GHG."]
 
-    ABS["Absolute Reduction Target (near-term)\n\nSBTi Scope 3 near-term targets\n(SBTi Criteria v5):\n• 1.5°C: ~42% reduction by 2030\n  (absolute contraction approach)\n• Long-term (2050): 90% absolute\n  reduction required for Net-Zero\n\nNote: The 67% figure cited in some\nsources applies to Scope 1+2, not S3.\nVerify against current SBTi Criteria\nas requirements are version-dependent.\n\nProblem: Requires actual reductions,\nnot just intensity improvements.\nGrowth companies struggle with\nabsolute contraction at scale."]
-
-    ENG["Engagement Target\n\n'X% of suppliers by spend\nhave SBTi targets by 20XX'\n\nProblem: Engagement ≠ Reduction.\nA supplier can set a target\nwithout achieving it.\nNot verifiable against actual GHG."]
+    Tension["⚠️ Tension\n\nABS targets require control\nover supplier actions.\nEngagement targets are looser\nbut don't guarantee\n1.5°C alignment"]
 
     START --> CHECK
     CHECK --> YES
@@ -158,10 +180,16 @@ flowchart TD
     YES --> OPTIONS
     OPTIONS --> ABS
     OPTIONS --> ENG
+    ABS --> Tension
 
-    ABS --> Tension["⚠️ Tension: ABS targets require\ncontrol over supplier actions.\nEngagement targets are looser\nbut don't guarantee 1.5°C alignment."]
-
-    style Tension fill:#fff3bf,color:#000
+    class START dark;
+    class CHECK warn;
+    class YES info;
+    class NO muted;
+    class OPTIONS dark;
+    class ABS good;
+    class ENG bad;
+    class Tension warn;
 ```
 
 ### SBTi's Financial Sector Standard
@@ -259,29 +287,35 @@ Companies operating globally face three partially inconsistent regulatory framew
 
 ```mermaid
 flowchart TD
-    Company["Multinational Company\nHQ: New York\nEU Operations: Yes\nSingapore Listing: Yes"]
+    classDef dark fill:#212529,stroke:#101113,color:#fff;
+    classDef info fill:#d0ebff,stroke:#1971c2,color:#1864ab;
+    classDef warn fill:#ffc078,stroke:#f08c00,color:#212529;
 
-    SEC["SEC Rule\n• Scope 1+2 mandatory\n• Scope 3 if material/targeted\n• US GAAP financial materiality\n• Limited assurance (S1+S2)\n• No EU value chain requirements"]
+    Company["Multinational Company\n\nHQ: New York\nEU operations: yes\nSingapore listing: yes"]
 
-    CSRD["CSRD/ESRS E1\n• All scopes mandatory\n• Double materiality\n• Full value chain\n• Third-party assurance\n• Applies to EU operations"]
+    SEC["US SEC Climate Rule\n\n• Scope 1+2 mandatory\n• Scope 3 if material\n  or in targets\n• Financial materiality\n• Limited assurance (S1+S2)\n• No EU value-chain\n  requirements"]
 
-    ISSB["ISSB S2 (SGX)\n• All scopes\n• Single (financial) materiality\n• GHG Protocol aligned\n• Singapore adoption 2025+"]
+    CSRD["EU CSRD / ESRS E1\n\n• All scopes mandatory\n• Double materiality\n• Full value chain\n• Third-party assurance\n• Applies to EU operations"]
+
+    ISSB["ISSB S2 (SGX)\n\n• All scopes\n• Single (financial)\n  materiality\n• GHG Protocol aligned\n• Singapore adoption 2025+"]
 
     Company --> SEC
     Company --> CSRD
     Company --> ISSB
 
-    Conflict1["⚠️ CSRD requires double materiality;\nSEC and ISSB use single materiality.\nSame climate risk may be\n'material' under CSRD but not SEC."]
-    Conflict2["⚠️ CSRD requires EU value chain;\nSEC does not. Same supplier data\nmay be required in one jurisdiction\nbut not mandated in the other."]
-    Conflict3["⚠️ Assurance standards differ.\nCSRD moves toward reasonable\nassurance; SEC has safe harbor.\nSame Scope 3 numbers may face\ndifferent scrutiny."]
+    Conflict1["⚠️ Materiality mismatch\n\nCSRD requires double materiality;\nSEC and ISSB use single.\nSame climate risk may be\n'material' under CSRD\nbut not SEC"]
+
+    Conflict2["⚠️ Value-chain divergence\n\nCSRD requires the EU value chain;\nSEC does not. Same supplier data\nmay be required in one jurisdiction\nbut not mandated in another"]
+
+    Conflict3["⚠️ Assurance standards differ\n\nCSRD moves toward reasonable\nassurance; SEC has a safe harbor.\nSame Scope 3 numbers may face\ndifferent scrutiny"]
 
     SEC --> Conflict1
     CSRD --> Conflict2
     ISSB --> Conflict3
 
-    style Conflict1 fill:#fff3bf,color:#000
-    style Conflict2 fill:#fff3bf,color:#000
-    style Conflict3 fill:#fff3bf,color:#000
+    class Company dark;
+    class SEC,CSRD,ISSB info;
+    class Conflict1,Conflict2,Conflict3 warn;
 ```
 
 **The practical cost:** A global company may need to maintain 2–3 parallel disclosure processes, with different materiality thresholds, different category coverage, and different assurance standards. This creates significant compliance cost and, paradoxically, reduces the quality of each disclosure because effort is spread across multiple processes.
