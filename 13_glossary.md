@@ -1,6 +1,6 @@
 # Glossary
 
-> **📚 [Scope 3 Challenge](README.md)** · Part 9 of 11 · [← Industry Data & Benchmarks](07_industry_data_and_benchmarks.md) · [Next: FAQ →](09_faq.md)
+> **📚 [Scope 3 Challenge](README.md)** · Part 14 of 16 · [← Advanced Topics](12_advanced_topics.md) · [Next: FAQ →](14_faq.md)
 
 <details open>
 <summary><strong>📑 Contents</strong></summary>
@@ -154,4 +154,4 @@
 
 ---
 
-**← Previous:** [Industry Data & Benchmarks](07_industry_data_and_benchmarks.md) &nbsp;·&nbsp; **Next:** [FAQ](09_faq.md) → &nbsp;·&nbsp; **[📚 Guide Index](README.md)**
+**← Previous:** [Advanced Topics](12_advanced_topics.md) &nbsp;·&nbsp; **Next:** [FAQ](14_faq.md) → &nbsp;·&nbsp; **[📚 Guide Index](README.md)**

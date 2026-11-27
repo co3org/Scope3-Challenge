@@ -1,6 +1,6 @@
 # Frequently Asked Questions
 
-> **📚 [Scope 3 Challenge](README.md)** · Part 10 of 11 · [← Glossary](08_glossary.md) · [Next: Quick Reference →](10_quick_reference.md)
+> **📚 [Scope 3 Challenge](README.md)** · Part 15 of 16 · [← Glossary](13_glossary.md) · [Next: Quick Reference →](15_quick_reference.md)
 
 <details open>
 <summary><strong>📑 Contents</strong></summary>
@@ -109,7 +109,7 @@ A pragmatic sequence, in order of leverage:
 4. **Watch the GHG Protocol revision** — it will determine how supplier reductions can be claimed.
 5. **Build the audit trail now**, so any claimed reduction survives CSRD assurance.
 
-([04 Abatement Challenges](04_abatement_challenges.md), [10 Quick Reference](10_quick_reference.md))
+([04 Abatement Challenges](04_abatement_challenges.md), [10 Quick Reference](15_quick_reference.md))
 
 ---
 
@@ -127,4 +127,4 @@ No. The distinction is **location and attribution**: Carbon3's inset credits rep
 
 ---
 
-**← Previous:** [Glossary](08_glossary.md) &nbsp;·&nbsp; **Next:** [Quick Reference](10_quick_reference.md) → &nbsp;·&nbsp; **[📚 Guide Index](README.md)**
+**← Previous:** [Glossary](13_glossary.md) &nbsp;·&nbsp; **Next:** [Quick Reference](15_quick_reference.md) → &nbsp;·&nbsp; **[📚 Guide Index](README.md)**

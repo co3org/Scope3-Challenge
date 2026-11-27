@@ -1,7 +1,6 @@
 # Scope 3 in Practice: Industry Case Studies
 
-> **📚 [Scope 3 Challenge](README.md)** · Part 4 of 11 · [← Complexity & Challenges](02_complexity_challenges.md) · [Next: Abatement Challenges →](04_abatement_challenges.md)
-
+> **📚 [Scope 3 Challenge](README.md)** · Part 4 of 16 · [← Complexity & Challenges](02_complexity_challenges.md) · [Next: Abatement Challenges →](04_abatement_challenges.md)
 
 <details open>
 <summary><strong>📑 Contents</strong></summary>

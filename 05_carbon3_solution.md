@@ -1,7 +1,6 @@
 # Carbon3: Building the Market Infrastructure for Supply Chain Decarbonisation
 
-> **📚 [Scope 3 Challenge](README.md)** · Part 6 of 11 · [← Abatement Challenges](04_abatement_challenges.md) · [Next: Standards & Regulatory →](06_standards_regulatory.md)
-
+> **📚 [Scope 3 Challenge](README.md)** · Part 6 of 16 · [← Abatement Challenges](04_abatement_challenges.md) · [Next: Standards & Regulatory →](06_standards_regulatory.md)
 
 <details open>
 <summary><strong>📑 Contents</strong></summary>
