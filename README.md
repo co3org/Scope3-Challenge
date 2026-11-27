@@ -1,12 +1,13 @@
 # Scope 3 Emissions: The Hardest Problem in Corporate Climate Action
 
-> A rigorously sourced, 16-part knowledge base on Scope 3 GHG accounting — from a zero-prerequisites primer and a full worked calculation, to regulatory detail, real company data, practitioner-level advanced topics, and the market infrastructure that could actually solve it. Built for **beginners and subject-matter experts alike**.
+> A rigorously sourced, 16-part guide to **Scope 3 emissions** — the 15 GHG Protocol categories, calculation methods, CSRD/SEC/ISSB/SBTi regulation, real data from 1,391 companies, and carbon-insetting market infrastructure for **supply-chain decarbonisation**. Covers everything from a zero-prerequisites primer to practitioner-level advanced topics, for **beginners and subject-matter experts alike**.
 
 ---
 
 ## 📑 Contents
 
 - [TL;DR](#tldr)
+- [Quick Answers](#quick-answers)
 - [Start Here: Choose Your Path](#start-here-choose-your-path)
 - [Two Learning Tracks](#two-learning-tracks)
 - [The Three Scopes at a Glance](#the-three-scopes-at-a-glance)
@@ -17,6 +18,7 @@
 - [Data Sources](#data-sources)
 - [What Maturity Looks Like](#what-maturity-looks-like)
 - [Contributing](#contributing)
+- [Cite This Guide](#cite-this-guide)
 
 ---
 
@@ -25,6 +27,28 @@
 - **Scope 3 = 70–90% of most companies' real climate footprint** — yet it is largely invisible, estimated, and underreported.
 - The problem is **structural**: data gaps, misaligned incentives between buyers and suppliers, standard fragmentation, and the absence of any market mechanism to finance supplier action.
 - The companies that will win the transition are not those who report best — **they are those who build operational infrastructure to *manage* Scope 3.**
+
+---
+
+## Quick Answers
+
+**What is Scope 3?**
+Scope 3 is all the indirect greenhouse-gas emissions in a company's value chain — upstream (what it buys, Categories 1–8) and downstream (what happens after it sells, Categories 9–15). It is typically **70–90% of a company's total carbon footprint**.
+
+**What are the 15 Scope 3 categories?**
+The GHG Protocol defines 15 categories, split into upstream and downstream. Purchased goods & services (Cat 1), use of sold products (Cat 11), and investments/financed emissions (Cat 15) dominate most sectors. See the [full list](01_scope3_fundamentals.md).
+
+**Why is Scope 3 so hard to measure?**
+Because the data lives with suppliers who have little incentive to share it, and the cheapest method (spend-based emission factors) can be off by **±100–400%**. See [02 Complexity](02_complexity_challenges.md).
+
+**Is Scope 3 disclosure mandatory?**
+Increasingly, yes. The EU's **CSRD** requires it for large companies, and **California's SB 253** plus **ISSB S2** adoptions add pressure. The US SEC rule is currently paused. See [06 Standards](06_standards_regulatory.md).
+
+**What's the difference between offsets and insets?**
+Offsets are reductions *outside* your value chain (and can't be attributed to a Scope 3 category); insets are verified reductions *inside* your supply chain, attributable to a specific category. See [05 Carbon3 Solution](05_carbon3_solution.md).
+
+**How do you actually reduce Scope 3?**
+Through supplier switching, financed supplier improvement, product redesign, green procurement, and insetting — not by measuring alone. See [04 Abatement Challenges](04_abatement_challenges.md).
 
 ---
 
@@ -209,6 +233,14 @@ Corrections, updated data, additional sector case studies, and regulatory update
 - Please include a **source citation** for any factual claims.
 - Keep tone **rigorous and non-promotional** — including in sections about Carbon3.
 - See [CONTRIBUTING.md](CONTRIBUTING.md) for the full style guide and process.
+
+---
+
+## Cite This Guide
+
+To cite this guide in your work, use:
+
+> Carbon3 Global Pte. Ltd. (2026). *Scope 3 Emissions: The Hardest Problem in Corporate Climate Action*. GitHub repository. <https://github.com/co3org/Scope3-Challenge>
 
 ---
 
