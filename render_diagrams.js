@@ -9,9 +9,20 @@ const DOCS = 'docs';
 const OUT = 'docs_build';
 const DIAGRAMS = path.join(OUT, 'assets', 'diagrams');
 
-const pptrArg = process.env.PUPPETEER_CONFIG_FILE
-  ? ['-p', process.env.PUPPETEER_CONFIG_FILE]
-  : [];
+function getPuppeteerArgs() {
+  if (process.env.PUPPETEER_CONFIG_FILE) {
+    return ['-p', process.env.PUPPETEER_CONFIG_FILE];
+  }
+  // mermaid-cli Docker image ships its puppeteer config at this path (points at
+  // the bundled chromium), but only its default entrypoint passes it. Re-add it
+  // when we invoke mmdc ourselves.
+  if (fs.existsSync('/puppeteer-config.json')) {
+    return ['-p', '/puppeteer-config.json'];
+  }
+  return [];
+}
+
+const pptrArg = getPuppeteerArgs();
 
 fs.rmSync(OUT, { recursive: true, force: true });
 fs.mkdirSync(DIAGRAMS, { recursive: true });
