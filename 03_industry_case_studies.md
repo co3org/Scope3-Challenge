@@ -25,7 +25,13 @@ Abstract complexity becomes concrete when you trace specific supply chains. This
 ### Value Chain Map
 
 ```mermaid
-flowchart LR
+    flowchart LR
+    classDef up fill:#66d9e8,stroke:#0c8599,color:#0b3c44;
+    classDef s1 fill:#ff922b,stroke:#e8590c,color:#fff;
+    classDef down fill:#63e6be,stroke:#0ca678,color:#0b2e1d;
+    classDef bad fill:#ff6b6b,stroke:#e03131,color:#fff;
+    classDef warn fill:#ffc078,stroke:#f08c00,color:#212529;
+
     subgraph T3["Tier 3+ Raw Materials"]
         Iron["Iron Ore\nMining"]
         Baux["Bauxite →\nAluminum"]
@@ -44,7 +50,7 @@ flowchart LR
         Body["Body\nPanels"]
         Power["Powertrain\nComponents"]
         BattPk["Battery\nPacks"]
-        Elec["Electronics\n& Sensors"]
+        Elec["Electronics\nand Sensors"]
         Int["Interior\nComponents"]
     end
 
@@ -54,19 +60,22 @@ flowchart LR
     end
 
     subgraph DS["Downstream"]
-        Deal["Dealerships\n& Distribution\nCat 9"]
+        Deal["Dealerships\nand Distribution\nCat 9"]
         Use["Vehicle\nUse Phase\nCat 11\n~85% of total S3"]
         EoL["End of Life\nRecycling\nCat 12"]
     end
 
     T3 --> T2 --> T1 --> OEM --> DS
 
-    note1["Cat 1 (upstream):\n~10-15% of total footprint"]
-    note2["Cat 11 (use phase):\n~75-85% of total footprint"]
+    note1["Cat 1 (upstream)\n~10-15% of total footprint"]
+    note2["Cat 11 (use phase)\n~75-85% of total footprint"]
 
-    style Use fill:#e03131,color:#fff
-    style Battery fill:#ffa94d,color:#000
-    style Steel fill:#ffa94d,color:#000
+    class Iron,Baux,Lith,Petro,AlumF,Chem,Body,Power,BattPk,Elec,Int up;
+    class Steel,Battery warn;
+    class Manuf,Log s1;
+    class Deal,EoL down;
+    class Use bad;
+    class note1,note2 warn;
 ```
 
 ### Emissions Profile: Traditional ICE vs. BEV
@@ -96,20 +105,27 @@ A major OEM selling 3 million vehicles per year must estimate the lifetime emiss
 The cobalt supply chain for EV batteries illustrates the multi-tier data problem:
 
 ```mermaid
-flowchart TD
-    Co["Cobalt Mine\n(DRC — ~70% of global supply)\n\nEmission intensity:\nHighly variable\nArtisanal vs industrial mining\n0.5–8 kg CO₂e/kg Co\n= 16x range"]
-    Ref["Cobalt Refiner\n(China — ~80% of refining)\n\nEnergy mix: coal-heavy grid\nIntensity: 15–30 kg CO₂e/kg Co\nrefined to battery-grade"]
+    flowchart TD
+    classDef up fill:#66d9e8,stroke:#0c8599,color:#0b3c44;
+    classDef s1 fill:#ff922b,stroke:#e8590c,color:#fff;
+    classDef bad fill:#ff6b6b,stroke:#e03131,color:#fff;
+    classDef warn fill:#ffc078,stroke:#f08c00,color:#212529;
+
+    Co["Cobalt Mine\nDRC — ~70% of global supply\nintensity highly variable\nartisanal vs industrial\n0.5–8 kg CO₂e/kg Co = 16x"]
+    Ref["Cobalt Refiner\nChina — ~80% of refining\ncoal-heavy grid\n15–30 kg CO₂e/kg Co"]
     Prec["Precursor\nCathode Active Material\n(PCAM)\nChina, South Korea, Japan"]
-    Cell["Battery Cell\nManufacturing\n65–100 kg CO₂e/kWh capacity"]
+    Cell["Battery Cell\nManufacturing\n65–100 kg CO₂e/kWh"]
     Pack["Battery Pack\nAssembly (Tier 1)"]
     OEM["Auto OEM"]
 
     Co --> Ref --> Prec --> Cell --> Pack --> OEM
 
-    note["OEM has supplier data from Tier 1.\nTiers 2–4 are effectively black boxes\nfor 95% of OEMs."]
+    note["OEM has supplier data from Tier 1.\nTiers 2–4 are black boxes\nfor 95% of OEMs."]
 
-    style Co fill:#e03131,color:#fff
-    style note fill:#fff3bf,color:#000
+    class Co bad;
+    class Ref,Prec,Cell,Pack up;
+    class OEM s1;
+    class note warn;
 ```
 
 **Challenge C: The SBTi Paradox for OEMs**
@@ -132,40 +148,49 @@ An OEM with a 2030 SBTi target must reduce Cat 11 by 67% (1.5°C pathway). But C
 ### Value Chain Map
 
 ```mermaid
-flowchart TD
+    flowchart TD
+    classDef up fill:#66d9e8,stroke:#0c8599,color:#0b3c44;
+    classDef s1 fill:#ff922b,stroke:#e8590c,color:#fff;
+    classDef down fill:#63e6be,stroke:#0ca678,color:#0b2e1d;
+    classDef bad fill:#ff6b6b,stroke:#e03131,color:#fff;
+    classDef warn fill:#ffc078,stroke:#f08c00,color:#212529;
+
     subgraph Raw["Raw Materials (Cat 1 Upstream)"]
-        Cotton["Cotton Farming\n~5,000 L water/kg\n~2–6 kg CO₂e/kg\nFertilizer = N₂O"]
-        Poly["Polyester\n(Fossil-based)\n~5–15 kg CO₂e/kg"]
-        Wool["Wool\n~36 kg CO₂e/kg\n(methane from sheep)"]
-        Regen["Recycled Fiber\n~1–3 kg CO₂e/kg\n(potential)"]
+        Cotton["Cotton Farming\n~5,000 L water/kg\n2–6 kg CO₂e/kg\nfertilizer = N₂O"]
+        Poly["Polyester\n(fossil-based)\n5–15 kg CO₂e/kg"]
+        Wool["Wool\n~36 kg CO₂e/kg\nmethane from sheep"]
+        Regen["Recycled Fiber\n1–3 kg CO₂e/kg\n(potential)"]
     end
 
     subgraph Process["Processing (Cat 1 Upstream)"]
-        Spin["Spinning\n& Weaving"]
-        Dye["Dyeing\n& Finishing\n(water, chemicals,\nheat-intensive)"]
-        Cut["Cut, Make,\nTrim (CMT)\n(labor-intensive\nlow-tech factories)"]
+        Spin["Spinning\nand Weaving"]
+        Dye["Dyeing\nand Finishing\nwater, chemicals,\nheat-intensive"]
+        Cut["Cut, Make, Trim\n(CMT)\nlabor-intensive\nlow-tech factories"]
     end
 
     subgraph Brand["Brand (Reporting Company)"]
-        Design["Design &\nProduct Dev"]
-        Proc["Procurement\n& QA"]
-        Mktg["Marketing &\nBrand"]
+        Design["Design and\nProduct Dev"]
+        Proc["Procurement\nand QA"]
+        Mktg["Marketing and\nBrand"]
     end
 
     subgraph DS["Downstream"]
         Ship["Ocean/Air Freight\nCat 4, Cat 9"]
         Retail["Retail\n(Own/Franchise)\nCat 13/14"]
-        Use["Consumer\nWashing &\nDrying\nCat 11"]
+        Use["Consumer Washing\nand Drying\nCat 11"]
         EoL["Landfill /\nIncineration\nCat 12\n>85% of apparel"]
     end
 
     Raw --> Process --> Brand --> DS
 
-    note["Brand employs zero manufacturing workers.\nZero direct control of fabric mills or farms.\nEntire physical supply chain = Scope 3."]
+    note["Brand employs zero manufacturing workers.\nZero direct control of mills or farms.\nEntire physical chain = Scope 3."]
 
-    style note fill:#fff3bf,color:#000
-    style Dye fill:#ffa94d,color:#000
-    style EoL fill:#e03131,color:#fff
+    class Cotton,Poly,Wool,Regen,Spin,Cut up;
+    class Dye warn;
+    class Design,Proc,Mktg s1;
+    class Ship,Retail,Use down;
+    class EoL bad;
+    class note warn;
 ```
 
 ### The "Disintermediated Brand" Problem
@@ -180,9 +205,13 @@ Fast fashion brands like Zara, H&M, and Shein have almost no direct physical ope
 **The tier multiplication problem:**
 
 ```mermaid
-graph TD
-    Brand["Brand\n1 entity"] 
-    T1["Tier 1 Garment Factories\n~200–500 factories"] 
+    flowchart TD
+    classDef s1 fill:#ff922b,stroke:#e8590c,color:#fff;
+    classDef up fill:#66d9e8,stroke:#0c8599,color:#0b3c44;
+    classDef warn fill:#ffc078,stroke:#f08c00,color:#212529;
+
+    Brand["Brand\n1 entity"]
+    T1["Tier 1 Garment Factories\n~200–500 factories"]
     T2["Tier 2 Fabric Mills\n~2,000–5,000 mills"]
     T3["Tier 3 Yarn/Fiber Suppliers\n~10,000+ entities"]
     T4["Tier 4 Raw Material\n~50,000+ farms/mines"]
@@ -192,8 +221,9 @@ graph TD
     note["Engagement cost grows\nexponentially by tier.\nTier 4 is effectively\nunreachable for most brands."]
     T4 --> note
 
-    style Brand fill:#339af0,color:#fff
-    style note fill:#fff3bf,color:#000
+    class Brand s1;
+    class T1,T2,T3,T4 up;
+    class note warn;
 ```
 
 ### Dyeing and Finishing: The Hidden Hotspot
@@ -226,15 +256,17 @@ None of these interventions can be measured and attributed to the brand's Cat 11
 ### Why Banks' Scope 3 Dwarfs Their Other Emissions
 
 ```mermaid
-flowchart LR
+    flowchart LR
+    classDef good fill:#69db7c,stroke:#2f9e44,color:#0b2e13;
+    classDef bad fill:#ff6b6b,stroke:#e03131,color:#fff;
+
     subgraph Bank["Large Commercial Bank (Illustrative)"]
-        Ops["Operational\nEmissions\n(Scope 1+2)\n\n~100,000 tCO₂e/yr\nOffices + data centers"]
-        
-        Cat15["Financed Emissions\n(Scope 3 Cat 15)\n\n~150–500 MtCO₂e/yr\n= 1,500–5,000x operational\n\nLoan book: $500B+\nSpanning all sectors"]
+        Ops["Operational Emissions\n(Scope 1+2)\n~100,000 tCO₂e/yr\noffices + data centers"]
+        Cat15["Financed Emissions\n(Scope 3 Cat 15)\n~150–500 MtCO₂e/yr\n1,500–5,000x operational\nloan book $500B+\nspanning all sectors"]
     end
 
-    style Ops fill:#69db7c,color:#000
-    style Cat15 fill:#e03131,color:#fff
+    class Ops good;
+    class Cat15 bad;
 ```
 
 ### The PCAF Attribution Calculation in Practice
@@ -256,29 +288,36 @@ This single loan generates financed emissions equal to **12.5 times** the bank's
 ### The Engagement vs. Divestment Dilemma
 
 ```mermaid
-flowchart TD
-    START["Bank has Net-Zero\ncommitment by 2050"]
+    flowchart TD
+    classDef dark fill:#212529,stroke:#101113,color:#fff;
+    classDef info fill:#d0ebff,stroke:#1971c2,color:#1864ab;
+    classDef good fill:#69db7c,stroke:#2f9e44,color:#0b2e13;
+    classDef warn fill:#ffc078,stroke:#f08c00,color:#212529;
 
+    START["Bank has Net-Zero\ncommitment by 2050"]
     Q1{"Client is high-emitting\nsteel/cement company"}
 
-    Engage["Strategy A: Engage\n\nContinue lending.\nRequire client to develop\ndecarbonization plan.\nMay offer green financing\nat preferential rates.\n\nPro: Enables transition finance.\nCon: Emissions remain attributed\nto bank for duration.\nCon: Client may not deliver."]
-
-    Divest["Strategy B: Divest/Exit\n\nRefuse new loans.\nAllow existing to mature.\nBank's financed emissions drop.\n\nPro: Reduces bank's Cat 15.\nCon: Client finds another lender.\nActual world emissions unchanged.\nCon: 'Carbon leakage' to less\nscrutinized balance sheets."]
-
-    Green["Strategy C: Transition Finance\n\nLend specifically for\ndecarbonization projects:\nGreen steel capex,\nCCS infrastructure,\nElectrification.\n\nPro: Finances real-world change.\nCon: Still attributed as financed\nemissions until project reduces\nclient's Scope 1+2."]
+    Engage["Strategy A: Engage\nContinue lending.\nRequire decarbonization plan.\nMay offer green financing.\nPro: transition finance.\nCon: emissions stay attributed."]
+    Divest["Strategy B: Divest/Exit\nRefuse new loans.\nLet existing mature.\nFinanced emissions drop.\nPro: reduces Cat 15.\nCon: client finds another lender;\nworld emissions unchanged."]
+    Green["Strategy C: Transition Finance\nLend for decarbonization:\ngreen steel capex, CCS, electrification.\nPro: real-world change.\nCon: still attributed until client\ncuts Scope 1+2."]
 
     START --> Q1
     Q1 --> Engage
     Q1 --> Divest
     Q1 --> Green
 
-    Insight["Key Insight: PCAF attribution\nrewards divestment even when\nengagement produces better\nreal-world outcomes.\nThis is a fundamental flaw\nin financed emission accounting."]
+    Insight["Key Insight: PCAF attribution\nrewards divestment even when\nengagement produces better outcomes.\nFundamental flaw in financed\nemission accounting."]
 
     Engage --> Insight
     Divest --> Insight
     Green --> Insight
 
-    style Insight fill:#fff3bf,color:#000
+    class START dark;
+    class Q1 info;
+    class Engage info;
+    class Divest warn;
+    class Green good;
+    class Insight warn;
 ```
 
 ### The SME Lending Black Hole
@@ -311,33 +350,39 @@ Agricultural emissions are:
 4. **Not covered by most emission factor databases** — agricultural process emissions require specialized models (IPCC Tier 2/3)
 
 ```mermaid
-flowchart LR
-    subgraph Farm["Agricultural Production (Cat 1 - dominant)"]
-        Rice["Rice Paddies\nMethane emissions\n~450 kg CO₂e/t rice\n(flooded cultivation)"]
-        Cattle["Beef Cattle\nEnteric fermentation\n~25–50 kg CO₂e/kg beef\n(varies 2x by system)"]
-        Dairy["Dairy\n~2–4 kg CO₂e/kg milk"]
-        Soy["Soybeans\n~0.4–3 kg CO₂e/kg\n(huge deforestation risk)"]
-        Coffee["Coffee\n~5–15 kg CO₂e/kg\n(processing + transport)"]
+    flowchart LR
+    classDef up fill:#66d9e8,stroke:#0c8599,color:#0b3c44;
+    classDef bad fill:#ff6b6b,stroke:#e03131,color:#fff;
+    classDef warn fill:#ffc078,stroke:#f08c00,color:#212529;
+    classDef s1 fill:#ff922b,stroke:#e8590c,color:#fff;
+    classDef down fill:#63e6be,stroke:#0ca678,color:#0b2e1d;
+
+    subgraph Farm["Agricultural Production (Cat 1)"]
+        Rice["Rice Paddies\nmethane emissions\n~450 kg CO₂e/t rice"]
+        Cattle["Beef Cattle\nenteric fermentation\n25–50 kg CO₂e/kg beef"]
+        Dairy["Dairy\n2–4 kg CO₂e/kg milk"]
+        Soy["Soybeans\n0.4–3 kg CO₂e/kg\nhuge deforestation risk"]
+        Coffee["Coffee\n5–15 kg CO₂e/kg\nprocessing + transport"]
     end
 
-    subgraph LUC["Land Use Change (Cat 1 - potentially catastrophic)"]
-        Def["Deforestation\nfor new agricultural\nland\n\nPeat conversion =\n50–100 years of\ncarbon debt"]
+    subgraph LUC["Land Use Change (Cat 1)"]
+        Def["Deforestation\nfor new agricultural land\npeat conversion =\n50–100 years carbon debt"]
     end
 
-    subgraph Proc["Processing & Manufacturing"]
-        Mill["Milling,\nBlending,\nPasteurization"]
-        Pack["Packaging\n(plastics, glass,\naluminum)"]
+    subgraph Proc["Processing and Manufacturing"]
+        Mill["Milling, Blending,\nPasteurization"]
+        Pack["Packaging\nplastics, glass,\naluminum"]
     end
 
     subgraph Brand2["Food Brand"]
-        R&D2["R&D +\nMarketing"]
+        RD2["Research and Development\n+ Marketing"]
     end
 
     subgraph DS2["Downstream"]
         Cold["Cold Chain\nLogistics"]
         Retail2["Grocery\nRetail"]
-        Cook["Consumer\nCooking\nCat 11"]
-        Waste["Food Waste\n(30–50% of\nfood produced)\nCat 12"]
+        Cook["Consumer Cooking\nCat 11"]
+        Waste["Food Waste\n30–50% of food produced\nCat 12"]
     end
 
     Farm --> LUC
@@ -345,8 +390,12 @@ flowchart LR
     LUC --> Proc
     Proc --> Brand2 --> DS2
 
-    style Def fill:#e03131,color:#fff
-    style Cattle fill:#ffa94d,color:#000
+    class Rice,Dairy,Soy,Coffee up;
+    class Cattle warn;
+    class Def bad;
+    class Mill,Pack up;
+    class RD2 s1;
+    class Cold,Retail2,Cook,Waste down;
 ```
 
 ### The Deforestation Time-Bomb
@@ -360,24 +409,34 @@ Under current GHG Protocol rules, LUC emissions are allocated to the commodity p
 - Most buyers have no visibility into which farms their commodities come from (especially through traders)
 
 ```mermaid
-flowchart LR
-    Farm1["Deforestation\nFarm A\nHigh LUC carbon debt"]
-    Farm2["Sustainable\nFarm B\nNo LUC"]
+    flowchart LR
+    classDef bad fill:#ff6b6b,stroke:#e03131,color:#fff;
+    classDef good fill:#69db7c,stroke:#2f9e44,color:#0b2e13;
+    classDef info fill:#d0ebff,stroke:#1971c2,color:#1864ab;
+    classDef up fill:#66d9e8,stroke:#0c8599,color:#0b3c44;
+    classDef s1 fill:#ff922b,stroke:#e8590c,color:#fff;
+    classDef warn fill:#ffc078,stroke:#f08c00,color:#212529;
+
+    Farm1["Deforestation\nFarm A\nhigh LUC carbon debt"]
+    Farm2["Sustainable\nFarm B\nno LUC"]
     Farm3["Farm C"]
-    Trader["Commodity\nTrader\n\nMixes grain from\nhundreds of farms.\nNo farm-level traceability."]
-    Brand3["Food Brand\n\nBuys 'Brazilian soy'\nfrom trader.\nCannot distinguish\nFarm A from Farm B."]
+    Trader["Commodity Trader\nmixes grain from\nhundreds of farms.\nno farm-level traceability"]
+    Brand3["Food Brand\nbuys 'Brazilian soy'\nfrom trader.\ncannot distinguish\nFarm A from Farm B"]
 
     Farm1 --> Trader
     Farm2 --> Trader
     Farm3 --> Trader
     Trader --> Brand3
 
-    Result3["Result: Brand must use\nnational/regional average\nLUC emission factor.\nCannot reward sustainable\nfarmers vs. deforesters."]
+    Result3["Result: brand must use\nnational/regional average\nLUC emission factor.\ncannot reward sustainable\nfarmers vs deforesters"]
     Brand3 --> Result3
 
-    style Farm1 fill:#e03131,color:#fff
-    style Farm2 fill:#2f9e44,color:#fff
-    style Result3 fill:#fff3bf,color:#000
+    class Farm1 bad;
+    class Farm2 good;
+    class Farm3 info;
+    class Trader up;
+    class Brand3 s1;
+    class Result3 warn;
 ```
 
 **Why this matters:** If a food brand sources soy from Brazil, should it use:
@@ -398,7 +457,10 @@ This is a category-level attribution failure: the system does not capture the fu
 ## Cross-Sector Summary: The Common Failure Patterns
 
 ```mermaid
-flowchart TD
+    flowchart TD
+    classDef info fill:#d0ebff,stroke:#1971c2,color:#1864ab;
+    classDef bad fill:#ff6b6b,stroke:#e03131,color:#fff;
+
     subgraph Common["Common Failure Patterns Across All Sectors"]
         F1["Spend-based proxies\nmask high-intensity suppliers"]
         F2["Tier 2+ supply chain\nis effectively invisible"]
@@ -408,9 +470,10 @@ flowchart TD
         F6["Annual measurement\ncannot track continuous\nsupply chain decisions"]
     end
 
-    F1 & F2 & F3 & F4 & F5 & F6 --> Consequence["The Result:\n\nCompanies report Scope 3.\nThey do not manage it.\nThe market cannot price\nthe difference between\na leader and a laggard."]
+    F1 & F2 & F3 & F4 & F5 & F6 --> Consequence["The Result:\nCompanies report Scope 3\nbut do not manage it.\nThe market cannot price\nthe difference between\na leader and a laggard."]
 
-    style Consequence fill:#e03131,color:#fff
+    class F1,F2,F3,F4,F5,F6 info;
+    class Consequence bad;
 ```
 
 ## Key Takeaways

@@ -61,6 +61,10 @@ The challenge compounds itself: the entities that produce the most emissions oft
 
 ```mermaid
 flowchart TB
+    classDef dark fill:#212529,stroke:#101113,color:#fff;
+    classDef bad fill:#ff6b6b,stroke:#e03131,color:#fff;
+    classDef muted fill:#f1f3f5,stroke:#ced4da,color:#343a40;
+
     Root["⚠️ Scope 3 Failure Modes"]
 
     Root --> D["📂 Data Gaps"]
@@ -89,27 +93,9 @@ flowchart TB
     S --> S2["Sector-specific vs cross-sector norms"]
     S --> S3["Regulatory divergence across jurisdictions"]
 
-    style Root fill:#c92a2a,color:#fff
-    style D fill:#1971c2,color:#fff
-    style A fill:#1971c2,color:#fff
-    style I fill:#1971c2,color:#fff
-    style B fill:#1971c2,color:#fff
-    style S fill:#1971c2,color:#fff
-    style D1 fill:#e7f5ff,color:#1864ab
-    style D2 fill:#e7f5ff,color:#1864ab
-    style D3 fill:#e7f5ff,color:#1864ab
-    style A1 fill:#e7f5ff,color:#1864ab
-    style A2 fill:#e7f5ff,color:#1864ab
-    style A3 fill:#e7f5ff,color:#1864ab
-    style I1 fill:#e7f5ff,color:#1864ab
-    style I2 fill:#e7f5ff,color:#1864ab
-    style I3 fill:#e7f5ff,color:#1864ab
-    style B1 fill:#e7f5ff,color:#1864ab
-    style B2 fill:#e7f5ff,color:#1864ab
-    style B3 fill:#e7f5ff,color:#1864ab
-    style S1 fill:#e7f5ff,color:#1864ab
-    style S2 fill:#e7f5ff,color:#1864ab
-    style S3 fill:#e7f5ff,color:#1864ab
+    class Root dark;
+    class D,A,I,B,S bad;
+    class D1,D2,D3,A1,A2,A3,I1,I2,I3,B1,B2,B3,S1,S2,S3 muted;
 ```
 
 **1. The Data Desert.** Most Scope 3 emissions are estimated, not measured. Tier-1 suppliers are difficult enough to engage; Tier-2 and beyond are almost impossible. The further upstream you go, the coarser the data. Most companies rely on spend-based emission factors — essentially multiplying invoiced spend by an average sector intensity — which can be off by **factors of 2–10x** from real emissions.
