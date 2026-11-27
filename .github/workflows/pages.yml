@@ -21,7 +21,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Render diagrams to static SVG
-        uses: docker://ghcr.io/mermaid-js/mermaid-cli:latest
+        uses: docker://ghcr.io/mermaid-js/mermaid-cli/mermaid-cli:latest
         with:
           entrypoint: node
           args: render_diagrams.js
