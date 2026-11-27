@@ -1,5 +1,23 @@
 # Carbon3: Building the Market Infrastructure for Supply Chain Decarbonisation
 
+> **📚 [Scope 3 Challenge](README.md)** · Part 6 of 11 · [← Abatement Challenges](04_abatement_challenges.md) · [Next: Standards & Regulatory →](06_standards_regulatory.md)
+
+
+<details open>
+<summary><strong>📑 Contents</strong></summary>
+
+- [The Structural Problem Carbon3 Addresses](#the-structural-problem-carbon3-addresses)
+- [1. The Core Instrument: Inset Credits](#1-the-core-instrument-inset-credits)
+- [2. The Carbon3 Platform: Infrastructure Stack](#2-the-carbon3-platform-infrastructure-stack)
+- [3. How Carbon3 Solves the Root-Cause Problems](#3-how-carbon3-solves-the-root-cause-problems)
+- [4. Target Sectors: Where Carbon3 Creates the Most Value](#4-target-sectors-where-carbon3-creates-the-most-value)
+- [5. Stakeholder Value Creation](#5-stakeholder-value-creation)
+- [6. Standards Compliance and Credibility Architecture](#6-standards-compliance-and-credibility-architecture)
+- [7. Critical Analysis: Open Questions and Genuine Risks](#7-critical-analysis-open-questions-and-genuine-risks)
+- [8. The Bigger Picture: Why Carbon3 Is Necessary](#8-the-bigger-picture-why-carbon3-is-necessary)
+
+</details>
+
 ## The Structural Problem Carbon3 Addresses
 
 Every preceding section of this guide points toward the same structural gap. Companies know *where* their Scope 3 emissions are. They increasingly know *which levers* could reduce them. What they lack is a **market mechanism** that creates financial value for verified Scope 3 reductions and channels that capital to suppliers who can actually make them happen.
@@ -425,3 +443,14 @@ flowchart TD
     style Carbon3Sol fill:#339af0,color:#fff
     style Outcome fill:#2f9e44,color:#fff
 ```
+
+## Key Takeaways
+
+- Inset credits convert verified **value-chain** reductions into tradable financial assets.
+- The model is structurally compelling but carries **unresolved risks** — chiefly GHG Protocol recognition.
+- The strongest near-term use case is **sub-$50/tCO₂e interventions**; hard-to-abate needs blended finance.
+- DP World's Insetify programme proves **operational feasibility** but not yet liquid, priced markets.
+
+---
+
+**← Previous:** [Abatement Challenges](04_abatement_challenges.md) &nbsp;·&nbsp; **Next:** [Standards & Regulatory](06_standards_regulatory.md) → &nbsp;·&nbsp; **[📚 Guide Index](README.md)**

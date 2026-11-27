@@ -1,5 +1,23 @@
 # Abatement and Decarbonization Challenges: Why Measuring Is Not Enough
 
+> **📚 [Scope 3 Challenge](README.md)** · Part 5 of 11 · [← Industry Case Studies](03_industry_case_studies.md) · [Next: Carbon3 Solution →](05_carbon3_solution.md)
+
+
+<details open>
+<summary><strong>📑 Contents</strong></summary>
+
+- [The Fundamental Gap](#the-fundamental-gap)
+- [1. The Decarbonization Lever Map](#1-the-decarbonization-lever-map)
+- [2. The Supplier Engagement Trap](#2-the-supplier-engagement-trap)
+- [3. The Offset vs. Inset Debate](#3-the-offset-vs-inset-debate)
+- [4. The Abatement Cost Curve](#4-the-abatement-cost-curve)
+- [5. The Supply Chain Finance Bridge](#5-the-supply-chain-finance-bridge)
+- [6. The Abatement Governance Problem: Who Sets the Rules?](#6-the-abatement-governance-problem-who-sets-the-rules)
+- [7. The Hard-to-Abate Sectors: Where Standard Approaches Break Down](#7-the-hard-to-abate-sectors-where-standard-approaches-break-down)
+- [8. What "Net-Zero Supply Chain" Actually Requires](#8-what-net-zero-supply-chain-actually-requires)
+
+</details>
+
 ## The Fundamental Gap
 
 The most important insight in corporate climate action is this: **measuring Scope 3 emissions and reducing them are almost entirely different problems.** Most corporate sustainability programs are structured to solve the measurement problem. Almost none are structured to solve the abatement problem at the required speed and scale.
@@ -337,3 +355,14 @@ The missing piece is infrastructure that:
 4. Connects this to recognized GHG Protocol and SBTi accounting frameworks
 
 This is the structural gap that insetting infrastructure is designed to fill.
+
+## Key Takeaways
+
+- **Measuring ≠ reducing** — the measurement stack is increasingly solved, the abatement stack is mostly absent.
+- Supplier-engagement targets measure **activity, not reductions, causality, or additionality**.
+- **Additionality** is the make-or-break test — and it is fiendishly hard to prove.
+- The cheapest abatement is blocked by **non-technical barriers**: capital access and split incentives.
+
+---
+
+**← Previous:** [Industry Case Studies](03_industry_case_studies.md) &nbsp;·&nbsp; **Next:** [Carbon3 Solution](05_carbon3_solution.md) → &nbsp;·&nbsp; **[📚 Guide Index](README.md)**

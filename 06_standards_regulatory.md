@@ -1,5 +1,29 @@
 # The Standards and Regulatory Landscape
 
+> **📚 [Scope 3 Challenge](README.md)** · Part 7 of 11 · [← Carbon3 Solution](05_carbon3_solution.md) · [Next: Industry Data & Benchmarks →](07_industry_data_and_benchmarks.md)
+
+
+<details open>
+<summary><strong>📑 Contents</strong></summary>
+
+- [Overview](#overview)
+- [1. The Framework Map](#1-the-framework-map)
+- [2. The GHG Protocol — The Foundation](#2-the-ghg-protocol--the-foundation)
+- [3. PCAF — The Financial Sector Extension](#3-pcaf--the-financial-sector-extension)
+- [4. SBTi — The Target-Setting Gold Standard](#4-sbti--the-target-setting-gold-standard)
+- [5. CSRD — The EU's Mandatory Disclosure Regime](#5-csrd--the-eus-mandatory-disclosure-regime)
+- [6. SEC Climate Rule — Finalized but Effectively Paused](#6-sec-climate-rule--finalized-but-effectively-paused)
+- [7. ISSB S2 (IFRS S2)](#7-issb-s2-ifrs-s2)
+- [8. The Regulatory Convergence Problem](#8-the-regulatory-convergence-problem)
+- [9. The GHG Protocol Revision — The Most Consequential Near-Term Event](#9-the-ghg-protocol-revision--the-most-consequential-near-term-event)
+- [10. Voluntary Carbon Market Integrity Bodies — VCMI and ICVCM](#10-voluntary-carbon-market-integrity-bodies--vcmi-and-icvcm)
+- [11. Supply Chain Due Diligence Regulations — CSDDD and LkSG](#11-supply-chain-due-diligence-regulations--csddd-and-lksg)
+- [12. Product-Level Carbon Footprint Infrastructure — The PACT Protocol](#12-product-level-carbon-footprint-infrastructure--the-pact-protocol)
+- [13. Climate Transition Plans](#13-climate-transition-plans)
+- [14. What Is Missing from the Current Standards Landscape](#14-what-is-missing-from-the-current-standards-landscape)
+
+</details>
+
 ## Overview
 
 The Scope 3 standards landscape is simultaneously over-complicated and under-enforced. Multiple frameworks govern how companies measure, report, and set targets for Scope 3 emissions — and they do not fully align with each other. Meanwhile, three major regulatory regimes (CSRD, SEC, ISSB) are creating partially divergent mandatory disclosure obligations that companies must satisfy simultaneously.
@@ -362,3 +386,14 @@ For financial institutions, the SBTi Financial Institutions Standard and emergin
 | Nature-positive integration | Biodiversity and water are not captured in GHG accounting | TNFD framework emerging |
 | Carbon removal quality | No agreed standard for corporate use of carbon removal credits in Scope 3 | Active debate |
 | Inset credit accounting | How should verified supply chain emission reductions be credited in Scope 3 reports? | GHG Protocol revision underway |
+
+## Key Takeaways
+
+- Three regimes — **CSRD, SEC, ISSB** — partially diverge on materiality, assurance, and value-chain depth.
+- The **GHG Protocol revision** is the single most consequential near-term event for the inset-credit market.
+- **SBTi Scope 3 targets** are mandatory for most companies yet depend on factors they do not control.
+- **VCMI/ICVCM** integrity rules are central but absent from most reports; insetting sits in an unresolved policy gap.
+
+---
+
+**← Previous:** [Carbon3 Solution](05_carbon3_solution.md) &nbsp;·&nbsp; **Next:** [Industry Data & Benchmarks](07_industry_data_and_benchmarks.md) → &nbsp;·&nbsp; **[📚 Guide Index](README.md)**

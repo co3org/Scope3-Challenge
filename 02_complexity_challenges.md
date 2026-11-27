@@ -1,5 +1,24 @@
 # Why Scope 3 Accounting Is So Hard: A Deep-Dive into Root Causes
 
+> **📚 [Scope 3 Challenge](README.md)** · Part 3 of 11 · [← Scope 3 Fundamentals](01_scope3_fundamentals.md) · [Next: Industry Case Studies →](03_industry_case_studies.md)
+
+
+<details open>
+<summary><strong>📑 Contents</strong></summary>
+
+- [Overview](#overview)
+- [Challenge 1: The Data Pyramid Problem](#challenge-1-the-data-pyramid-problem)
+- [Challenge 2: The Incentive Trap](#challenge-2-the-incentive-trap)
+- [Challenge 3: Emission Factor Uncertainty and Database Fragmentation](#challenge-3-emission-factor-uncertainty-and-database-fragmentation)
+- [Challenge 4: Boundary Ambiguity and Category Overlap](#challenge-4-boundary-ambiguity-and-category-overlap)
+- [Challenge 5: The Attribution War — Who Owns Shared Emissions?](#challenge-5-the-attribution-war--who-owns-shared-emissions)
+- [Challenge 6: Downstream Speculation — Category 11 and Beyond](#challenge-6-downstream-speculation--category-11-and-beyond)
+- [Challenge 7: The Disclosure Gap — Completeness vs. Accuracy Trade-off](#challenge-7-the-disclosure-gap--completeness-vs-accuracy-trade-off)
+- [Challenge 8: Temporal Mismatch](#challenge-8-temporal-mismatch)
+- [Challenge 9: The SBTi Target-Setting Paradox](#challenge-9-the-sbti-target-setting-paradox)
+
+</details>
+
 ## Overview
 
 Scope 3 accounting is not merely difficult — it is *structurally* difficult. The challenges are not primarily technical (though technology matters); they are rooted in information economics, organizational incentives, system boundary design, and the fundamental nature of distributed global supply chains. This section maps the key failure modes with precision.
@@ -336,3 +355,14 @@ Science Based Targets initiative (SBTi) is the gold standard for corporate clima
 **The result:** A company can meet 100% of its internal decarbonization targets (Scope 1 and 2) and still miss its Scope 3 SBTi target because the grid did not decarbonize fast enough or its suppliers did not invest in clean technology.
 
 SBTi acknowledges this by allowing companies to set "engagement targets" for Scope 3 (e.g., "65% of suppliers by spend have SBTi targets by 2026") rather than absolute reduction targets — but engagement targets do not guarantee emission reductions, and cannot be directly measured against a 1.5°C budget.
+
+## Key Takeaways
+
+- Data quality decays sharply upstream: **Tier 0 is near-perfect, Tier 3+ is a black box.**
+- The **incentive trap** is structural: suppliers hold the data but face competitive risk from sharing it.
+- Emission-factor databases disagree by **2–3x** for the same process; spend-based proxies are systematically directional.
+- Reporting incentives push toward **maximum coverage at minimum accuracy** — a perverse, unmanaged trade-off.
+
+---
+
+**← Previous:** [Scope 3 Fundamentals](01_scope3_fundamentals.md) &nbsp;·&nbsp; **Next:** [Industry Case Studies](03_industry_case_studies.md) → &nbsp;·&nbsp; **[📚 Guide Index](README.md)**

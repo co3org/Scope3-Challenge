@@ -1,11 +1,23 @@
 # Scope 3 Emissions: The Hardest Problem in Corporate Climate Action
 
+> **📚 [Scope 3 Challenge](README.md)** · Part 1 of 11 · [Next: Scope 3 Fundamentals →](01_scope3_fundamentals.md)
+
+
 > **TL;DR for executives:**
 > - Scope 3 = 70–90% of most companies' real climate footprint, yet is largely invisible, estimated, and underreported.
 > - The problem is structural: data gaps, misaligned supplier incentives, standard fragmentation, and no market mechanism to finance upstream action.
 > - The companies that win the transition are not those who report best — they are those who build operational infrastructure to *manage* Scope 3.
 
 ---
+
+<details open>
+<summary><strong>📑 Contents</strong></summary>
+
+- [How to Use This Guide](#how-to-use-this-guide)
+- [Guide Index](#guide-index)
+- [Executive Summary](#executive-summary)
+
+</details>
 
 ## How to Use This Guide
 
@@ -139,4 +151,15 @@ Each lever requires a different type of engagement, a different data infrastruct
 
 ---
 
+## Key Takeaways
+
+- Scope 3 is **70–90% of most companies' real footprint**, yet it remains invisible, estimated, and underreported.
+- The failure is **structural, not technical** — five root causes: data gaps, attribution conflicts, incentive misalignment, boundary ambiguity, and standard fragmentation.
+- Knowing where your emissions are is **not the same as knowing how to reduce them** — the decarbonization gap is the deeper problem.
+- The companies that win will build **operational infrastructure to *manage* Scope 3**, not just report it.
+
 *This guide is maintained by [Carbon3](https://carbon3.net) — building the market infrastructure that makes supply-chain decarbonisation financially self-sustaining. See [05 Carbon3 Solution](05_carbon3_solution.md) for how the inset credit model addresses the structural gaps described above.*
+
+---
+
+**← Previous:** [Guide Index](README.md) &nbsp;·&nbsp; **Next:** [Scope 3 Fundamentals](01_scope3_fundamentals.md) → &nbsp;·&nbsp; **[📚 Guide Index](README.md)**
