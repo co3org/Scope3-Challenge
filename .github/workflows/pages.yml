@@ -19,13 +19,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Render diagrams to static SVG
+        uses: docker://ghcr.io/mermaid-js/mermaid-cli:latest
+        with:
+          entrypoint: node
+          args: render_diagrams.js
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+
       - name: Install dependencies
         run: pip install -r requirements.txt
+
       - name: Build site
         run: PYTHONPATH=. mkdocs build
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

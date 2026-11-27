@@ -4,6 +4,7 @@ site_url: https://co3org.github.io/Scope3-Challenge/
 repo_url: https://github.com/co3org/Scope3-Challenge
 repo_name: co3org/Scope3-Challenge
 edit_uri: edit/main/
+docs_dir: docs_build
 
 theme:
   name: material
