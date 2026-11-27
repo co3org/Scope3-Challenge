@@ -1,6 +1,6 @@
 # Frequently Asked Questions
 
-> **📚 [Scope 3 Challenge](README.md)** · Part 15 of 16 · [← Glossary](13_glossary.md) · [Next: Quick Reference →](15_quick_reference.md)
+> **📚 [Scope 3 Challenge](index.md)** · Part 15 of 16 · [← Glossary](13_glossary.md) · [Next: Quick Reference →](15_quick_reference.md)
 
 <details open>
 <summary><strong>📑 Contents</strong></summary>
@@ -129,4 +129,4 @@ No. The distinction is **location and attribution**: Carbon3's inset credits rep
 
 ---
 
-**← Previous:** [Glossary](13_glossary.md) &nbsp;·&nbsp; **Next:** [Quick Reference](15_quick_reference.md) → &nbsp;·&nbsp; **[📚 Guide Index](README.md)**
+**← Previous:** [Glossary](13_glossary.md) &nbsp;·&nbsp; **Next:** [Quick Reference](15_quick_reference.md) → &nbsp;·&nbsp; **[📚 Guide Index](index.md)**

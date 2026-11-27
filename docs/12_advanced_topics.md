@@ -1,6 +1,6 @@
 # Advanced Topics for Practitioners
 
-> **📚 [Scope 3 Challenge](README.md)** · Part 13 of 16 · [← Templates & Checklists](11_templates.md) · [Next: Glossary →](13_glossary.md)
+> **📚 [Scope 3 Challenge](index.md)** · Part 13 of 16 · [← Templates & Checklists](11_templates.md) · [Next: Glossary →](13_glossary.md)
 
 <details open>
 <summary><strong>📑 Contents</strong></summary>
@@ -160,4 +160,4 @@ National GHG inventories, by contrast, use IPCC sectoral methodologies that *avo
 
 ---
 
-**← Previous:** [Templates & Checklists](11_templates.md) &nbsp;·&nbsp; **Next:** [Glossary](13_glossary.md) → &nbsp;·&nbsp; **[📚 Guide Index](README.md)**
+**← Previous:** [Templates & Checklists](11_templates.md) &nbsp;·&nbsp; **Next:** [Glossary](13_glossary.md) → &nbsp;·&nbsp; **[📚 Guide Index](index.md)**

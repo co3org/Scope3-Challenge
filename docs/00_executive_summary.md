@@ -1,6 +1,6 @@
 # Scope 3 Emissions: The Hardest Problem in Corporate Climate Action
 
-> **📚 [Scope 3 Challenge](README.md)** · Part 1 of 16 · [Next: Scope 3 Fundamentals →](01_scope3_fundamentals.md)
+> **📚 [Scope 3 Challenge](index.md)** · Part 1 of 16 · [Next: Scope 3 Fundamentals →](01_scope3_fundamentals.md)
 
 > **TL;DR for executives:**
 > - Scope 3 = 70–90% of most companies' real climate footprint, yet is largely invisible, estimated, and underreported.
@@ -28,7 +28,7 @@
 | **Procurement / Operations** | [03 Industry Case Studies](03_industry_case_studies.md) | Supplier engagement diagrams in each sector |
 | **Technologist / Data team** | [02 Complexity & Challenges](02_complexity_challenges.md) | [07 Data & Benchmarks](07_industry_data_and_benchmarks.md) |
 
-→ *Full guide index and overview at the [repository README](README.md).*
+→ *Full guide index and overview at the [Guide Index](index.md).*
 
 ---
 
@@ -147,4 +147,4 @@ Each lever requires a different type of engagement, a different data infrastruct
 
 ---
 
-**← Previous:** [Guide Index](README.md) &nbsp;·&nbsp; **Next:** [Scope 3 Fundamentals](01_scope3_fundamentals.md) → &nbsp;·&nbsp; **[📚 Guide Index](README.md)**
+**← Previous:** [Guide Index](index.md) &nbsp;·&nbsp; **Next:** [Scope 3 Fundamentals](01_scope3_fundamentals.md) → &nbsp;·&nbsp; **[📚 Guide Index](index.md)**

@@ -1,6 +1,6 @@
 # Worked Example: From Raw Data to a Scope 3 Inventory
 
-> **📚 [Scope 3 Challenge](README.md)** · Part 10 of 16 · [← Scope 3 101](08_scope3_101.md) · [Next: Common Mistakes →](10_common_mistakes.md)
+> **📚 [Scope 3 Challenge](index.md)** · Part 10 of 16 · [← Scope 3 101](08_scope3_101.md) · [Next: Common Mistakes →](10_common_mistakes.md)
 
 <details open>
 <summary><strong>📑 Contents</strong></summary>
@@ -210,4 +210,4 @@ Build your own first-pass inventory:
 
 ---
 
-**← Previous:** [Scope 3 101](08_scope3_101.md) &nbsp;·&nbsp; **Next:** [Common Mistakes](10_common_mistakes.md) → &nbsp;·&nbsp; **[📚 Guide Index](README.md)**
+**← Previous:** [Scope 3 101](08_scope3_101.md) &nbsp;·&nbsp; **Next:** [Common Mistakes](10_common_mistakes.md) → &nbsp;·&nbsp; **[📚 Guide Index](index.md)**

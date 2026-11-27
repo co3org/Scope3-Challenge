@@ -1,6 +1,6 @@
 # Scope 3 in Practice: Industry Case Studies
 
-> **📚 [Scope 3 Challenge](README.md)** · Part 4 of 16 · [← Complexity & Challenges](02_complexity_challenges.md) · [Next: Abatement Challenges →](04_abatement_challenges.md)
+> **📚 [Scope 3 Challenge](index.md)** · Part 4 of 16 · [← Complexity & Challenges](02_complexity_challenges.md) · [Next: Abatement Challenges →](04_abatement_challenges.md)
 
 <details open>
 <summary><strong>📑 Contents</strong></summary>
@@ -485,4 +485,4 @@ This is a category-level attribution failure: the system does not capture the fu
 
 ---
 
-**← Previous:** [Complexity & Challenges](02_complexity_challenges.md) &nbsp;·&nbsp; **Next:** [Abatement Challenges](04_abatement_challenges.md) → &nbsp;·&nbsp; **[📚 Guide Index](README.md)**
+**← Previous:** [Complexity & Challenges](02_complexity_challenges.md) &nbsp;·&nbsp; **Next:** [Abatement Challenges](04_abatement_challenges.md) → &nbsp;·&nbsp; **[📚 Guide Index](index.md)**

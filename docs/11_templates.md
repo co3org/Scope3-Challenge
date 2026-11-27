@@ -1,6 +1,6 @@
 # Templates & Checklists
 
-> **📚 [Scope 3 Challenge](README.md)** · Part 12 of 16 · [← Common Mistakes](10_common_mistakes.md) · [Next: Advanced Topics →](12_advanced_topics.md)
+> **📚 [Scope 3 Challenge](index.md)** · Part 12 of 16 · [← Common Mistakes](10_common_mistakes.md) · [Next: Advanced Topics →](12_advanced_topics.md)
 
 <details open>
 <summary><strong>📑 Contents</strong></summary>
@@ -117,4 +117,4 @@ Before you publish (or before an auditor arrives):
 
 ---
 
-**← Previous:** [Common Mistakes](10_common_mistakes.md) &nbsp;·&nbsp; **Next:** [Advanced Topics](12_advanced_topics.md) → &nbsp;·&nbsp; **[📚 Guide Index](README.md)**
+**← Previous:** [Common Mistakes](10_common_mistakes.md) &nbsp;·&nbsp; **Next:** [Advanced Topics](12_advanced_topics.md) → &nbsp;·&nbsp; **[📚 Guide Index](index.md)**

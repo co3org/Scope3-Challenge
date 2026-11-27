@@ -36,19 +36,19 @@
 Scope 3 is all the indirect greenhouse-gas emissions in a company's value chain — upstream (what it buys, Categories 1–8) and downstream (what happens after it sells, Categories 9–15). It is typically **70–90% of a company's total carbon footprint**.
 
 **What are the 15 Scope 3 categories?**
-The GHG Protocol defines 15 categories, split into upstream and downstream. Purchased goods & services (Cat 1), use of sold products (Cat 11), and investments/financed emissions (Cat 15) dominate most sectors. See the [full list](01_scope3_fundamentals.md).
+The GHG Protocol defines 15 categories, split into upstream and downstream. Purchased goods & services (Cat 1), use of sold products (Cat 11), and investments/financed emissions (Cat 15) dominate most sectors. See the [full list](docs/01_scope3_fundamentals.md).
 
 **Why is Scope 3 so hard to measure?**
-Because the data lives with suppliers who have little incentive to share it, and the cheapest method (spend-based emission factors) can be off by **±100–400%**. See [02 Complexity](02_complexity_challenges.md).
+Because the data lives with suppliers who have little incentive to share it, and the cheapest method (spend-based emission factors) can be off by **±100–400%**. See [02 Complexity](docs/02_complexity_challenges.md).
 
 **Is Scope 3 disclosure mandatory?**
-Increasingly, yes. The EU's **CSRD** requires it for large companies, and **California's SB 253** plus **ISSB S2** adoptions add pressure. The US SEC rule is currently paused. See [06 Standards](06_standards_regulatory.md).
+Increasingly, yes. The EU's **CSRD** requires it for large companies, and **California's SB 253** plus **ISSB S2** adoptions add pressure. The US SEC rule is currently paused. See [06 Standards](docs/06_standards_regulatory.md).
 
 **What's the difference between offsets and insets?**
-Offsets are reductions *outside* your value chain (and can't be attributed to a Scope 3 category); insets are verified reductions *inside* your supply chain, attributable to a specific category. See [05 Carbon3 Solution](05_carbon3_solution.md).
+Offsets are reductions *outside* your value chain (and can't be attributed to a Scope 3 category); insets are verified reductions *inside* your supply chain, attributable to a specific category. See [05 Carbon3 Solution](docs/05_carbon3_solution.md).
 
 **How do you actually reduce Scope 3?**
-Through supplier switching, financed supplier improvement, product redesign, green procurement, and insetting — not by measuring alone. See [04 Abatement Challenges](04_abatement_challenges.md).
+Through supplier switching, financed supplier improvement, product redesign, green procurement, and insetting — not by measuring alone. See [04 Abatement Challenges](docs/04_abatement_challenges.md).
 
 ---
 
@@ -56,13 +56,13 @@ Through supplier switching, financed supplier improvement, product redesign, gre
 
 | I am... | Start with | Then go to |
 |---------|-----------|-----------|
-| **Completely new to Scope 3** | [08 Scope 3 101](08_scope3_101.md) | [09 Worked Example](09_worked_example.md) → [01 Fundamentals](01_scope3_fundamentals.md) |
-| **Executive / Board member** | [00 Executive Summary](00_executive_summary.md) | [04 Abatement Challenges](04_abatement_challenges.md) → [15 Quick Reference](15_quick_reference.md) |
-| **Sustainability / ESG lead** | [01 Fundamentals](01_scope3_fundamentals.md) | [02 Complexity](02_complexity_challenges.md) → [06 Standards](06_standards_regulatory.md) |
-| **Finance / Risk team** | [06 Standards & Regulatory](06_standards_regulatory.md) | [03 Case Studies — Banking](03_industry_case_studies.md) → [07 Data](07_industry_data_and_benchmarks.md) |
-| **Procurement / Operations** | [03 Industry Case Studies](03_industry_case_studies.md) | [11 Templates](11_templates.md) → [04 Abatement Challenges](04_abatement_challenges.md) |
-| **Technologist / Data team** | [02 Complexity & Challenges](02_complexity_challenges.md) | [07 Data](07_industry_data_and_benchmarks.md) → [12 Advanced Topics](12_advanced_topics.md) |
-| **Seasoned practitioner** | [12 Advanced Topics](12_advanced_topics.md) | [07 Data](07_industry_data_and_benchmarks.md) → [15 Quick Reference](15_quick_reference.md) |
+| **Completely new to Scope 3** | [08 Scope 3 101](docs/08_scope3_101.md) | [09 Worked Example](docs/09_worked_example.md) → [01 Fundamentals](docs/01_scope3_fundamentals.md) |
+| **Executive / Board member** | [00 Executive Summary](docs/00_executive_summary.md) | [04 Abatement Challenges](docs/04_abatement_challenges.md) → [15 Quick Reference](docs/15_quick_reference.md) |
+| **Sustainability / ESG lead** | [01 Fundamentals](docs/01_scope3_fundamentals.md) | [02 Complexity](docs/02_complexity_challenges.md) → [06 Standards](docs/06_standards_regulatory.md) |
+| **Finance / Risk team** | [06 Standards & Regulatory](docs/06_standards_regulatory.md) | [03 Case Studies — Banking](docs/03_industry_case_studies.md) → [07 Data](docs/07_industry_data_and_benchmarks.md) |
+| **Procurement / Operations** | [03 Industry Case Studies](docs/03_industry_case_studies.md) | [11 Templates](docs/11_templates.md) → [04 Abatement Challenges](docs/04_abatement_challenges.md) |
+| **Technologist / Data team** | [02 Complexity & Challenges](docs/02_complexity_challenges.md) | [07 Data](docs/07_industry_data_and_benchmarks.md) → [12 Advanced Topics](docs/12_advanced_topics.md) |
+| **Seasoned practitioner** | [12 Advanced Topics](docs/12_advanced_topics.md) | [07 Data](docs/07_industry_data_and_benchmarks.md) → [15 Quick Reference](docs/15_quick_reference.md) |
 
 ---
 
@@ -70,19 +70,19 @@ Through supplier switching, financed supplier improvement, product redesign, gre
 
 **🌱 Beginner track — build intuition first.**
 
-1. [08 Scope 3 101](08_scope3_101.md) — the big idea, in plain English, with analogies and a mini example.
-2. [09 Worked Example](09_worked_example.md) — watch a full inventory get built, with real arithmetic.
-3. [01 Fundamentals](01_scope3_fundamentals.md) — the 15 categories, properly.
-4. [10 Common Mistakes](10_common_mistakes.md) — what *not* to do.
+1. [08 Scope 3 101](docs/08_scope3_101.md) — the big idea, in plain English, with analogies and a mini example.
+2. [09 Worked Example](docs/09_worked_example.md) — watch a full inventory get built, with real arithmetic.
+3. [01 Fundamentals](docs/01_scope3_fundamentals.md) — the 15 categories, properly.
+4. [10 Common Mistakes](docs/10_common_mistakes.md) — what *not* to do.
 
 **🎓 Expert track — go deep on the hard parts.**
 
-1. [02 Complexity & Challenges](02_complexity_challenges.md) — the nine structural failure modes.
-2. [06 Standards & Regulatory](06_standards_regulatory.md) — CSRD, SEC, ISSB, PCAF, SBTi, and the GHG Protocol revision.
-3. [07 Data & Benchmarks](07_industry_data_and_benchmarks.md) — 1,391 companies' real disclosures.
-4. [12 Advanced Topics](12_advanced_topics.md) — allocation, uncertainty, PCAF data quality, scenario analysis.
+1. [02 Complexity & Challenges](docs/02_complexity_challenges.md) — the nine structural failure modes.
+2. [06 Standards & Regulatory](docs/06_standards_regulatory.md) — CSRD, SEC, ISSB, PCAF, SBTi, and the GHG Protocol revision.
+3. [07 Data & Benchmarks](docs/07_industry_data_and_benchmarks.md) — 1,391 companies' real disclosures.
+4. [12 Advanced Topics](docs/12_advanced_topics.md) — allocation, uncertainty, PCAF data quality, scenario analysis.
 
-Both tracks converge on [04 Abatement Challenges](04_abatement_challenges.md) → [05 Carbon3 Solution](05_carbon3_solution.md), where the guide turns from "what is the problem" to "how do we actually solve it."
+Both tracks converge on [04 Abatement Challenges](docs/04_abatement_challenges.md) → [05 Carbon3 Solution](docs/05_carbon3_solution.md), where the guide turns from "what is the problem" to "how do we actually solve it."
 
 ---
 
@@ -131,7 +131,7 @@ flowchart LR
 | Total voluntary carbon market value (2024) | **$535 million** | Ecosystem Marketplace SOVCM 2025 |
 | Bain PE finding (2021–2023) | **S3 +15%** while S1 −5%, S2 −26% | Bain & Company (2025) |
 
-*Every figure is sourced and explained in [07 Industry Data & Benchmarks](07_industry_data_and_benchmarks.md).*
+*Every figure is sourced and explained in [07 Industry Data & Benchmarks](docs/07_industry_data_and_benchmarks.md).*
 
 ---
 
@@ -141,46 +141,46 @@ flowchart LR
 
 | # | File | Contents |
 |---|------|----------|
-| 00 | [Executive Summary](00_executive_summary.md) | Key insights, five root causes, maturity model |
-| 01 | [Scope 3 Fundamentals](01_scope3_fundamentals.md) | GHG scopes, all 15 categories, double-counting mechanics |
-| 02 | [Complexity & Challenges](02_complexity_challenges.md) | Data pyramid, incentive traps, EF uncertainty, attribution conflicts |
-| 03 | [Industry Case Studies](03_industry_case_studies.md) | Automotive, apparel, banking, food & ag — deep dives |
-| 04 | [Abatement Challenges](04_abatement_challenges.md) | Why measuring ≠ reducing; lever map; decarbonization playbook |
-| 05 | [Carbon3 Solution](05_carbon3_solution.md) | The inset credit model — with rigorous critical analysis |
-| 06 | [Standards & Regulatory](06_standards_regulatory.md) | GHG Protocol, PCAF, SBTi, CSRD, SEC, ISSB, VCMI, CSDDD, PACT |
-| 07 | [Industry Data & Benchmarks](07_industry_data_and_benchmarks.md) | 1,391 companies, BCG/CDP/McKinsey/Bain, VCM pricing |
+| 00 | [Executive Summary](docs/00_executive_summary.md) | Key insights, five root causes, maturity model |
+| 01 | [Scope 3 Fundamentals](docs/01_scope3_fundamentals.md) | GHG scopes, all 15 categories, double-counting mechanics |
+| 02 | [Complexity & Challenges](docs/02_complexity_challenges.md) | Data pyramid, incentive traps, EF uncertainty, attribution conflicts |
+| 03 | [Industry Case Studies](docs/03_industry_case_studies.md) | Automotive, apparel, banking, food & ag — deep dives |
+| 04 | [Abatement Challenges](docs/04_abatement_challenges.md) | Why measuring ≠ reducing; lever map; decarbonization playbook |
+| 05 | [Carbon3 Solution](docs/05_carbon3_solution.md) | The inset credit model — with rigorous critical analysis |
+| 06 | [Standards & Regulatory](docs/06_standards_regulatory.md) | GHG Protocol, PCAF, SBTi, CSRD, SEC, ISSB, VCMI, CSDDD, PACT |
+| 07 | [Industry Data & Benchmarks](docs/07_industry_data_and_benchmarks.md) | 1,391 companies, BCG/CDP/McKinsey/Bain, VCM pricing |
 
 **Learn & apply (beginners → practitioners):**
 
 | # | File | Contents |
 |---|------|----------|
-| 08 | [Scope 3 101](08_scope3_101.md) | Zero-prerequisites primer: analogies, mini example, quiz |
-| 09 | [Worked Example](09_worked_example.md) | A full Scope 3 inventory, step by step with arithmetic |
-| 10 | [Common Mistakes](10_common_mistakes.md) | 24 real anti-patterns — and their fixes |
-| 11 | [Templates & Checklists](11_templates.md) | Supplier request, materiality matrix, readiness checklists |
-| 12 | [Advanced Topics](12_advanced_topics.md) | Allocation, uncertainty, PCAF data quality, GHG Protocol revision |
+| 08 | [Scope 3 101](docs/08_scope3_101.md) | Zero-prerequisites primer: analogies, mini example, quiz |
+| 09 | [Worked Example](docs/09_worked_example.md) | A full Scope 3 inventory, step by step with arithmetic |
+| 10 | [Common Mistakes](docs/10_common_mistakes.md) | 24 real anti-patterns — and their fixes |
+| 11 | [Templates & Checklists](docs/11_templates.md) | Supplier request, materiality matrix, readiness checklists |
+| 12 | [Advanced Topics](docs/12_advanced_topics.md) | Allocation, uncertainty, PCAF data quality, GHG Protocol revision |
 
 **Reference (consult as needed):**
 
 | # | File | Contents |
 |---|------|----------|
-| 13 | [Glossary](13_glossary.md) | 40+ terms defined precisely |
-| 14 | [FAQ](14_faq.md) | The hard questions, answered directly |
-| 15 | [Quick Reference](15_quick_reference.md) | One-page cheat sheet: categories, levers, key numbers |
+| 13 | [Glossary](docs/13_glossary.md) | 40+ terms defined precisely |
+| 14 | [FAQ](docs/14_faq.md) | The hard questions, answered directly |
+| 15 | [Quick Reference](docs/15_quick_reference.md) | One-page cheat sheet: categories, levers, key numbers |
 
 ---
 
 ## How to Read This Guide
 
-**15-minute orientation** — [00 Executive Summary](00_executive_summary.md) → [15 Quick Reference](15_quick_reference.md). Get the argument and the numbers; skip the detail.
+**15-minute orientation** — [00 Executive Summary](docs/00_executive_summary.md) → [15 Quick Reference](docs/15_quick_reference.md). Get the argument and the numbers; skip the detail.
 
-**1-hour deep dive** — [00](00_executive_summary.md) → [01](01_scope3_fundamentals.md) → [02](02_complexity_challenges.md) → [04](04_abatement_challenges.md). Understand *why* this is hard and *why measuring ≠ reducing*.
+**1-hour deep dive** — [00](docs/00_executive_summary.md) → [01](docs/01_scope3_fundamentals.md) → [02](docs/02_complexity_challenges.md) → [04](docs/04_abatement_challenges.md). Understand *why* this is hard and *why measuring ≠ reducing*.
 
-**Beginner path** — [08](08_scope3_101.md) → [09](09_worked_example.md) → [01](01_scope3_fundamentals.md) → [10](10_common_mistakes.md). Build intuition before detail.
+**Beginner path** — [08](docs/08_scope3_101.md) → [09](docs/09_worked_example.md) → [01](docs/01_scope3_fundamentals.md) → [10](docs/10_common_mistakes.md). Build intuition before detail.
 
-**Practitioner path** — [01](01_scope3_fundamentals.md) → [06](06_standards_regulatory.md) → [07](07_industry_data_and_benchmarks.md) → [12](12_advanced_topics.md). The standards, the data, and the deep method.
+**Practitioner path** — [01](docs/01_scope3_fundamentals.md) → [06](docs/06_standards_regulatory.md) → [07](docs/07_industry_data_and_benchmarks.md) → [12](docs/12_advanced_topics.md). The standards, the data, and the deep method.
 
-**The thesis** — [04](04_abatement_challenges.md) → [05](05_carbon3_solution.md) → [14 FAQ](14_faq.md). The market-design gap and the case for inset-credit infrastructure, including its open risks.
+**The thesis** — [04](docs/04_abatement_challenges.md) → [05](docs/05_carbon3_solution.md) → [14 FAQ](docs/14_faq.md). The market-design gap and the case for inset-credit infrastructure, including its open risks.
 
 ---
 
@@ -190,13 +190,13 @@ Scope 3 accounting is not merely difficult — it is *structurally* difficult. T
 
 This guide was built to provide the most rigorous, non-promotional treatment of those challenges available in one place — and to be honest about what remains unsolved. It spans the full spectrum: from "what is Scope 3?" to "how do we price and verify a supply-chain emission reduction?"
 
-The guide culminates in [05 Carbon3 Solution](05_carbon3_solution.md), which describes how **[Carbon3](https://carbon3.net)** is building the market infrastructure that makes supply-chain decarbonisation financially self-sustaining: the inset credit mechanism, an independent verification layer, and a live marketplace for traded supply-chain emission reductions. That section includes a frank critical analysis of the open questions and risks — because the problem deserves honesty, not sales copy.
+The guide culminates in [05 Carbon3 Solution](docs/05_carbon3_solution.md), which describes how **[Carbon3](https://carbon3.net)** is building the market infrastructure that makes supply-chain decarbonisation financially self-sustaining: the inset credit mechanism, an independent verification layer, and a live marketplace for traded supply-chain emission reductions. That section includes a frank critical analysis of the open questions and risks — because the problem deserves honesty, not sales copy.
 
 ---
 
 ## Data Sources
 
-The benchmarks and company-level analysis in [07 Industry Data & Benchmarks](07_industry_data_and_benchmarks.md) draw on:
+The benchmarks and company-level analysis in [07 Industry Data & Benchmarks](docs/07_industry_data_and_benchmarks.md) draw on:
 
 | Source | Coverage |
 |--------|---------|
@@ -222,7 +222,7 @@ Registry data is available via the Carbon3 API: `demo.carbon3.net/api/emissions-
 | **4 — Management** | Near-complete coverage, verified data | Supplier decarbonization programs | ~8% |
 | **5 — Transformation** | Real-time supply chain carbon intelligence | Embedded carbon pricing in procurement | ~2% |
 
-Most Fortune 500 companies are at Level 2. The [05 Carbon3 Solution](05_carbon3_solution.md) describes the market infrastructure designed to help companies move from Level 2–3 to Level 4–5.
+Most Fortune 500 companies are at Level 2. The [05 Carbon3 Solution](docs/05_carbon3_solution.md) describes the market infrastructure designed to help companies move from Level 2–3 to Level 4–5.
 
 ---
 
