@@ -1,6 +1,6 @@
 # The 24 Most Common Scope 3 Mistakes
 
-> **📚 [Scope 3 Challenge](README.md)** · Part 11 of 16 · [← Worked Example](09_worked_example.md) · [Next: Templates & Checklists →](11_templates.md)
+> **📚 [Scope 3 Challenge](index.md)** · Part 11 of 16 · [← Worked Example](09_worked_example.md) · [Next: Templates & Checklists →](11_templates.md)
 
 <details open>
 <summary><strong>📑 Contents</strong></summary>
@@ -136,4 +136,4 @@
 
 ---
 
-**← Previous:** [Worked Example](09_worked_example.md) &nbsp;·&nbsp; **Next:** [Templates & Checklists](11_templates.md) → &nbsp;·&nbsp; **[📚 Guide Index](README.md)**
+**← Previous:** [Worked Example](09_worked_example.md) &nbsp;·&nbsp; **Next:** [Templates & Checklists](11_templates.md) → &nbsp;·&nbsp; **[📚 Guide Index](index.md)**

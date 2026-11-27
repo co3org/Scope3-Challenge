@@ -1,6 +1,6 @@
 # Quick Reference Card
 
-> **📚 [Scope 3 Challenge](README.md)** · Part 16 of 16 · [← FAQ](14_faq.md) · [↩ Back to Index](README.md)
+> **📚 [Scope 3 Challenge](index.md)** · Part 16 of 16 · [← FAQ](14_faq.md) · [↩ Back to Index](index.md)
 
 <details open>
 <summary><strong>📑 Contents</strong></summary>
@@ -164,4 +164,4 @@ Use this to pressure-test any Scope 3 claim — yours or someone else's.
 
 ---
 
-**← Previous:** [FAQ](14_faq.md) &nbsp;·&nbsp; **[📚 Guide Index](README.md)**
+**← Previous:** [FAQ](14_faq.md) &nbsp;·&nbsp; **[📚 Guide Index](index.md)**

@@ -1,6 +1,6 @@
 # Scope 3 Emissions: Fundamentals and Category Breakdown
 
-> **📚 [Scope 3 Challenge](README.md)** · Part 2 of 16 · [← Executive Summary](00_executive_summary.md) · [Next: Complexity & Challenges →](02_complexity_challenges.md)
+> **📚 [Scope 3 Challenge](index.md)** · Part 2 of 16 · [← Executive Summary](00_executive_summary.md) · [Next: Complexity & Challenges →](02_complexity_challenges.md)
 
 <details open>
 <summary><strong>📑 Contents</strong></summary>
@@ -343,4 +343,4 @@ The implication for policy and markets: you cannot simply add up Scope 3 disclos
 
 ---
 
-**← Previous:** [Executive Summary](00_executive_summary.md) &nbsp;·&nbsp; **Next:** [Complexity & Challenges](02_complexity_challenges.md) → &nbsp;·&nbsp; **[📚 Guide Index](README.md)**
+**← Previous:** [Executive Summary](00_executive_summary.md) &nbsp;·&nbsp; **Next:** [Complexity & Challenges](02_complexity_challenges.md) → &nbsp;·&nbsp; **[📚 Guide Index](index.md)**

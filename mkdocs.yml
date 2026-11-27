@@ -1,0 +1,76 @@
+site_name: Scope 3 Emissions
+site_description: A rigorous 16-part guide to Scope 3 greenhouse gas emissions — the 15 GHG Protocol categories, calculation methods, CSRD/SEC/ISSB/SBTi regulation, real company data, and carbon-insetting market infrastructure for supply-chain decarbonisation.
+site_url: https://co3org.github.io/Scope3-Challenge/
+repo_url: https://github.com/co3org/Scope3-Challenge
+repo_name: co3org/Scope3-Challenge
+edit_uri: edit/main/
+
+theme:
+  name: material
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: green
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: green
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - tables
+  - attr_list
+  - toc:
+      permalink: true
+      toc_depth: 3
+      slugify: !!python/name:slugify.slugify
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Core narrative:
+      - Executive Summary: 00_executive_summary.md
+      - Scope 3 Fundamentals: 01_scope3_fundamentals.md
+      - Complexity & Challenges: 02_complexity_challenges.md
+      - Industry Case Studies: 03_industry_case_studies.md
+      - Abatement Challenges: 04_abatement_challenges.md
+      - Carbon3 Solution: 05_carbon3_solution.md
+      - Standards & Regulatory: 06_standards_regulatory.md
+      - Industry Data & Benchmarks: 07_industry_data_and_benchmarks.md
+  - Learn & apply:
+      - Scope 3 101: 08_scope3_101.md
+      - Worked Example: 09_worked_example.md
+      - Common Mistakes: 10_common_mistakes.md
+      - Templates & Checklists: 11_templates.md
+      - Advanced Topics: 12_advanced_topics.md
+  - Reference:
+      - Glossary: 13_glossary.md
+      - FAQ: 14_faq.md
+      - Quick Reference: 15_quick_reference.md

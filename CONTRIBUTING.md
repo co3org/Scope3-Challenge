@@ -10,7 +10,7 @@ Thank you for helping make this guide more accurate, clearer, and more useful. T
 ## Style Guide
 
 - **Rigour over promotion.** This includes the Carbon3 sections — the guide's credibility comes from being honest about open questions and risks. Do not add sales copy.
-- **Cite every factual claim.** Add the source (and a URL where possible) inline or to the [Sources](07_industry_data_and_benchmarks.md#sources) list. Prefer primary sources (company reports, standards bodies, regulators) over press summaries.
+- **Cite every factual claim.** Add the source (and a URL where possible) inline or to the [Sources](docs/07_industry_data_and_benchmarks.md#sources) list. Prefer primary sources (company reports, standards bodies, regulators) over press summaries.
 - **Match the existing conventions:**
   - British spelling for organisational terms (*decarbonisation, programme, organisation*) as used in the Carbon3 content.
   - Mermaid for diagrams; keep node labels short and test that they render.
@@ -27,7 +27,7 @@ Thank you for helping make this guide more accurate, clearer, and more useful. T
 
 ## Data Updates
 
-The figures in [07 Industry Data & Benchmarks](07_industry_data_and_benchmarks.md) are drawn from the [Carbon3 Emissions Registry](https://demo.carbon3.net/api/emissions-registry) and third-party research. When updating data:
+The figures in [07 Industry Data & Benchmarks](docs/07_industry_data_and_benchmarks.md) are drawn from the [Carbon3 Emissions Registry](https://demo.carbon3.net/api/emissions-registry) and third-party research. When updating data:
 
 - Record the report year and the number of companies (`n`) in the sample.
 - Preserve the distinction between **medians**, **averages**, and **totals**.

@@ -1,6 +1,6 @@
 # Abatement and Decarbonization Challenges: Why Measuring Is Not Enough
 
-> **📚 [Scope 3 Challenge](README.md)** · Part 5 of 16 · [← Industry Case Studies](03_industry_case_studies.md) · [Next: Carbon3 Solution →](05_carbon3_solution.md)
+> **📚 [Scope 3 Challenge](index.md)** · Part 5 of 16 · [← Industry Case Studies](03_industry_case_studies.md) · [Next: Carbon3 Solution →](05_carbon3_solution.md)
 
 <details open>
 <summary><strong>📑 Contents</strong></summary>
@@ -405,4 +405,4 @@ This is the structural gap that insetting infrastructure is designed to fill.
 
 ---
 
-**← Previous:** [Industry Case Studies](03_industry_case_studies.md) &nbsp;·&nbsp; **Next:** [Carbon3 Solution](05_carbon3_solution.md) → &nbsp;·&nbsp; **[📚 Guide Index](README.md)**
+**← Previous:** [Industry Case Studies](03_industry_case_studies.md) &nbsp;·&nbsp; **Next:** [Carbon3 Solution](05_carbon3_solution.md) → &nbsp;·&nbsp; **[📚 Guide Index](index.md)**
