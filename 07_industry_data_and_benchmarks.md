@@ -32,9 +32,9 @@
 Analysis of the Carbon3 emissions registry (companies from 35 sectors, sustainability reports primarily 2023–2024) reveals the current state of Scope 3 disclosure practice:
 
 ```mermaid
-pie title Scope 3 Disclosure Status (1,391 companies)
+pie title "Scope 3 Disclosure Status (1,391 companies)"
     "Full S3 + category breakdown" : 804
-    "Total S3 only (no breakdown)" : 229
+    "Total S3 only" : 229
     "No S3 disclosure" : 358
 ```
 
@@ -78,7 +78,7 @@ Median Scope 3 as a percentage of total (Scope 1+2+3) footprint, by sector, deri
 ```mermaid
 xychart-beta
     title "Median Scope 3 Share of Total Footprint by Sector (Carbon3 Registry, n=804)"
-    x-axis ["Automotive", "Mfg", "E-commerce", "Tech", "Consumer", "Retail", "Food & Bev", "Fin. Svcs", "Oil & Gas", "Agriculture", "Chemicals", "Mining", "Aviation"]
+    x-axis ["Automotive", "Mfg", "E-commerce", "Tech", "Consumer", "Retail", "Food+Bev", "Fin. Svcs", "Oil+Gas", "Agriculture", "Chemicals", "Mining", "Aviation"]
     y-axis "Scope 3 % of Total Footprint" 0 --> 100
     bar [99, 99, 99, 98, 97, 97, 96, 93, 92, 91, 79, 60, 23]
 ```
@@ -372,19 +372,32 @@ The Carbon3 registry data, combined with BCG/CDP/McKinsey/Bain research, makes a
 
 ```mermaid
 flowchart TD
-    D1["25.7% of companies\ndisclose zero Scope 3\n— No data for procurement decisions"]
+    classDef warn fill:#ffc078,stroke:#f08c00,color:#212529;
+    classDef bad fill:#ff6b6b,stroke:#e03131,color:#fff;
+    classDef good fill:#69db7c,stroke:#2f9e44,color:#0b2e13;
+
+    D1["25.7% of companies\ndisclose zero Scope 3\n— no data for procurement decisions"]
     D2["Only 15% have\nScope 3 targets\n— 85% lack formal reduction commitments"]
-    D3["Median Scope 3 = 91–99%\nof total footprint\n— Where the problem actually lives"]
-    D4["Bain: Scope 3 rising 15%\ndespite Scope 1 falling 5%\n— Current approaches not working"]
-    D5["$335B implied\ncarbon liability\n— Financial risk not yet priced"]
-    D6["BCG: 3–6x ROI on\nsupply chain decarbonization\n— Value available but uncaptured"]
+    D3["Median Scope 3 = 91–99%\nof total footprint\n— where the problem actually lives"]
+    D4["Bain: Scope 3 rising 15%\ndespite Scope 1 falling 5%\n— current approaches not working"]
+    D5["$335B implied\ncarbon liability\n— financial risk not yet priced"]
+    D6["BCG: 3–6x ROI on\nsupply chain decarbonization\n— value available but uncaptured"]
 
-    D1 & D2 & D3 & D4 & D5 & D6 --> Gap["THE MARKET GAP:\n\nNo mechanism converts verified\nscope 3 reductions into\nfinancial value for suppliers.\nEngagement programs exist.\nFinancial incentives do not."]
+    Gap["THE MARKET GAP\n\nNo mechanism converts verified\nScope 3 reductions into\nfinancial value for suppliers.\nEngagement programs exist.\nFinancial incentives do not."]
 
-    Gap --> C3["Carbon3:\nBuilds the market infrastructure\nthat creates that financial value —\nenabling supply-chain decarbonisation\nto be financially self-sustaining"]
+    C3["Carbon3\nBuilds the market infrastructure\nthat creates that financial value —\nenabling supply-chain decarbonisation\nto be financially self-sustaining"]
 
-    style Gap fill:#e03131,color:#fff
-    style C3 fill:#2f9e44,color:#fff
+    D1 --> Gap
+    D2 --> Gap
+    D3 --> Gap
+    D4 --> Gap
+    D5 --> Gap
+    D6 --> Gap
+    Gap --> C3
+
+    class D1,D2,D3,D4,D5,D6 warn;
+    class Gap bad;
+    class C3 good;
 ```
 
 **The core empirical argument:**
@@ -423,30 +436,39 @@ The DP World Insetify case study is among the most instructive early-market exam
 
 ```mermaid
 flowchart TD
+    classDef s3 fill:#40c057,stroke:#2b8a3e,color:#fff;
+    classDef info fill:#d0ebff,stroke:#1971c2,color:#1864ab;
+    classDef good fill:#69db7c,stroke:#2f9e44,color:#0b2e13;
+    classDef market fill:#b197fc,stroke:#7950f2,color:#fff;
+    classDef down fill:#63e6be,stroke:#0ca678,color:#0b2e1d;
+
     subgraph Reduction["Emission Reduction Layer"]
         Unifeeder["Unifeeder\n(container shipping operator)\n\nDeploys second-generation biofuels\n(ISCC-EU certified, RED II compliant)\non port call operations:\nvessel berthing, tug operations,\npilot boat movements"]
-        Svitzer["Svitzer\n(towage operator)\n\nTug boat emission reductions\ntracked via 123Carbon platform\nIndependently verified"]
+        Svitzer["Svitzer\n(towage operator)\n\nTug boat emission reductions\ntracked via 123Carbon platform\nindependently verified"]
     end
 
-    subgraph Measurement["Measurement & Verification Layer"]
-        GreenBox["Unifeeder GreenBox Platform\nTracks fuel consumption\nvs. baseline per voyage"]
-        C123["Svitzer 123Carbon Platform\nTracks tug emission reductions"]
-        BV["Bureau Veritas\nIndependent third-party\ncertification of all credits"]
-        SFC["Smart Freight Centre Methodology\nIndustry-standard freight\nemission calculation framework"]
+    subgraph Measurement["Measurement and Verification Layer"]
+        GreenBox["Unifeeder GreenBox Platform\ntracks fuel consumption\nvs. baseline per voyage"]
+        C123["Svitzer 123Carbon Platform\ntracks tug emission reductions"]
+        BV["Bureau Veritas\nindependent third-party\ncertification of all credits"]
+        SFC["Smart Freight Centre Methodology\nindustry-standard freight\nemission calculation framework"]
     end
 
     subgraph Issuance["Credit Issuance Layer"]
-        DPW["DP World Insetify\n\n• Issues credits quarterly\n• 100–250 kg CO₂e per TEU\n• Certificates valid 2 years\n• Non-transferable (no double-counting)\n• Free to qualifying freight customers"]
+        DPW["DP World Insetify\n\n• issues credits quarterly\n• 100–250 kg CO₂e per TEU\n• certificates valid 2 years\n• non-transferable (no double-counting)\n• free to qualifying freight customers"]
     end
 
     subgraph Claim["Customer Claim Layer"]
-        Freight["Ocean freight customers\n(importers, brands, retailers)\n\nClaim credits against\nScope 3 Cat 4 or Cat 9\n(upstream/downstream T&D)\nin sustainability reports"]
+        Freight["Ocean freight customers\n(importers, brands, retailers)\n\nclaim credits against\nScope 3 Cat 4 or Cat 9\n(upstream and downstream T&D)\nin sustainability reports"]
     end
 
     Reduction --> Measurement --> Issuance --> Claim
 
-    style BV fill:#2f9e44,color:#fff
-    style DPW fill:#339af0,color:#fff
+    class Unifeeder,Svitzer s3;
+    class GreenBox,C123,SFC info;
+    class BV good;
+    class DPW market;
+    class Freight down;
 ```
 
 ### What Makes This Significant
