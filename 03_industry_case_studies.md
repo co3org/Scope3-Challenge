@@ -1,5 +1,20 @@
 # Scope 3 in Practice: Industry Case Studies
 
+> **📚 [Scope 3 Challenge](README.md)** · Part 4 of 11 · [← Complexity & Challenges](02_complexity_challenges.md) · [Next: Abatement Challenges →](04_abatement_challenges.md)
+
+
+<details open>
+<summary><strong>📑 Contents</strong></summary>
+
+- [Overview](#overview)
+- [Case Study 1: Automotive OEM](#case-study-1-automotive-oem)
+- [Case Study 2: Apparel / Fashion Brand](#case-study-2-apparel--fashion-brand)
+- [Case Study 3: Commercial Bank — Financed Emissions](#case-study-3-commercial-bank--financed-emissions)
+- [Case Study 4: Food & Beverage — Agricultural Emissions](#case-study-4-food--beverage--agricultural-emissions)
+- [Cross-Sector Summary: The Common Failure Patterns](#cross-sector-summary-the-common-failure-patterns)
+
+</details>
+
 ## Overview
 
 Abstract complexity becomes concrete when you trace specific supply chains. This section provides deep-dive case studies for four sectors where Scope 3 accounting is particularly challenging: automotive manufacturing, fashion/apparel, commercial banking, and food & agriculture. For each sector, we map the full value chain, identify the dominant emission categories, and explain why the standard approaches fail.
@@ -398,3 +413,14 @@ flowchart TD
 
     style Consequence fill:#e03131,color:#fff
 ```
+
+## Key Takeaways
+
+- **Automotive:** Cat 11 is 85–95% of Scope 3 and 75–85% of the entire footprint.
+- **Apparel:** the brand operates zero manufacturing — the entire physical chain is Scope 3.
+- **Banking:** financed emissions are 100–1,000x operational emissions; divestment is rewarded even when engagement delivers more.
+- **Food & ag:** the LUC emission-factor choice (a **15–40x** range) outweighs any near-term intervention.
+
+---
+
+**← Previous:** [Complexity & Challenges](02_complexity_challenges.md) &nbsp;·&nbsp; **Next:** [Abatement Challenges](04_abatement_challenges.md) → &nbsp;·&nbsp; **[📚 Guide Index](README.md)**

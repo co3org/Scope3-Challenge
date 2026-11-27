@@ -1,5 +1,18 @@
 # Scope 3 Emissions: Fundamentals and Category Breakdown
 
+> **📚 [Scope 3 Challenge](README.md)** · Part 2 of 11 · [← Executive Summary](00_executive_summary.md) · [Next: Complexity & Challenges →](02_complexity_challenges.md)
+
+
+<details open>
+<summary><strong>📑 Contents</strong></summary>
+
+- [1. The GHG Protocol's Three Scopes](#1-the-ghg-protocols-three-scopes)
+- [2. The 15 Scope 3 Categories](#2-the-15-scope-3-categories)
+- [3. Materiality — Which Categories Matter Most by Sector](#3-materiality--which-categories-matter-most-by-sector)
+- [4. The Double-Counting Problem](#4-the-double-counting-problem)
+
+</details>
+
 ## 1. The GHG Protocol's Three Scopes
 
 The Greenhouse Gas (GHG) Protocol Corporate Standard — first published in 2001, revised in 2004, with the Scope 3 Standard added in 2011 — divides corporate emissions into three nested scopes. This architecture was designed to prevent double-counting *within* a company's boundary, though as we will see, it creates significant double-counting *across* company boundaries.
@@ -286,3 +299,14 @@ flowchart LR
 This is not a bug in the Protocol — it is a deliberate design choice. Scope 3 is intended to give each company visibility into its *value chain risk*, not to produce system-level accounting. But it creates enormous confusion when aggregating disclosures, setting sector-level targets, or comparing company disclosures.
 
 The implication for policy and markets: you cannot simply add up Scope 3 disclosures to understand economy-wide emissions. National GHG inventories (using the IPCC methodology) are the authoritative system-level account — and they do not map cleanly onto corporate Scope 3 boundaries.
+
+## Key Takeaways
+
+- Scope 3 spans **15 categories** — upstream (Cat 1–8, what you buy) and downstream (Cat 9–15, what happens after you sell).
+- **Cat 11 (use of sold products)** dominates energy-transition sectors; **Cat 15 (financed emissions)** dominates finance.
+- Calculation accuracy falls sharply from supplier-specific (±10–20%) down to spend-based (±100–400%).
+- Double-counting is **by design** — Scope 3 is a company-level risk tool, not a system-level inventory.
+
+---
+
+**← Previous:** [Executive Summary](00_executive_summary.md) &nbsp;·&nbsp; **Next:** [Complexity & Challenges](02_complexity_challenges.md) → &nbsp;·&nbsp; **[📚 Guide Index](README.md)**

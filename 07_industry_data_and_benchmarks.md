@@ -1,10 +1,30 @@
 # Industry Data, Benchmarks, and Research Findings
 
+> **📚 [Scope 3 Challenge](README.md)** · Part 8 of 11 · [← Standards & Regulatory](06_standards_regulatory.md) · [Next: Glossary →](08_glossary.md)
+
+
 > **Data sources:** Carbon3 Emissions Registry (1,391 global companies, sustainability reports 2022–2025); BCG/CDP Scope 3 Upstream Report (June 2024); McKinsey & Company research (2023–2025); Bain & Company CEO Sustainability Guide (2025); World Economic Forum reports (2023–2025); Ecosystem Marketplace SOVCM (2025); DP World Insetify programme data (2025–2026).
 >
 > **Carbon3 Registry note:** All company-level figures are drawn from verified sustainability reports filed by the named companies. Source report URLs are available via the Carbon3 emissions registry API at `demo.carbon3.net/api/emissions-registry`.
 
 ---
+
+<details open>
+<summary><strong>📑 Contents</strong></summary>
+
+- [1. The Disclosure Landscape: What the Data Actually Shows](#1-the-disclosure-landscape-what-the-data-actually-shows)
+- [2. Scope 3 Intensity: Real Data Across Sectors](#2-scope-3-intensity-real-data-across-sectors)
+- [3. Category-Level Analysis: Where the Carbon Actually Is](#3-category-level-analysis-where-the-carbon-actually-is)
+- [4. Real Company Benchmarks: Named Disclosures from the Registry](#4-real-company-benchmarks-named-disclosures-from-the-registry)
+- [5. Research Findings: The Financial Case for Action](#5-research-findings-the-financial-case-for-action)
+- [6. The Voluntary Carbon Market: Context for Inset Pricing](#6-the-voluntary-carbon-market-context-for-inset-pricing)
+- [7. Sector Deep-Dives: What the Carbon3 Registry Reveals](#7-sector-deep-dives-what-the-carbon3-registry-reveals)
+- [8. The Target-Setting Gap](#8-the-target-setting-gap)
+- [9. What This Data Means for the Inset Credit Market](#9-what-this-data-means-for-the-inset-credit-market)
+- [10. Real-World Validation: DP World's Insetify Programme](#10-real-world-validation-dp-worlds-insetify-programme)
+- [Sources](#sources)
+
+</details>
 
 ## 1. The Disclosure Landscape: What the Data Actually Shows
 
@@ -490,3 +510,14 @@ The DP World case study validates three of Carbon3's core assumptions and surfac
 - [Maritime Executive: DP World Launches Carbon Inset Trial in Belgium, Portugal and Sweden (Mar 2026)](https://maritime-executive.com/corporate/dp-world-launches-carbon-inset-trial-in-belgium-portugal-and-sweden)
 - [ESG News: DP World Launches Free Carbon Inset Trial Across European Shipping Lanes (Mar 2026)](https://esgnews.com/dp-world-launches-free-carbon-inset-trial-across-european-shipping-lanes/)
 - [Supply Chain Digital: DP World Carbon Inset Programme Hits 100,000 Containers](https://supplychaindigital.com/sustainability/dp-world-carbon-inset-hits-10000-containers)
+
+## Key Takeaways
+
+- **74.3%** of companies disclose *some* Scope 3, but only **57.8%** provide category breakdowns.
+- **Cat 11 = 62.2%** of all registry Scope 3 by volume, yet only 48.3% of companies report it.
+- Bain: Scope 3 **rose 15%** while Scope 1 fell 5% and Scope 2 fell 26% (2021–2023).
+- A **$335B** implied carbon liability (3 sectors) vs. a **$535M** total VCM — a market-design gap, not a technology gap.
+
+---
+
+**← Previous:** [Standards & Regulatory](06_standards_regulatory.md) &nbsp;·&nbsp; **Next:** [Glossary](08_glossary.md) → &nbsp;·&nbsp; **[📚 Guide Index](README.md)**
