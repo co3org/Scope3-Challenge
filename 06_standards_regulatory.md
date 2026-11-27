@@ -1,7 +1,6 @@
 # The Standards and Regulatory Landscape
 
-> **📚 [Scope 3 Challenge](README.md)** · Part 7 of 11 · [← Carbon3 Solution](05_carbon3_solution.md) · [Next: Industry Data & Benchmarks →](07_industry_data_and_benchmarks.md)
-
+> **📚 [Scope 3 Challenge](README.md)** · Part 7 of 16 · [← Carbon3 Solution](05_carbon3_solution.md) · [Next: Industry Data & Benchmarks →](07_industry_data_and_benchmarks.md)
 
 <details open>
 <summary><strong>📑 Contents</strong></summary>

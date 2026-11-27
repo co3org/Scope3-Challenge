@@ -1,7 +1,6 @@
 # Industry Data, Benchmarks, and Research Findings
 
-> **📚 [Scope 3 Challenge](README.md)** · Part 8 of 11 · [← Standards & Regulatory](06_standards_regulatory.md) · [Next: Glossary →](08_glossary.md)
-
+> **📚 [Scope 3 Challenge](README.md)** · Part 8 of 16 · [← Standards & Regulatory](06_standards_regulatory.md) · [Next: Scope 3 101 →](08_scope3_101.md)
 
 > **Data sources:** Carbon3 Emissions Registry (1,391 global companies, sustainability reports 2022–2025); BCG/CDP Scope 3 Upstream Report (June 2024); McKinsey & Company research (2023–2025); Bain & Company CEO Sustainability Guide (2025); World Economic Forum reports (2023–2025); Ecosystem Marketplace SOVCM (2025); DP World Insetify programme data (2025–2026).
 >
@@ -520,4 +519,4 @@ The DP World case study validates three of Carbon3's core assumptions and surfac
 
 ---
 
-**← Previous:** [Standards & Regulatory](06_standards_regulatory.md) &nbsp;·&nbsp; **Next:** [Glossary](08_glossary.md) → &nbsp;·&nbsp; **[📚 Guide Index](README.md)**
+**← Previous:** [Standards & Regulatory](06_standards_regulatory.md) &nbsp;·&nbsp; **Next:** [Scope 3 101](08_scope3_101.md) → &nbsp;·&nbsp; **[📚 Guide Index](README.md)**

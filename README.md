@@ -1,6 +1,6 @@
 # Scope 3 Emissions: The Hardest Problem in Corporate Climate Action
 
-> A rigorously sourced, 11-part knowledge base on Scope 3 GHG accounting — from first principles and regulatory detail to real company data and the market infrastructure that could actually solve it.
+> A rigorously sourced, 16-part knowledge base on Scope 3 GHG accounting — from a zero-prerequisites primer and a full worked calculation, to regulatory detail, real company data, practitioner-level advanced topics, and the market infrastructure that could actually solve it. Built for **beginners and subject-matter experts alike**.
 
 ---
 
@@ -8,6 +8,7 @@
 
 - [TL;DR](#tldr)
 - [Start Here: Choose Your Path](#start-here-choose-your-path)
+- [Two Learning Tracks](#two-learning-tracks)
 - [The Three Scopes at a Glance](#the-three-scopes-at-a-glance)
 - [The Numbers That Matter](#the-numbers-that-matter)
 - [Guide Index](#guide-index)
@@ -31,12 +32,33 @@
 
 | I am... | Start with | Then go to |
 |---------|-----------|-----------|
-| **Executive / Board member** | [00 Executive Summary](00_executive_summary.md) | [04 Abatement Challenges](04_abatement_challenges.md) → [10 Quick Reference](10_quick_reference.md) |
+| **Completely new to Scope 3** | [08 Scope 3 101](08_scope3_101.md) | [09 Worked Example](09_worked_example.md) → [01 Fundamentals](01_scope3_fundamentals.md) |
+| **Executive / Board member** | [00 Executive Summary](00_executive_summary.md) | [04 Abatement Challenges](04_abatement_challenges.md) → [15 Quick Reference](15_quick_reference.md) |
 | **Sustainability / ESG lead** | [01 Fundamentals](01_scope3_fundamentals.md) | [02 Complexity](02_complexity_challenges.md) → [06 Standards](06_standards_regulatory.md) |
-| **Finance / Risk team** | [06 Standards & Regulatory](06_standards_regulatory.md) | [03 Case Studies — Banking](03_industry_case_studies.md) → [07 Data & Benchmarks](07_industry_data_and_benchmarks.md) |
-| **Procurement / Operations** | [03 Industry Case Studies](03_industry_case_studies.md) | [04 Abatement Challenges](04_abatement_challenges.md) → [10 Quick Reference](10_quick_reference.md) |
-| **Technologist / Data team** | [02 Complexity & Challenges](02_complexity_challenges.md) | [07 Data & Benchmarks](07_industry_data_and_benchmarks.md) → [08 Glossary](08_glossary.md) |
-| **New to Scope 3** | [01 Fundamentals](01_scope3_fundamentals.md) | [08 Glossary](08_glossary.md) → [09 FAQ](09_faq.md) |
+| **Finance / Risk team** | [06 Standards & Regulatory](06_standards_regulatory.md) | [03 Case Studies — Banking](03_industry_case_studies.md) → [07 Data](07_industry_data_and_benchmarks.md) |
+| **Procurement / Operations** | [03 Industry Case Studies](03_industry_case_studies.md) | [11 Templates](11_templates.md) → [04 Abatement Challenges](04_abatement_challenges.md) |
+| **Technologist / Data team** | [02 Complexity & Challenges](02_complexity_challenges.md) | [07 Data](07_industry_data_and_benchmarks.md) → [12 Advanced Topics](12_advanced_topics.md) |
+| **Seasoned practitioner** | [12 Advanced Topics](12_advanced_topics.md) | [07 Data](07_industry_data_and_benchmarks.md) → [15 Quick Reference](15_quick_reference.md) |
+
+---
+
+## Two Learning Tracks
+
+**🌱 Beginner track — build intuition first.**
+
+1. [08 Scope 3 101](08_scope3_101.md) — the big idea, in plain English, with analogies and a mini example.
+2. [09 Worked Example](09_worked_example.md) — watch a full inventory get built, with real arithmetic.
+3. [01 Fundamentals](01_scope3_fundamentals.md) — the 15 categories, properly.
+4. [10 Common Mistakes](10_common_mistakes.md) — what *not* to do.
+
+**🎓 Expert track — go deep on the hard parts.**
+
+1. [02 Complexity & Challenges](02_complexity_challenges.md) — the nine structural failure modes.
+2. [06 Standards & Regulatory](06_standards_regulatory.md) — CSRD, SEC, ISSB, PCAF, SBTi, and the GHG Protocol revision.
+3. [07 Data & Benchmarks](07_industry_data_and_benchmarks.md) — 1,391 companies' real disclosures.
+4. [12 Advanced Topics](12_advanced_topics.md) — allocation, uncertainty, PCAF data quality, scenario analysis.
+
+Both tracks converge on [04 Abatement Challenges](04_abatement_challenges.md) → [05 Carbon3 Solution](05_carbon3_solution.md), where the guide turns from "what is the problem" to "how do we actually solve it."
 
 ---
 
@@ -91,31 +113,50 @@ flowchart LR
 
 ## Guide Index
 
-| # | File | Contents | Best for |
-|---|------|----------|---------|
-| 00 | [Executive Summary](00_executive_summary.md) | Key insights, five root causes, maturity model, guide map | All audiences — start here |
-| 01 | [Scope 3 Fundamentals](01_scope3_fundamentals.md) | GHG scopes, all 15 categories, double-counting mechanics | ESG leads, new practitioners |
-| 02 | [Complexity & Challenges](02_complexity_challenges.md) | Data pyramid, incentive traps, emission-factor uncertainty, attribution conflicts | Technical teams, data architects |
-| 03 | [Industry Case Studies](03_industry_case_studies.md) | Automotive, apparel, banking, food & ag — deep dives with value-chain maps | Procurement, sector specialists |
-| 04 | [Abatement Challenges](04_abatement_challenges.md) | Why measuring ≠ reducing; lever map by category; decarbonization playbook | Executives, operations leaders |
-| 05 | [Carbon3 Solution](05_carbon3_solution.md) | The inset credit model and market infrastructure — with rigorous critical analysis | All audiences |
-| 06 | [Standards & Regulatory](06_standards_regulatory.md) | GHG Protocol, PCAF, SBTi, CSRD, SEC Rule, ISSB S2, VCMI, CSDDD, PACT | Finance, legal, compliance |
-| 07 | [Industry Data & Benchmarks](07_industry_data_and_benchmarks.md) | Real data from 1,391 companies, BCG/CDP/McKinsey/Bain research, VCM pricing | Analysts, researchers |
-| 08 | [Glossary](08_glossary.md) | 40+ terms defined precisely — from additionality to vintage | Everyone, as a reference |
-| 09 | [FAQ](09_faq.md) | The hard questions, answered directly with links to the detail | Anyone evaluating the space |
-| 10 | [Quick Reference](10_quick_reference.md) | One-page cheat sheet: the 15 categories, lever map, key numbers | Busy decision-makers |
+**The core narrative (read in order):**
+
+| # | File | Contents |
+|---|------|----------|
+| 00 | [Executive Summary](00_executive_summary.md) | Key insights, five root causes, maturity model |
+| 01 | [Scope 3 Fundamentals](01_scope3_fundamentals.md) | GHG scopes, all 15 categories, double-counting mechanics |
+| 02 | [Complexity & Challenges](02_complexity_challenges.md) | Data pyramid, incentive traps, EF uncertainty, attribution conflicts |
+| 03 | [Industry Case Studies](03_industry_case_studies.md) | Automotive, apparel, banking, food & ag — deep dives |
+| 04 | [Abatement Challenges](04_abatement_challenges.md) | Why measuring ≠ reducing; lever map; decarbonization playbook |
+| 05 | [Carbon3 Solution](05_carbon3_solution.md) | The inset credit model — with rigorous critical analysis |
+| 06 | [Standards & Regulatory](06_standards_regulatory.md) | GHG Protocol, PCAF, SBTi, CSRD, SEC, ISSB, VCMI, CSDDD, PACT |
+| 07 | [Industry Data & Benchmarks](07_industry_data_and_benchmarks.md) | 1,391 companies, BCG/CDP/McKinsey/Bain, VCM pricing |
+
+**Learn & apply (beginners → practitioners):**
+
+| # | File | Contents |
+|---|------|----------|
+| 08 | [Scope 3 101](08_scope3_101.md) | Zero-prerequisites primer: analogies, mini example, quiz |
+| 09 | [Worked Example](09_worked_example.md) | A full Scope 3 inventory, step by step with arithmetic |
+| 10 | [Common Mistakes](10_common_mistakes.md) | 24 real anti-patterns — and their fixes |
+| 11 | [Templates & Checklists](11_templates.md) | Supplier request, materiality matrix, readiness checklists |
+| 12 | [Advanced Topics](12_advanced_topics.md) | Allocation, uncertainty, PCAF data quality, GHG Protocol revision |
+
+**Reference (consult as needed):**
+
+| # | File | Contents |
+|---|------|----------|
+| 13 | [Glossary](13_glossary.md) | 40+ terms defined precisely |
+| 14 | [FAQ](14_faq.md) | The hard questions, answered directly |
+| 15 | [Quick Reference](15_quick_reference.md) | One-page cheat sheet: categories, levers, key numbers |
 
 ---
 
 ## How to Read This Guide
 
-**15-minute orientation** — [00 Executive Summary](00_executive_summary.md) → [10 Quick Reference](10_quick_reference.md). Get the argument and the numbers; skip the detail.
+**15-minute orientation** — [00 Executive Summary](00_executive_summary.md) → [15 Quick Reference](15_quick_reference.md). Get the argument and the numbers; skip the detail.
 
 **1-hour deep dive** — [00](00_executive_summary.md) → [01](01_scope3_fundamentals.md) → [02](02_complexity_challenges.md) → [04](04_abatement_challenges.md). Understand *why* this is hard and *why measuring ≠ reducing*.
 
-**Practitioner path** — [01](01_scope3_fundamentals.md) → [06](06_standards_regulatory.md) → [07](07_industry_data_and_benchmarks.md). The standards, the obligations, and the real data.
+**Beginner path** — [08](08_scope3_101.md) → [09](09_worked_example.md) → [01](01_scope3_fundamentals.md) → [10](10_common_mistakes.md). Build intuition before detail.
 
-**The thesis** — [04](04_abatement_challenges.md) → [05](05_carbon3_solution.md) → [09 FAQ](09_faq.md). The market-design gap and the case for inset-credit infrastructure, including its open risks.
+**Practitioner path** — [01](01_scope3_fundamentals.md) → [06](06_standards_regulatory.md) → [07](07_industry_data_and_benchmarks.md) → [12](12_advanced_topics.md). The standards, the data, and the deep method.
+
+**The thesis** — [04](04_abatement_challenges.md) → [05](05_carbon3_solution.md) → [14 FAQ](14_faq.md). The market-design gap and the case for inset-credit infrastructure, including its open risks.
 
 ---
 
@@ -123,7 +164,7 @@ flowchart LR
 
 Scope 3 accounting is not merely difficult — it is *structurally* difficult. The challenges are rooted in information economics, organizational incentives, system-boundary design, and the nature of distributed global supply chains.
 
-This guide was built to provide the most rigorous, non-promotional treatment of those challenges available in one place — and to be honest about what remains unsolved.
+This guide was built to provide the most rigorous, non-promotional treatment of those challenges available in one place — and to be honest about what remains unsolved. It spans the full spectrum: from "what is Scope 3?" to "how do we price and verify a supply-chain emission reduction?"
 
 The guide culminates in [05 Carbon3 Solution](05_carbon3_solution.md), which describes how **[Carbon3](https://carbon3.net)** is building the market infrastructure that makes supply-chain decarbonisation financially self-sustaining: the inset credit mechanism, an independent verification layer, and a live marketplace for traded supply-chain emission reductions. That section includes a frank critical analysis of the open questions and risks — because the problem deserves honesty, not sales copy.
 

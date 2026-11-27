@@ -1,7 +1,6 @@
 # Why Scope 3 Accounting Is So Hard: A Deep-Dive into Root Causes
 
-> **📚 [Scope 3 Challenge](README.md)** · Part 3 of 11 · [← Scope 3 Fundamentals](01_scope3_fundamentals.md) · [Next: Industry Case Studies →](03_industry_case_studies.md)
-
+> **📚 [Scope 3 Challenge](README.md)** · Part 3 of 16 · [← Scope 3 Fundamentals](01_scope3_fundamentals.md) · [Next: Industry Case Studies →](03_industry_case_studies.md)
 
 <details open>
 <summary><strong>📑 Contents</strong></summary>

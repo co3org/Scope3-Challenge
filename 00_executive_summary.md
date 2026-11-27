@@ -1,7 +1,6 @@
 # Scope 3 Emissions: The Hardest Problem in Corporate Climate Action
 
-> **📚 [Scope 3 Challenge](README.md)** · Part 1 of 11 · [Next: Scope 3 Fundamentals →](01_scope3_fundamentals.md)
-
+> **📚 [Scope 3 Challenge](README.md)** · Part 1 of 16 · [Next: Scope 3 Fundamentals →](01_scope3_fundamentals.md)
 
 > **TL;DR for executives:**
 > - Scope 3 = 70–90% of most companies' real climate footprint, yet is largely invisible, estimated, and underreported.
