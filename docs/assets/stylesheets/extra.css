@@ -1,0 +1,29 @@
+/* ---------------------------------------------------------------------------
+   Scope 3 Challenge — diagram readability
+   The diagrams are pre-rendered SVGs at their natural size. Rather than
+   shrinking wide diagrams (which makes their text unreadable), render them
+   at natural size and let the containing paragraph scroll horizontally.
+   --------------------------------------------------------------------------- */
+
+.md-typeset p:has(> img[src$=".svg"]) {
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+  margin: 1.25em 0;
+  padding-bottom: 0.4rem;
+  border-radius: 8px;
+}
+
+.md-typeset p:has(> img[src$=".svg"]) > img[src$=".svg"] {
+  max-width: none;
+  height: auto;
+  display: block;
+  margin: 0;
+}
+
+/* A little breathing room for the scrollbar on touch devices. */
+@media (hover: none) {
+  .md-typeset p:has(> img[src$=".svg"]) {
+    padding-bottom: 0.8rem;
+  }
+}

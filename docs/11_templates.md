@@ -2,7 +2,7 @@
 
 > **📚 [Scope 3 Challenge](index.md)** · Part 12 of 16 · [← Common Mistakes](10_common_mistakes.md) · [Next: Advanced Topics →](12_advanced_topics.md)
 
-<details open>
+<details open markdown="1">
 <summary><strong>📑 Contents</strong></summary>
 
 - [Template 1: Supplier Emissions Data Request](#template-1-supplier-emissions-data-request)

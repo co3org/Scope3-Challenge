@@ -2,7 +2,7 @@
 
 > **📚 [Scope 3 Challenge](index.md)** · Part 10 of 16 · [← Scope 3 101](08_scope3_101.md) · [Next: Common Mistakes →](10_common_mistakes.md)
 
-<details open>
+<details open markdown="1">
 <summary><strong>📑 Contents</strong></summary>
 
 - [What This Is (and Isn't)](#what-this-is-and-isnt)

@@ -2,7 +2,7 @@
 
 > **📚 [Scope 3 Challenge](index.md)** · Part 3 of 16 · [← Scope 3 Fundamentals](01_scope3_fundamentals.md) · [Next: Industry Case Studies →](03_industry_case_studies.md)
 
-<details open>
+<details open markdown="1">
 <summary><strong>📑 Contents</strong></summary>
 
 - [Overview](#overview)

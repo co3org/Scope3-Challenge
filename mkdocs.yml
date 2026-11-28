@@ -39,6 +39,7 @@ theme:
 markdown_extensions:
   - admonition
   - pymdownx.details
+  - md_in_html
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -50,6 +51,9 @@ markdown_extensions:
       permalink: true
       toc_depth: 3
       slugify: !!python/name:slugify.slugify
+
+extra_css:
+  - assets/stylesheets/extra.css
 
 plugins:
   - search

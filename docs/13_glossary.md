@@ -2,7 +2,7 @@
 
 > **📚 [Scope 3 Challenge](index.md)** · Part 14 of 16 · [← Advanced Topics](12_advanced_topics.md) · [Next: FAQ →](14_faq.md)
 
-<details open>
+<details open markdown="1">
 <summary><strong>📑 Contents</strong></summary>
 
 - [A-C](#a-c)

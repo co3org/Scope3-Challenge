@@ -8,7 +8,7 @@
 
 ---
 
-<details open>
+<details open markdown="1">
 <summary><strong>📑 Contents</strong></summary>
 
 - [1. The Disclosure Landscape: What the Data Actually Shows](#1-the-disclosure-landscape-what-the-data-actually-shows)

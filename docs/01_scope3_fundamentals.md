@@ -2,7 +2,7 @@
 
 > **📚 [Scope 3 Challenge](index.md)** · Part 2 of 16 · [← Executive Summary](00_executive_summary.md) · [Next: Complexity & Challenges →](02_complexity_challenges.md)
 
-<details open>
+<details open markdown="1">
 <summary><strong>📑 Contents</strong></summary>
 
 - [1. The GHG Protocol's Three Scopes](#1-the-ghg-protocols-three-scopes)

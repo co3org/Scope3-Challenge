@@ -2,7 +2,7 @@
 
 > **📚 [Scope 3 Challenge](index.md)** · Part 4 of 16 · [← Complexity & Challenges](02_complexity_challenges.md) · [Next: Abatement Challenges →](04_abatement_challenges.md)
 
-<details open>
+<details open markdown="1">
 <summary><strong>📑 Contents</strong></summary>
 
 - [Overview](#overview)

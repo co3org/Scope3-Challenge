@@ -2,7 +2,7 @@
 
 > **📚 [Scope 3 Challenge](index.md)** · Part 16 of 16 · [← FAQ](14_faq.md) · [↩ Back to Index](index.md)
 
-<details open>
+<details open markdown="1">
 <summary><strong>📑 Contents</strong></summary>
 
 - [The 15 Scope 3 Categories](#the-15-scope-3-categories)

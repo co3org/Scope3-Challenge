@@ -2,7 +2,7 @@
 
 > **📚 [Scope 3 Challenge](index.md)** · Part 7 of 16 · [← Carbon3 Solution](05_carbon3_solution.md) · [Next: Industry Data & Benchmarks →](07_industry_data_and_benchmarks.md)
 
-<details open>
+<details open markdown="1">
 <summary><strong>📑 Contents</strong></summary>
 
 - [Overview](#overview)

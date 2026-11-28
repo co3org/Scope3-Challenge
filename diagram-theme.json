@@ -27,13 +27,27 @@
     "nodeSpacing": 38,
     "rankSpacing": 52,
     "padding": 14,
-    "useMaxWidth": true
+    "useMaxWidth": false
   },
   "sequence": {
     "actorMargin": 55,
-    "messageMargin": 42
+    "messageMargin": 42,
+    "useMaxWidth": false
+  },
+  "gantt": {
+    "useMaxWidth": false
   },
   "pie": {
-    "textPosition": 0.72
+    "textPosition": 0.72,
+    "useMaxWidth": false
+  },
+  "quadrantChart": {
+    "useMaxWidth": false
+  },
+  "xyChart": {
+    "useMaxWidth": false
+  },
+  "timeline": {
+    "useMaxWidth": false
   }
 }

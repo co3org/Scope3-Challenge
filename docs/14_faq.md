@@ -2,7 +2,7 @@
 
 > **📚 [Scope 3 Challenge](index.md)** · Part 15 of 16 · [← Glossary](13_glossary.md) · [Next: Quick Reference →](15_quick_reference.md)
 
-<details open>
+<details open markdown="1">
 <summary><strong>📑 Contents</strong></summary>
 
 - [Why does Scope 3 matter more than Scopes 1 and 2?](#why-does-scope-3-matter-more-than-scopes-1-and-2)

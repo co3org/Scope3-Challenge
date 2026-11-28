@@ -27,6 +27,21 @@ const pptrArg = getPuppeteerArgs();
 fs.rmSync(OUT, { recursive: true, force: true });
 fs.mkdirSync(DIAGRAMS, { recursive: true });
 
+// Copy non-Markdown assets (CSS, images, etc.) from docs/ into the build dir.
+function copyAssets(srcDir, destDir) {
+  for (const entry of fs.readdirSync(srcDir, { withFileTypes: true })) {
+    const src = path.join(srcDir, entry.name);
+    const dest = path.join(destDir, entry.name);
+    if (entry.isDirectory()) {
+      copyAssets(src, dest);
+    } else if (!entry.name.endsWith('.md')) {
+      fs.mkdirSync(destDir, { recursive: true });
+      fs.copyFileSync(src, dest);
+    }
+  }
+}
+copyAssets(DOCS, OUT);
+
 const files = fs.readdirSync(DOCS).filter((f) => f.endsWith('.md')).sort();
 const re = /```mermaid\s*\r?\n([\s\S]*?)```/g;
 

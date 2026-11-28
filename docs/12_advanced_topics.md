@@ -2,7 +2,7 @@
 
 > **📚 [Scope 3 Challenge](index.md)** · Part 13 of 16 · [← Templates & Checklists](11_templates.md) · [Next: Glossary →](13_glossary.md)
 
-<details open>
+<details open markdown="1">
 <summary><strong>📑 Contents</strong></summary>
 
 - [Allocation Methods, Done Properly](#allocation-methods-done-properly)

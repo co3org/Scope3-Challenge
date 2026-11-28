@@ -2,7 +2,7 @@
 
 > **📚 [Scope 3 Challenge](index.md)** · Part 5 of 16 · [← Industry Case Studies](03_industry_case_studies.md) · [Next: Carbon3 Solution →](05_carbon3_solution.md)
 
-<details open>
+<details open markdown="1">
 <summary><strong>📑 Contents</strong></summary>
 
 - [The Fundamental Gap](#the-fundamental-gap)

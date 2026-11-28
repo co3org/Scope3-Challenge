@@ -2,7 +2,7 @@
 
 > **📚 [Scope 3 Challenge](index.md)** · Part 11 of 16 · [← Worked Example](09_worked_example.md) · [Next: Templates & Checklists →](11_templates.md)
 
-<details open>
+<details open markdown="1">
 <summary><strong>📑 Contents</strong></summary>
 
 - [Measurement Mistakes](#measurement-mistakes)

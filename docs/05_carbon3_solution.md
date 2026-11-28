@@ -2,7 +2,7 @@
 
 > **📚 [Scope 3 Challenge](index.md)** · Part 6 of 16 · [← Abatement Challenges](04_abatement_challenges.md) · [Next: Standards & Regulatory →](06_standards_regulatory.md)
 
-<details open>
+<details open markdown="1">
 <summary><strong>📑 Contents</strong></summary>
 
 - [The Structural Problem Carbon3 Addresses](#the-structural-problem-carbon3-addresses)
