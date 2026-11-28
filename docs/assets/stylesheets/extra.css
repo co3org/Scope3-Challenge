@@ -27,3 +27,16 @@
     padding-bottom: 0.8rem;
   }
 }
+
+/* ---------------------------------------------------------------------------
+   Sidebar: keep a clean "topic legend".
+   The left sidebar should list the guide's sections and topics only — hide the
+   current page's inline sub-table-of-contents that Material nests under the
+   active page (the right-hand TOC covers page sections), so every page shows
+   the same full set of themes and topics.
+   --------------------------------------------------------------------------- */
+
+.md-sidebar--primary .md-nav--secondary {
+  display: none !important;
+}
+
