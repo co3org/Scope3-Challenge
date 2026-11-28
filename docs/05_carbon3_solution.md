@@ -35,18 +35,17 @@ Carbon3's primary innovation is the **inset credit** — a tradable financial in
 
 ```mermaid
 flowchart LR
-    classDef market fill:#b197fc,stroke:#7950f2,color:#fff;
-    classDef good fill:#69db7c,stroke:#2f9e44,color:#0b2e13;
-    classDef bad fill:#ff6b6b,stroke:#e03131,color:#fff;
+    classDef market fill:#f3f0ff,stroke:#7950f2,color:#2e1b5c;
+    classDef good fill:#ebfbee,stroke:#2f9e44,color:#0b2e1d;
+    classDef bad fill:#fff5f5,stroke:#e03131,color:#5c0f0f;
 
-    subgraph Definition["What Is an Inset Credit?"]
-        IC["🟢 Inset Credit\n\n• 1 unit = 1 tCO₂e verified reduction\n• Occurs WITHIN the value chain\n  (not external like offsets)\n• Independently verified\n• Issued on Carbon3 platform\n• Full audit trail and traceability\n• Tradable financial asset"]
+    subgraph Definition["What is an inset credit?"]
+        IC["1 credit = 1 tCO₂e<br/>verified reduction within<br/>the value chain"]
     end
 
-    subgraph Comparison["Inset vs. Offset"]
-        Off["❌ Carbon Offset\n\nExternal project\n(forest in Brazil)\nNo supply chain link\nHigh additionality risk\nNo Scope 3 category attribution\nIncreasingly restricted by\nSBTi, VCMI, CSRD"]
-
-        In["✅ Inset Credit\n\nInternal value chain\n(your supplier switches fuel)\nDirect supply chain link\nStronger additionality case\nAttributable to specific\nScope 3 category\nAligned with GHG Protocol\nrevision direction"]
+    subgraph Comparison["Inset vs. offset"]
+        Off["❌ Offset<br/>outside the value chain<br/>no category attribution"]
+        In["✅ Inset<br/>inside the value chain<br/>attributable + verified"]
     end
 
     IC --> Comparison
@@ -79,43 +78,42 @@ Carbon3 provides the full technology and market infrastructure needed for inset 
 
 ```mermaid
 flowchart TD
-    classDef info fill:#d0ebff,stroke:#1971c2,color:#1864ab;
-    classDef market fill:#b197fc,stroke:#7950f2,color:#fff;
+    classDef info fill:#e7f5ff,stroke:#1971c2,color:#0b3a5e;
+    classDef market fill:#f3f0ff,stroke:#7950f2,color:#2e1b5c;
 
-    subgraph Platform["Carbon3 Platform Infrastructure"]
-        subgraph Layer1["Layer 1: Project Registry"]
+    subgraph Platform["Carbon3 platform"]
+        subgraph Layer1["1 · Project registry"]
             direction LR
-            P1["Project Registration\n\nSupplier registers\ndecarbonisation project:\n• Fuel switching\n• Electrification\n• Regenerative agriculture\n• Marine fuel switch\n• Process efficiency"]
-            P2["Baseline Setting\n\nEstablish pre-intervention\nemission intensity per unit\nof production output"]
+            P1["Register project<br/>fuel switch · electrification · agriculture"]
+            P2["Set baseline<br/>pre-intervention intensity"]
         end
 
-        subgraph Layer2["Layer 2: Measurement and Verification"]
+        subgraph Layer2["2 · Measurement & verification"]
             direction LR
-            M1["Measurement\n\nReductions measured against\nestablished baseline using\nrecognised methodologies\n(ISO 14064-2, GHG Protocol)"]
-            M2["Independent Verification\n\nThird-party auditor validates\nmeasurement and additionality\nper ISO 14064-3"]
+            M1["Measure reductions<br/>ISO 14064-2 · GHG Protocol"]
+            M2["Independent verification<br/>ISO 14064-3"]
         end
 
-        subgraph Layer3["Layer 3: Issuance"]
-            I1["Credit Issuance\n\nVerified reductions become\ninset credits with:\n• Unique identifier\n• Full audit trail\n• Methodology disclosure\n• Vintage (year of reduction)"]
+        subgraph Layer3["3 · Issuance"]
+            I1["Issue credit<br/>unique id · audit trail · vintage"]
         end
 
-        subgraph Layer4["Layer 4: Market"]
+        subgraph Layer4["4 · Market"]
             direction LR
-            A1["Allocation Engine\n\nProprietary tool for\nassigning credits to specific\nsupply-chain relationships\n(buyer ↔ supplier)"]
-            A2["Trading Marketplace\n\nLive marketplace with:\n• Price discovery\n• Order books\n• Transaction settlement"]
+            A1["Allocation engine<br/>buyer ↔ supplier"]
+            A2["Marketplace<br/>price discovery · settlement"]
         end
 
-        subgraph Layer5["Layer 5: Reporting"]
+        subgraph Layer5["5 · Reporting"]
             direction LR
-            R1["ESG Reporting Dashboard\n\nAutomated Scope 3 reporting\naligned to:\n• GHG Protocol\n• TCFD\nWith full traceability per credit"]
-            R2["Data and Analytics\n\nMarket pricing data\nPortfolio analytics\nBenchmarking"]
+            R1["ESG dashboard<br/>GHG Protocol · TCFD"]
+            R2["Data & analytics<br/>pricing · benchmarking"]
         end
     end
 
     Layer1 --> Layer2 --> Layer3 --> Layer4 --> Layer5
 
-    class P1,P2 info;
-    class M1,M2 info;
+    class P1,P2,M1,M2 info;
     class I1,A1,A2 market;
     class R1,R2 info;
 ```
@@ -153,8 +151,8 @@ Mapping Carbon3's solution against the structural challenges identified in this 
 
 ```mermaid
 flowchart LR
-    classDef bad fill:#ff6b6b,stroke:#e03131,color:#fff;
-    classDef good fill:#69db7c,stroke:#2f9e44,color:#0b2e13;
+    classDef bad fill:#fff5f5,stroke:#e03131,color:#5c0f0f;
+    classDef good fill:#ebfbee,stroke:#2f9e44,color:#0b2e1d;
 
     Before["BEFORE Carbon3\n\nSupplier invests in fuel switching\n→ Costs $X\n→ Buyer saves on Scope 3 Cat 1\n→ Supplier gets: nothing\nResult: Supplier does not invest"]
 
@@ -205,11 +203,11 @@ Carbon3's aviation inset credit mechanism:
 
 ```mermaid
 flowchart TD
-    classDef up fill:#66d9e8,stroke:#0c8599,color:#0b3c44;
-    classDef info fill:#d0ebff,stroke:#1971c2,color:#1864ab;
-    classDef market fill:#b197fc,stroke:#7950f2,color:#fff;
-    classDef good fill:#69db7c,stroke:#2f9e44,color:#0b2e13;
-    classDef warn fill:#ffc078,stroke:#f08c00,color:#212529;
+    classDef up fill:#e3fafc,stroke:#0c8599,color:#0b3c44;
+    classDef info fill:#e7f5ff,stroke:#1971c2,color:#0b3a5e;
+    classDef market fill:#f3f0ff,stroke:#7950f2,color:#2e1b5c;
+    classDef good fill:#ebfbee,stroke:#2f9e44,color:#0b2e1d;
+    classDef warn fill:#fff9db,stroke:#f08c00,color:#5c4400;
 
     SAF["Sustainable Aviation Fuel (SAF)\nProduced by fuel manufacturer\nVerified lower lifecycle carbon intensity\nvs. conventional jet fuel\n(Reduction: 60–85% per flight)"]
 
@@ -240,11 +238,11 @@ Carbon3's maritime application goes beyond DP World's current model in two ways:
 
 ```mermaid
 flowchart TD
-    classDef info fill:#d0ebff,stroke:#1971c2,color:#1864ab;
-    classDef good fill:#69db7c,stroke:#2f9e44,color:#0b2e13;
-    classDef market fill:#b197fc,stroke:#7950f2,color:#fff;
-    classDef down fill:#63e6be,stroke:#0ca678,color:#0b2e1d;
-    classDef muted fill:#f1f3f5,stroke:#ced4da,color:#343a40;
+    classDef info fill:#e7f5ff,stroke:#1971c2,color:#0b3a5e;
+    classDef good fill:#ebfbee,stroke:#2f9e44,color:#0b2e1d;
+    classDef market fill:#f3f0ff,stroke:#7950f2,color:#2e1b5c;
+    classDef down fill:#e6fcf5,stroke:#0ca678,color:#0b2e1d;
+    classDef muted fill:#f8f9fa,stroke:#dee2e6,color:#495057;
 
     Ship["Major Shipping Operator\nRoute: Rotterdam → Singapore"]
 
@@ -284,10 +282,10 @@ For food companies facing Cat 1 deforestation and agricultural emissions:
 
 ```mermaid
 flowchart LR
-    classDef up fill:#66d9e8,stroke:#0c8599,color:#0b3c44;
-    classDef market fill:#b197fc,stroke:#7950f2,color:#fff;
-    classDef down fill:#63e6be,stroke:#0ca678,color:#0b2e1d;
-    classDef good fill:#69db7c,stroke:#2f9e44,color:#0b2e13;
+    classDef up fill:#e3fafc,stroke:#0c8599,color:#0b3c44;
+    classDef market fill:#f3f0ff,stroke:#7950f2,color:#2e1b5c;
+    classDef down fill:#e6fcf5,stroke:#0ca678,color:#0b2e1d;
+    classDef good fill:#ebfbee,stroke:#2f9e44,color:#0b2e1d;
 
     Farmer["Smallholder farmer\nImplements:\n• Cover cropping\n• Reduced tillage\n• Soil carbon sequestration\n\nMeasured reduction:\n~2–5 tCO₂e/hectare/year"]
 
@@ -315,20 +313,17 @@ Carbon3 creates value across four distinct stakeholder groups:
 
 ```mermaid
 flowchart TD
-    classDef up fill:#66d9e8,stroke:#0c8599,color:#0b3c44;
-    classDef down fill:#63e6be,stroke:#0ca678,color:#0b2e1d;
-    classDef market fill:#b197fc,stroke:#7950f2,color:#fff;
-    classDef info fill:#d0ebff,stroke:#1971c2,color:#1864ab;
+    classDef up fill:#e3fafc,stroke:#0c8599,color:#0b3c44;
+    classDef down fill:#e6fcf5,stroke:#0ca678,color:#0b2e1d;
+    classDef market fill:#f3f0ff,stroke:#7950f2,color:#2e1b5c;
+    classDef info fill:#e7f5ff,stroke:#1971c2,color:#0b3a5e;
 
-    subgraph Stakeholders["Four Stakeholder Groups"]
+    subgraph Stakeholders["Four stakeholder groups"]
         direction LR
-        PO["🏭 Project Owners\n(Suppliers, manufacturers,\nfarmers, logistics operators)\n\nValue:\n• Monetize emission reductions\n• Access green finance\n• Differentiate to buyers\n• No upfront cost for platform"]
-
-        SCP["🏢 Supply Chain Partners\n(Brands, OEMs, procurement teams)\n\nValue:\n• Verified Scope 3 Cat 1/4/11 reduction\n• Regulatory-grade audit trail\n• Supplier relationship deepening\n• Quantified progress toward SBTi targets"]
-
-        CB["💼 Credit Buyers\n(ESG funds, sustainability teams,\ncompliance buyers)\n\nValue:\n• Verified provenance (vs. VCMR uncertainty)\n• Supply-chain proximity = higher quality\n• Portfolio analytics and benchmarking\n• Emerging regulatory acceptance"]
-
-        ESG["🔬 ESG Consultants and Advisors\n\nValue:\n• Integrated carbon infrastructure\n• Client Scope 3 reporting automation\n• Methodology and standard compliance\n• Data and analytics layer"]
+        PO["🏭 Project owners<br/>Monetise reductions · green finance"]
+        SCP["🏢 Supply-chain partners<br/>Verified reductions · audit trail"]
+        CB["💼 Credit buyers<br/>Provenance · portfolio analytics"]
+        ESG["🔬 Consultants<br/>Infrastructure · reporting automation"]
     end
 
     class PO up;
@@ -345,17 +340,18 @@ Carbon3's credibility rests on compliance with the authoritative standards stack
 
 ```mermaid
 flowchart LR
-    classDef info fill:#d0ebff,stroke:#1971c2,color:#1864ab;
-    classDef good fill:#69db7c,stroke:#2f9e44,color:#0b2e13;
-    classDef market fill:#b197fc,stroke:#7950f2,color:#fff;
+    classDef info fill:#e7f5ff,stroke:#1971c2,color:#0b3a5e;
+    classDef good fill:#ebfbee,stroke:#2f9e44,color:#0b2e1d;
+    classDef market fill:#f3f0ff,stroke:#7950f2,color:#2e1b5c;
 
-    subgraph Standards["Standards Compliance"]
-        S1["GHG Protocol\nScope 3 Standard\n\nAll measurement and accounting\nfollows the Protocol's methodology\nfor Scope 3 category attribution"]
-        S2["ISO 14064-2\n(Project-level quantification)\n\nProject baseline setting\nand reduction measurement"]
-        S3["ISO 14064-3\n(Verification and validation)\n\nIndependent third-party\nverification of all issued credits"]
-        S4["SBTi Corporate\nNet-Zero Standard\n\nCredits aligned with\nSBTi target-setting requirements"]
-        S5["SBTi FLAG Guidance\n(Forest, Land, Agriculture)\n\nFor agricultural and\nforest-related projects"]
-        S6["TCFD / ISSB S2\n\nESG reporting dashboard\naligned with disclosure\nrequirements"]
+    subgraph Standards["Standards stack"]
+        direction TB
+        S1["GHG Protocol<br/>accounting"]
+        S2["ISO 14064-2<br/>project quantification"]
+        S3["ISO 14064-3<br/>verification"]
+        S4["SBTi Net-Zero<br/>target alignment"]
+        S5["SBTi FLAG<br/>land sector"]
+        S6["TCFD / ISSB S2<br/>disclosure"]
     end
 
     class S1,S2,S3 info;
@@ -481,18 +477,15 @@ The math of corporate net-zero is unambiguous:
 
 ```mermaid
 flowchart TD
-    classDef bad fill:#ff6b6b,stroke:#e03131,color:#fff;
-    classDef warn fill:#ffc078,stroke:#f08c00,color:#212529;
-    classDef market fill:#b197fc,stroke:#7950f2,color:#fff;
-    classDef s3 fill:#40c057,stroke:#2b8a3e,color:#fff;
+    classDef bad fill:#fff5f5,stroke:#e03131,color:#5c0f0f;
+    classDef warn fill:#fff9db,stroke:#f08c00,color:#5c4400;
+    classDef market fill:#f3f0ff,stroke:#7950f2,color:#2e1b5c;
+    classDef s3 fill:#ebfbee,stroke:#2b8a3e,color:#0b2e1d;
 
-    Problem["Corporate Scope 3 = 70-90% of footprint\nCannot be reduced without supplier action\nSuppliers won't act without financial incentive\nNo financial incentive exists today"]
-
-    Missing["Missing Infrastructure:\nA market that converts verified\nScope 3 reductions into\ntradable financial value"]
-
-    Carbon3Sol["Carbon3 Solution:\n\nInset credit infrastructure that:\n1. Verifies real reductions (ISO 14064)\n2. Issues tradable assets (marketplace)\n3. Attributes reductions to buyers (Allocation Engine)\n4. Connects to corporate disclosure (ESG Dashboard)\n5. Creates financial return for suppliers (price discovery)"]
-
-    Outcome["Outcome:\nSupply-chain decarbonisation\nbecomes financially self-sustaining.\nThe transition is no longer a\nCost — it is a Market."]
+    Problem["Scope 3 is 70–90% of footprint<br/>but suppliers won't act without a return"]
+    Missing["No market converts verified reductions<br/>into tradable value"]
+    Carbon3Sol["Carbon3: verify · issue credits ·<br/>attribute to buyers · connect to disclosure ·<br/>pay suppliers"]
+    Outcome["Decarbonisation becomes<br/>a market, not a cost"]
 
     Problem --> Missing --> Carbon3Sol --> Outcome
 

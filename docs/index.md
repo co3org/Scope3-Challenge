@@ -13,11 +13,11 @@ A rigorously sourced, **16-part guide** to Scope 3 greenhouse-gas emissions — 
 
 ```mermaid
 flowchart LR
-    classDef s1 fill:#ff922b,stroke:#e8590c,color:#fff;
-    classDef s2 fill:#4dabf7,stroke:#1c7ed6,color:#fff;
-    classDef s3 fill:#40c057,stroke:#2b8a3e,color:#fff;
-    classDef up fill:#66d9e8,stroke:#0c8599,color:#0b3c44;
-    classDef down fill:#63e6be,stroke:#0ca678,color:#0b2e1d;
+    classDef s1 fill:#fff4e6,stroke:#e8590c,color:#7a3d00;
+    classDef s2 fill:#e7f5ff,stroke:#1c7ed6,color:#0b3a5e;
+    classDef s3 fill:#ebfbee,stroke:#2b8a3e,color:#0b2e1d;
+    classDef up fill:#e3fafc,stroke:#0c8599,color:#0b3c44;
+    classDef down fill:#e6fcf5,stroke:#0ca678,color:#0b2e1d;
 
     S1["Scope 1 — Direct\nFuel combustion, process\nand fugitive emissions\n(owned or controlled)\n5–15% of footprint"]
     S2["Scope 2 — Purchased Energy\nElectricity, steam, heat, cooling\n(bought from outside)\n5–20% of footprint"]

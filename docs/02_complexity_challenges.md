@@ -30,10 +30,10 @@ Every supply chain has a data quality pyramid. Data gets worse as you move upstr
 
 ```mermaid
     flowchart TB
-    classDef good fill:#69db7c,stroke:#2f9e44,color:#0b2e13;
-    classDef info fill:#d0ebff,stroke:#1971c2,color:#1864ab;
-    classDef warn fill:#ffc078,stroke:#f08c00,color:#212529;
-    classDef bad fill:#ff6b6b,stroke:#e03131,color:#fff;
+    classDef good fill:#ebfbee,stroke:#2f9e44,color:#0b2e1d;
+    classDef info fill:#e7f5ff,stroke:#1971c2,color:#0b3a5e;
+    classDef warn fill:#fff9db,stroke:#f08c00,color:#5c4400;
+    classDef bad fill:#fff5f5,stroke:#e03131,color:#5c0f0f;
 
     subgraph Pyramid["Data Quality Across the Supply Chain"]
         T0["Tier 0: The Reporting Company\nHas: invoices, energy bills, travel logs\nQuality ★★★★★ · Coverage 100%"]
@@ -79,9 +79,9 @@ The parties who hold the most valuable Scope 3 data — suppliers — have the l
 
 ```mermaid
     flowchart LR
-    classDef info fill:#d0ebff,stroke:#1971c2,color:#1864ab;
-    classDef warn fill:#ffc078,stroke:#f08c00,color:#212529;
-    classDef dark fill:#212529,stroke:#101113,color:#fff;
+    classDef info fill:#e7f5ff,stroke:#1971c2,color:#0b3a5e;
+    classDef warn fill:#fff9db,stroke:#f08c00,color:#5c4400;
+    classDef dark fill:#1f2937,stroke:#111827,color:#fff;
 
     subgraph Buyer["Buyer (Large Brand)"]
         B1["Needs supplier emissions\ndata for Scope 3"]
@@ -137,9 +137,9 @@ The problem: emission factor databases are inconsistent, geographically crude, a
 
 ```mermaid
     flowchart TD
-    classDef info fill:#d0ebff,stroke:#1971c2,color:#1864ab;
-    classDef warn fill:#ffc078,stroke:#f08c00,color:#212529;
-    classDef bad fill:#ff6b6b,stroke:#e03131,color:#fff;
+    classDef info fill:#e7f5ff,stroke:#1971c2,color:#0b3a5e;
+    classDef warn fill:#fff9db,stroke:#f08c00,color:#5c4400;
+    classDef bad fill:#fff5f5,stroke:#e03131,color:#5c0f0f;
 
     subgraph EFDatabases["Major Emission Factor Databases"]
         EEIO["US EPA USEEIO\nUS economy-wide I/O\nUpdated 2021 · US only"]
@@ -199,8 +199,8 @@ The Protocol distinguishes Cat 1 (purchased goods: recurring) from Cat 2 (capita
 
 ```mermaid
     flowchart LR
-    classDef info fill:#d0ebff,stroke:#1971c2,color:#1864ab;
-    classDef warn fill:#ffc078,stroke:#f08c00,color:#212529;
+    classDef info fill:#e7f5ff,stroke:#1971c2,color:#0b3a5e;
+    classDef warn fill:#fff9db,stroke:#f08c00,color:#5c4400;
 
     subgraph Question["Is this transaction Cat 1 or Cat 2?"]
         T["Company buys 10,000 laptops\nfor employee use\nrefreshed annually"]
@@ -235,9 +235,9 @@ The mill's process emissions: 1,000 tonnes CO₂e.
 
 ```mermaid
     flowchart TD
-    classDef dark fill:#212529,stroke:#101113,color:#fff;
-    classDef info fill:#d0ebff,stroke:#1971c2,color:#1864ab;
-    classDef good fill:#69db7c,stroke:#2f9e44,color:#0b2e13;
+    classDef dark fill:#1f2937,stroke:#111827,color:#fff;
+    classDef info fill:#e7f5ff,stroke:#1971c2,color:#0b3a5e;
+    classDef good fill:#ebfbee,stroke:#2f9e44,color:#0b2e1d;
 
     Mill["Steel Mill\n1,000 t CO₂e process emissions"]
     Auto["Auto OEM\n60% of output\nclaims 600 t CO₂e\n(Scope 3 Cat 1)"]
@@ -282,8 +282,8 @@ For an appliance manufacturer selling refrigerators in 50 countries:
 
 ```mermaid
     flowchart LR
-    classDef info fill:#d0ebff,stroke:#1971c2,color:#1864ab;
-    classDef warn fill:#ffc078,stroke:#f08c00,color:#212529;
+    classDef info fill:#e7f5ff,stroke:#1971c2,color:#0b3a5e;
+    classDef warn fill:#fff9db,stroke:#f08c00,color:#5c4400;
 
     subgraph Inputs["Required Inputs for Cat 11"]
         I1["Active fleet\n~25M units globally"]

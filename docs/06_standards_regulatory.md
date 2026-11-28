@@ -33,31 +33,31 @@ The Scope 3 standards landscape is simultaneously over-complicated and under-enf
 
 ```mermaid
 flowchart TD
-    classDef info fill:#d0ebff,stroke:#1971c2,color:#1864ab;
-    classDef s3 fill:#40c057,stroke:#2b8a3e,color:#fff;
-    classDef market fill:#b197fc,stroke:#7950f2,color:#fff;
-    classDef warn fill:#ffc078,stroke:#f08c00,color:#212529;
+    classDef info fill:#e7f5ff,stroke:#1971c2,color:#0b3a5e;
+    classDef s3 fill:#ebfbee,stroke:#2b8a3e,color:#0b2e1d;
+    classDef market fill:#f3f0ff,stroke:#7950f2,color:#2e1b5c;
+    classDef warn fill:#fff9db,stroke:#f08c00,color:#5c4400;
 
-    subgraph Measurement["Measurement and Accounting Standards"]
-        GHG["GHG Protocol\n\nCorporate Standard (2004)\n+ Scope 3 Standard (2011)\n+ Land Sector (2022)\n\nDominant, voluntary framework\nused by 90%+ of Fortune 500"]
-        PCAF["PCAF Standard\n\n(Partnership for Carbon\nAccounting Financials)\n(2020, updated 2022)\n\nExtends GHG Protocol for\nfinancial institutions —\nfinanced emissions (Cat 15)"]
-        ISO["ISO 14064 Series\n\n14064-1: Organizational\n14064-2: Project-level\n14064-3: Verification\n\nInternational, compatible with\nGHG Protocol; used for\nthird-party verification"]
+    subgraph Measurement["Measurement & accounting"]
+        GHG["GHG Protocol<br/>Dominant voluntary standard"]
+        PCAF["PCAF<br/>Financed emissions"]
+        ISO["ISO 14064<br/>Verification"]
     end
 
-    subgraph Targets["Target-Setting Frameworks"]
-        SBTi["Science Based Targets\ninitiative (SBTi)\n\nValidates corporate targets\nagainst a 1.5°C pathway.\nCorporate Net-Zero Standard.\nFLAG guidance for land sector.\nFinancial sector standard."]
-        PCAF2["PCAF Target-Setting\nProtocol\n\nFor financial institutions\naligning loan/investment\nbooks with net-zero"]
+    subgraph Targets["Target-setting"]
+        SBTi["SBTi<br/>1.5°C corporate targets"]
+        PCAF2["PCAF target protocol<br/>Financial institutions"]
     end
 
-    subgraph Disclosure["Disclosure Frameworks"]
-        TCFD["TCFD\n\n(Task Force on Climate-related\nFinancial Disclosures)\n\nScenario analysis and\nrisk and opportunity disclosure.\nNow folded into ISSB S2"]
-        CDP["CDP\n\n(formerly Carbon\nDisclosure Project)\n\nAnnual questionnaire used\nby 23,000+ companies.\nAligned with TCFD/ISSB"]
+    subgraph Disclosure["Disclosure"]
+        TCFD["TCFD<br/>Now ISSB S2"]
+        CDP["CDP<br/>Annual questionnaire"]
     end
 
-    subgraph Regulation["Mandatory Regulation"]
-        CSRD["EU CSRD\n\n(Corporate Sustainability\nReporting Directive)\n\nEffective FY2024 for large\nEU companies. Covers Scope\n1, 2, 3; ESRS E1 mandatory;\ndouble materiality"]
-        SEC["US SEC Climate Rule\n(2024)\n\nScope 1+2 mandatory;\nScope 3 if material\nor in targets.\nSubject to legal challenge"]
-        ISSB["ISSB S2\n(IFRS S2)\n\nInternational standard\nadopted by 20+ jurisdictions.\nFinancial materiality.\nCompatible with TCFD"]
+    subgraph Regulation["Mandatory regulation"]
+        CSRD["EU CSRD<br/>All scopes, double materiality"]
+        SEC["US SEC<br/>Currently paused"]
+        ISSB["ISSB S2<br/>20+ jurisdictions"]
     end
 
     GHG --> SBTi
@@ -116,20 +116,20 @@ Financial institutions are unique: their Scope 1 and 2 emissions are trivially s
 
 ```mermaid
 flowchart LR
-    classDef market fill:#b197fc,stroke:#7950f2,color:#fff;
-    classDef info fill:#d0ebff,stroke:#1971c2,color:#1864ab;
+    classDef market fill:#f3f0ff,stroke:#7950f2,color:#2e1b5c;
+    classDef info fill:#e7f5ff,stroke:#1971c2,color:#0b3a5e;
 
-    subgraph PCAF["PCAF Standard Coverage"]
-        AL["Listed Equity\nand Corporate Bonds\n\nAttribution factor =\nEquity/bond value\n÷ Enterprise value\n× Investee Scope 1+2+3"]
-        BL["Business Loans\nand Unlisted Equity\n\nSame attribution.\nUnlisted: use alternative\nenterprise value methods."]
-        PF["Project Finance\n\nAttribution =\nOutstanding balance\n÷ Total project cost\n× Project emissions"]
-        CO["Commercial Real\nEstate Loans\n\nAttribution =\nOutstanding balance\n÷ Property value\n× CRREM intensity × floor area"]
-        MO["Mortgages\n\nSame as CRE.\nResidential emission\nfactors by country."]
-        VL["Vehicle Loans\n\nAttribution =\nOutstanding balance\n÷ Vehicle value\n× Fleet emissions"]
-        SME["SME and Retail\nLoans\n\nSpend-based fallback.\nHigher uncertainty."]
+    subgraph PCAF["PCAF asset classes"]
+        direction TB
+        AL["Listed equity and bonds<br/>value ÷ EV × emissions"]
+        BL["Business loans and unlisted equity<br/>same attribution"]
+        PF["Project finance<br/>loan ÷ project cost × emissions"]
+        CO["Commercial real estate<br/>loan ÷ property value × intensity"]
+        MO["Mortgages<br/>same as CRE"]
+        VL["Vehicle loans<br/>loan ÷ vehicle value"]
+        SME["SME and retail<br/>spend-based fallback"]
     end
 
-    class PCAF market;
     class AL,BL,PF,CO,MO,VL,SME info;
 ```
 
@@ -155,38 +155,22 @@ For companies where Scope 3 > 40% of total footprint (which is most companies):
 
 ```mermaid
 flowchart TD
-    classDef dark fill:#212529,stroke:#101113,color:#fff;
-    classDef warn fill:#ffc078,stroke:#f08c00,color:#212529;
-    classDef info fill:#d0ebff,stroke:#1971c2,color:#1864ab;
-    classDef muted fill:#f1f3f5,stroke:#ced4da,color:#343a40;
-    classDef good fill:#69db7c,stroke:#2f9e44,color:#0b2e13;
-    classDef bad fill:#ff6b6b,stroke:#e03131,color:#fff;
+    classDef dark fill:#1f2937,stroke:#111827,color:#fff;
+    classDef warn fill:#fff9db,stroke:#f08c00,color:#5c4400;
+    classDef info fill:#e7f5ff,stroke:#1971c2,color:#0b3a5e;
+    classDef good fill:#ebfbee,stroke:#2f9e44,color:#0b2e1d;
+    classDef bad fill:#fff5f5,stroke:#e03131,color:#5c0f0f;
 
-    START["Company submits target\nfor SBTi validation"]
-    CHECK["Is Scope 3 > 40%\nof total (S1+S2+S3)?"]
-    YES["YES → Scope 3\ntarget required"]
-    NO["NO → Scope 3 target\noptional but encouraged"]
-    OPTIONS["Two target\ntypes available"]
-
-    ABS["Absolute Reduction\n(near-term)\n\nSBTi Scope 3 near-term:\n~42% reduction by 2030\n(1.5°C pathway)\n\nLong-term (2050):\n90% absolute reduction\nfor Net-Zero\n\nNote: 67% figure applies to\nScope 1+2, not S3 — verify\nagainst current SBTi Criteria.\n\nProblem: requires actual\nreductions; growth companies\nstruggle with absolute\ncontraction"]
-
-    ENG["Engagement Target\n\n'X% of suppliers by spend\nhave SBTi targets by 20XX'\n\nProblem: engagement ≠ reduction.\nA supplier can set a target\nwithout achieving it; not\nverifiable against actual GHG."]
-
-    Tension["⚠️ Tension\n\nABS targets require control\nover supplier actions.\nEngagement targets are looser\nbut don't guarantee\n1.5°C alignment"]
-
-    START --> CHECK
-    CHECK --> YES
-    CHECK --> NO
-    YES --> OPTIONS
-    OPTIONS --> ABS
-    OPTIONS --> ENG
-    ABS --> Tension
+    START["Target submitted"] --> CHECK["Scope 3 > 40%<br/>of total?"]
+    CHECK -->|"yes"| YES["Scope 3 target required"]
+    CHECK -->|"no"| NO["Optional"]
+    YES --> ABS["Absolute reduction<br/>~42% by 2030 · 90% by 2050"]
+    YES --> ENG["Engagement target<br/>X% of suppliers with targets"]
+    ABS --> Tension["ABS needs supplier control;<br/>engagement doesn't guarantee 1.5°C"]
+    ENG --> Tension
 
     class START dark;
-    class CHECK warn;
-    class YES info;
-    class NO muted;
-    class OPTIONS dark;
+    class CHECK,YES,NO info;
     class ABS good;
     class ENG bad;
     class Tension warn;
@@ -287,9 +271,9 @@ Companies operating globally face three partially inconsistent regulatory framew
 
 ```mermaid
 flowchart TD
-    classDef dark fill:#212529,stroke:#101113,color:#fff;
-    classDef info fill:#d0ebff,stroke:#1971c2,color:#1864ab;
-    classDef warn fill:#ffc078,stroke:#f08c00,color:#212529;
+    classDef dark fill:#1f2937,stroke:#111827,color:#fff;
+    classDef info fill:#e7f5ff,stroke:#1971c2,color:#0b3a5e;
+    classDef warn fill:#fff9db,stroke:#f08c00,color:#5c4400;
 
     Company["Multinational Company\n\nHQ: New York\nEU operations: yes\nSingapore listing: yes"]
 

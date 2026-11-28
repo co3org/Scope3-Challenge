@@ -26,11 +26,11 @@ Abstract complexity becomes concrete when you trace specific supply chains. This
 
 ```mermaid
     flowchart LR
-    classDef up fill:#66d9e8,stroke:#0c8599,color:#0b3c44;
-    classDef s1 fill:#ff922b,stroke:#e8590c,color:#fff;
-    classDef down fill:#63e6be,stroke:#0ca678,color:#0b2e1d;
-    classDef bad fill:#ff6b6b,stroke:#e03131,color:#fff;
-    classDef warn fill:#ffc078,stroke:#f08c00,color:#212529;
+    classDef up fill:#e3fafc,stroke:#0c8599,color:#0b3c44;
+    classDef s1 fill:#fff4e6,stroke:#e8590c,color:#7a3d00;
+    classDef down fill:#e6fcf5,stroke:#0ca678,color:#0b2e1d;
+    classDef bad fill:#fff5f5,stroke:#e03131,color:#5c0f0f;
+    classDef warn fill:#fff9db,stroke:#f08c00,color:#5c4400;
 
     subgraph T3["Tier 3+ Raw Materials"]
         Iron["Iron Ore\nMining"]
@@ -106,10 +106,10 @@ The cobalt supply chain for EV batteries illustrates the multi-tier data problem
 
 ```mermaid
     flowchart TD
-    classDef up fill:#66d9e8,stroke:#0c8599,color:#0b3c44;
-    classDef s1 fill:#ff922b,stroke:#e8590c,color:#fff;
-    classDef bad fill:#ff6b6b,stroke:#e03131,color:#fff;
-    classDef warn fill:#ffc078,stroke:#f08c00,color:#212529;
+    classDef up fill:#e3fafc,stroke:#0c8599,color:#0b3c44;
+    classDef s1 fill:#fff4e6,stroke:#e8590c,color:#7a3d00;
+    classDef bad fill:#fff5f5,stroke:#e03131,color:#5c0f0f;
+    classDef warn fill:#fff9db,stroke:#f08c00,color:#5c4400;
 
     Co["Cobalt Mine\nDRC — ~70% of global supply\nintensity highly variable\nartisanal vs industrial\n0.5–8 kg CO₂e/kg Co = 16x"]
     Ref["Cobalt Refiner\nChina — ~80% of refining\ncoal-heavy grid\n15–30 kg CO₂e/kg Co"]
@@ -149,11 +149,11 @@ An OEM with a 2030 SBTi target must reduce Cat 11 by 67% (1.5°C pathway). But C
 
 ```mermaid
     flowchart TD
-    classDef up fill:#66d9e8,stroke:#0c8599,color:#0b3c44;
-    classDef s1 fill:#ff922b,stroke:#e8590c,color:#fff;
-    classDef down fill:#63e6be,stroke:#0ca678,color:#0b2e1d;
-    classDef bad fill:#ff6b6b,stroke:#e03131,color:#fff;
-    classDef warn fill:#ffc078,stroke:#f08c00,color:#212529;
+    classDef up fill:#e3fafc,stroke:#0c8599,color:#0b3c44;
+    classDef s1 fill:#fff4e6,stroke:#e8590c,color:#7a3d00;
+    classDef down fill:#e6fcf5,stroke:#0ca678,color:#0b2e1d;
+    classDef bad fill:#fff5f5,stroke:#e03131,color:#5c0f0f;
+    classDef warn fill:#fff9db,stroke:#f08c00,color:#5c4400;
 
     subgraph Raw["Raw Materials (Cat 1 Upstream)"]
         Cotton["Cotton Farming\n~5,000 L water/kg\n2–6 kg CO₂e/kg\nfertilizer = N₂O"]
@@ -206,9 +206,9 @@ Fast fashion brands like Zara, H&M, and Shein have almost no direct physical ope
 
 ```mermaid
     flowchart TD
-    classDef s1 fill:#ff922b,stroke:#e8590c,color:#fff;
-    classDef up fill:#66d9e8,stroke:#0c8599,color:#0b3c44;
-    classDef warn fill:#ffc078,stroke:#f08c00,color:#212529;
+    classDef s1 fill:#fff4e6,stroke:#e8590c,color:#7a3d00;
+    classDef up fill:#e3fafc,stroke:#0c8599,color:#0b3c44;
+    classDef warn fill:#fff9db,stroke:#f08c00,color:#5c4400;
 
     Brand["Brand\n1 entity"]
     T1["Tier 1 Garment Factories\n~200–500 factories"]
@@ -257,8 +257,8 @@ None of these interventions can be measured and attributed to the brand's Cat 11
 
 ```mermaid
     flowchart LR
-    classDef good fill:#69db7c,stroke:#2f9e44,color:#0b2e13;
-    classDef bad fill:#ff6b6b,stroke:#e03131,color:#fff;
+    classDef good fill:#ebfbee,stroke:#2f9e44,color:#0b2e1d;
+    classDef bad fill:#fff5f5,stroke:#e03131,color:#5c0f0f;
 
     subgraph Bank["Large Commercial Bank (Illustrative)"]
         Ops["Operational Emissions\n(Scope 1+2)\n~100,000 tCO₂e/yr\noffices + data centers"]
@@ -289,10 +289,10 @@ This single loan generates financed emissions equal to **12.5 times** the bank's
 
 ```mermaid
     flowchart TD
-    classDef dark fill:#212529,stroke:#101113,color:#fff;
-    classDef info fill:#d0ebff,stroke:#1971c2,color:#1864ab;
-    classDef good fill:#69db7c,stroke:#2f9e44,color:#0b2e13;
-    classDef warn fill:#ffc078,stroke:#f08c00,color:#212529;
+    classDef dark fill:#1f2937,stroke:#111827,color:#fff;
+    classDef info fill:#e7f5ff,stroke:#1971c2,color:#0b3a5e;
+    classDef good fill:#ebfbee,stroke:#2f9e44,color:#0b2e1d;
+    classDef warn fill:#fff9db,stroke:#f08c00,color:#5c4400;
 
     START["Bank has Net-Zero\ncommitment by 2050"]
     Q1{"Client is high-emitting\nsteel/cement company"}
@@ -351,11 +351,11 @@ Agricultural emissions are:
 
 ```mermaid
     flowchart LR
-    classDef up fill:#66d9e8,stroke:#0c8599,color:#0b3c44;
-    classDef bad fill:#ff6b6b,stroke:#e03131,color:#fff;
-    classDef warn fill:#ffc078,stroke:#f08c00,color:#212529;
-    classDef s1 fill:#ff922b,stroke:#e8590c,color:#fff;
-    classDef down fill:#63e6be,stroke:#0ca678,color:#0b2e1d;
+    classDef up fill:#e3fafc,stroke:#0c8599,color:#0b3c44;
+    classDef bad fill:#fff5f5,stroke:#e03131,color:#5c0f0f;
+    classDef warn fill:#fff9db,stroke:#f08c00,color:#5c4400;
+    classDef s1 fill:#fff4e6,stroke:#e8590c,color:#7a3d00;
+    classDef down fill:#e6fcf5,stroke:#0ca678,color:#0b2e1d;
 
     subgraph Farm["Agricultural Production (Cat 1)"]
         Rice["Rice Paddies\nmethane emissions\n~450 kg CO₂e/t rice"]
@@ -410,12 +410,12 @@ Under current GHG Protocol rules, LUC emissions are allocated to the commodity p
 
 ```mermaid
     flowchart LR
-    classDef bad fill:#ff6b6b,stroke:#e03131,color:#fff;
-    classDef good fill:#69db7c,stroke:#2f9e44,color:#0b2e13;
-    classDef info fill:#d0ebff,stroke:#1971c2,color:#1864ab;
-    classDef up fill:#66d9e8,stroke:#0c8599,color:#0b3c44;
-    classDef s1 fill:#ff922b,stroke:#e8590c,color:#fff;
-    classDef warn fill:#ffc078,stroke:#f08c00,color:#212529;
+    classDef bad fill:#fff5f5,stroke:#e03131,color:#5c0f0f;
+    classDef good fill:#ebfbee,stroke:#2f9e44,color:#0b2e1d;
+    classDef info fill:#e7f5ff,stroke:#1971c2,color:#0b3a5e;
+    classDef up fill:#e3fafc,stroke:#0c8599,color:#0b3c44;
+    classDef s1 fill:#fff4e6,stroke:#e8590c,color:#7a3d00;
+    classDef warn fill:#fff9db,stroke:#f08c00,color:#5c4400;
 
     Farm1["Deforestation\nFarm A\nhigh LUC carbon debt"]
     Farm2["Sustainable\nFarm B\nno LUC"]
@@ -458,8 +458,8 @@ This is a category-level attribution failure: the system does not capture the fu
 
 ```mermaid
     flowchart TD
-    classDef info fill:#d0ebff,stroke:#1971c2,color:#1864ab;
-    classDef bad fill:#ff6b6b,stroke:#e03131,color:#fff;
+    classDef info fill:#e7f5ff,stroke:#1971c2,color:#0b3a5e;
+    classDef bad fill:#fff5f5,stroke:#e03131,color:#5c0f0f;
 
     subgraph Common["Common Failure Patterns Across All Sectors"]
         F1["Spend-based proxies\nmask high-intensity suppliers"]

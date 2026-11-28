@@ -372,9 +372,9 @@ The Carbon3 registry data, combined with BCG/CDP/McKinsey/Bain research, makes a
 
 ```mermaid
 flowchart TD
-    classDef warn fill:#ffc078,stroke:#f08c00,color:#212529;
-    classDef bad fill:#ff6b6b,stroke:#e03131,color:#fff;
-    classDef good fill:#69db7c,stroke:#2f9e44,color:#0b2e13;
+    classDef warn fill:#fff9db,stroke:#f08c00,color:#5c4400;
+    classDef bad fill:#fff5f5,stroke:#e03131,color:#5c0f0f;
+    classDef good fill:#ebfbee,stroke:#2f9e44,color:#0b2e1d;
 
     D1["25.7% of companies\ndisclose zero Scope 3\n— no data for procurement decisions"]
     D2["Only 15% have\nScope 3 targets\n— 85% lack formal reduction commitments"]
@@ -436,11 +436,11 @@ The DP World Insetify case study is among the most instructive early-market exam
 
 ```mermaid
 flowchart TD
-    classDef s3 fill:#40c057,stroke:#2b8a3e,color:#fff;
-    classDef info fill:#d0ebff,stroke:#1971c2,color:#1864ab;
-    classDef good fill:#69db7c,stroke:#2f9e44,color:#0b2e13;
-    classDef market fill:#b197fc,stroke:#7950f2,color:#fff;
-    classDef down fill:#63e6be,stroke:#0ca678,color:#0b2e1d;
+    classDef s3 fill:#ebfbee,stroke:#2b8a3e,color:#0b2e1d;
+    classDef info fill:#e7f5ff,stroke:#1971c2,color:#0b3a5e;
+    classDef good fill:#ebfbee,stroke:#2f9e44,color:#0b2e1d;
+    classDef market fill:#f3f0ff,stroke:#7950f2,color:#2e1b5c;
+    classDef down fill:#e6fcf5,stroke:#0ca678,color:#0b2e1d;
 
     subgraph Reduction["Emission Reduction Layer"]
         Unifeeder["Unifeeder\n(container shipping operator)\n\nDeploys second-generation biofuels\n(ISCC-EU certified, RED II compliant)\non port call operations:\nvessel berthing, tug operations,\npilot boat movements"]

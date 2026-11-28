@@ -18,11 +18,11 @@ The Greenhouse Gas (GHG) Protocol Corporate Standard — first published in 2001
 
 ```mermaid
 flowchart TB
-    classDef s1 fill:#ff922b,stroke:#e8590c,color:#fff;
-    classDef s2 fill:#4dabf7,stroke:#1c7ed6,color:#fff;
-    classDef up fill:#66d9e8,stroke:#0c8599,color:#0b3c44;
-    classDef down fill:#63e6be,stroke:#0ca678,color:#0b2e1d;
-    classDef muted fill:#f1f3f5,stroke:#ced4da,color:#343a40;
+    classDef s1 fill:#fff4e6,stroke:#e8590c,color:#7a3d00;
+    classDef s2 fill:#e7f5ff,stroke:#1c7ed6,color:#0b3a5e;
+    classDef up fill:#e3fafc,stroke:#0c8599,color:#0b3c44;
+    classDef down fill:#e6fcf5,stroke:#0ca678,color:#0b2e1d;
+    classDef muted fill:#f8f9fa,stroke:#dee2e6,color:#495057;
 
     subgraph Company["Company Operational Boundary"]
         direction TB
@@ -67,9 +67,9 @@ The GHG Protocol's Scope 3 Standard (2011) defines 15 distinct categories, split
 
 ```mermaid
 flowchart LR
-    classDef up fill:#66d9e8,stroke:#0c8599,color:#0b3c44;
-    classDef down fill:#63e6be,stroke:#0ca678,color:#0b2e1d;
-    classDef s3 fill:#40c057,stroke:#2b8a3e,color:#fff;
+    classDef up fill:#e3fafc,stroke:#0c8599,color:#0b3c44;
+    classDef down fill:#e6fcf5,stroke:#0ca678,color:#0b2e1d;
+    classDef s3 fill:#ebfbee,stroke:#2b8a3e,color:#0b2e1d;
 
     subgraph US["Upstream Scope 3 — Cat 1–8"]
         direction TB
@@ -114,10 +114,10 @@ The single largest Scope 3 category for most companies. All emissions associated
 
 ```mermaid
 flowchart TD
-    classDef s3 fill:#40c057,stroke:#2b8a3e,color:#fff;
-    classDef good fill:#69db7c,stroke:#2f9e44,color:#0b2e13;
-    classDef warn fill:#ffc078,stroke:#f08c00,color:#212529;
-    classDef bad fill:#ff6b6b,stroke:#e03131,color:#fff;
+    classDef s3 fill:#ebfbee,stroke:#2b8a3e,color:#0b2e1d;
+    classDef good fill:#ebfbee,stroke:#2f9e44,color:#0b2e1d;
+    classDef warn fill:#fff9db,stroke:#f08c00,color:#5c4400;
+    classDef bad fill:#fff5f5,stroke:#e03131,color:#5c0f0f;
 
     M1["Supplier-Specific Method\n(Primary data)\n★★★★★ Accuracy\nDirect data from suppliers\nrequires supplier capacity and trust"]
     M2["Hybrid Method\n★★★★☆ Accuracy\nPrimary supplier data plus\nsecondary emission factors\nfor remaining gaps"]
@@ -203,9 +203,9 @@ For any company selling products that consume energy during their lifetime — c
 
 ```mermaid
 flowchart LR
-    classDef info fill:#d0ebff,stroke:#1971c2,color:#1864ab;
-    classDef warn fill:#ffc078,stroke:#f08c00,color:#212529;
-    classDef muted fill:#f1f3f5,stroke:#ced4da,color:#343a40;
+    classDef info fill:#e7f5ff,stroke:#1971c2,color:#0b3a5e;
+    classDef warn fill:#fff9db,stroke:#f08c00,color:#5c4400;
+    classDef muted fill:#f8f9fa,stroke:#dee2e6,color:#495057;
 
     subgraph Assumptions["Assumptions Required for Cat 11 Calculation"]
         direction TB
@@ -252,10 +252,10 @@ Governed primarily by the **Partnership for Carbon Accounting Financials (PCAF)*
 
 ```mermaid
 flowchart TD
-    classDef market fill:#b197fc,stroke:#7950f2,color:#fff;
-    classDef info fill:#d0ebff,stroke:#1971c2,color:#1864ab;
-    classDef bad fill:#ff6b6b,stroke:#e03131,color:#fff;
-    classDef muted fill:#f1f3f5,stroke:#ced4da,color:#343a40;
+    classDef market fill:#f3f0ff,stroke:#7950f2,color:#2e1b5c;
+    classDef info fill:#e7f5ff,stroke:#1971c2,color:#0b3a5e;
+    classDef bad fill:#fff5f5,stroke:#e03131,color:#5c0f0f;
+    classDef muted fill:#f8f9fa,stroke:#dee2e6,color:#495057;
 
     Bank["Commercial Bank\n$500B loan portfolio"]
 
@@ -306,28 +306,24 @@ Scope 3 is designed to be a *company-level* accounting tool, not a *system-level
 
 ```mermaid
 flowchart LR
-    classDef up fill:#66d9e8,stroke:#0c8599,color:#0b3c44;
-    classDef down fill:#63e6be,stroke:#0ca678,color:#0b2e1d;
-    classDef info fill:#d0ebff,stroke:#1971c2,color:#1864ab;
-    classDef warn fill:#ffc078,stroke:#f08c00,color:#212529;
-    classDef muted fill:#f1f3f5,stroke:#ced4da,color:#343a40;
+    classDef up fill:#e3fafc,stroke:#0c8599,color:#0b3c44;
+    classDef down fill:#e6fcf5,stroke:#0ca678,color:#0b2e1d;
+    classDef info fill:#e7f5ff,stroke:#1971c2,color:#0b3a5e;
+    classDef warn fill:#fff9db,stroke:#f08c00,color:#5c4400;
 
-    subgraph Chain["Value Chain: Iron Ore → Steel → Car"]
-        Mine["Iron Ore Mine\nScope 1: 100t CO₂e\n(mining operations)"]
-        Steel["Steel Mill\nScope 1: 800t CO₂e (smelting)\nScope 3 Cat 1: 100t\n(purchased ore — same atoms\nas Mine Scope 1)"]
-        Auto["Auto OEM\nScope 1: 50t CO₂e (assembly)\nScope 3 Cat 1: 900t\n(steel and components — overlaps\nMine S1 and Mill S1)\nScope 3 Cat 11: 5,000t\n(lifetime vehicle use — same\nemissions as Driver S1)"]
-        Driver["Driver\nScope 1: 200t CO₂e\n(fuel combustion\nover vehicle life)"]
-    end
+    Mine["Iron ore<br/>100 t"]
+    Steel["Steel mill<br/>800 t · buys 100 t"]
+    Auto["Auto OEM<br/>50 t · buys 900 t"]
+    Driver["Driver<br/>200 t"]
 
     Mine --> Steel --> Auto --> Driver
 
-    Note["Physical system total (actual CO₂e emitted):\nMine 100t + Mill 800t + Assembly 50t + Driving 200t = 1,150t\n\nSum of all companies' Scope 3 disclosures:\n~6,100t — because the same physical\nemissions appear in multiple companies' accounts.\n\nThis is by design: Scope 3 is a company-level\nrisk tool, not a system-level inventory."]
+    Note["Physical total: 1,150 t<br/>Sum of disclosures: ~6,100 t<br/>same tonnes counted repeatedly"]
 
     class Mine up;
     class Steel,Auto info;
     class Driver down;
     class Note warn;
-    class Chain muted;
 ```
 
 This is not a bug in the Protocol — it is a deliberate design choice. Scope 3 is intended to give each company visibility into its *value chain risk*, not to produce system-level accounting. But it creates enormous confusion when aggregating disclosures, setting sector-level targets, or comparing company disclosures.

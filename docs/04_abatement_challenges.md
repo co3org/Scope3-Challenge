@@ -23,10 +23,10 @@ The most important insight in corporate climate action is this: **measuring Scop
 
 ```mermaid
 flowchart LR
-    classDef info fill:#d0ebff,stroke:#1971c2,color:#1864ab;
-    classDef bad fill:#ff6b6b,stroke:#e03131,color:#fff;
-    classDef warn fill:#ffc078,stroke:#f08c00,color:#212529;
-    classDef muted fill:#f1f3f5,stroke:#ced4da,color:#343a40;
+    classDef info fill:#e7f5ff,stroke:#1971c2,color:#0b3a5e;
+    classDef bad fill:#fff5f5,stroke:#e03131,color:#5c0f0f;
+    classDef warn fill:#fff9db,stroke:#f08c00,color:#5c4400;
+    classDef muted fill:#f8f9fa,stroke:#dee2e6,color:#495057;
 
     subgraph Measurement["Measurement Stack\n(Increasingly Solved)"]
         direction TB
@@ -71,41 +71,35 @@ For any Scope 3 category, there is a finite set of abatement levers. Each lever 
 
 ```mermaid
 flowchart TD
-    classDef info fill:#d0ebff,stroke:#1971c2,color:#1864ab;
-    classDef warn fill:#ffc078,stroke:#f08c00,color:#212529;
+    classDef info fill:#e7f5ff,stroke:#1971c2,color:#0b3a5e;
+    classDef warn fill:#fff9db,stroke:#f08c00,color:#5c4400;
 
-    subgraph L1["Lever 1: Supplier Switching"]
-        LS1["🔄 Replace high-carbon supplier\nwith a lower-carbon alternative\n\nRequires: verified alternatives\nTime: 12–36 months\nCost: green material premium\nRisk: supply security, quality"]
+    subgraph L1["Lever 1 — Supplier switching"]
+        LS1["🔄 Move to a lower-carbon supplier<br/>12–36 months · green premium"]
+    end
+    subgraph L2["Lever 2 — Supplier improvement"]
+        LS2["🤝 Fund suppliers to decarbonise<br/>3–10 years · shared investment"]
+    end
+    subgraph L3["Lever 3 — Product redesign"]
+        LS3["🛠️ Cut material intensity<br/>2–5 year design cycles"]
+    end
+    subgraph L4["Lever 4 — Green procurement"]
+        LS4["📋 Require low-carbon certifications<br/>fast if supply exists · 10–100% premium"]
+    end
+    subgraph L5["Lever 5 — Demand reduction"]
+        LS5["📉 Reduce absolute volume<br/>multi-year · revenue impact"]
     end
 
-    subgraph L2["Lever 2: Supplier Improvement"]
-        LS2["🤝 Fund existing suppliers to\ndecarbonize their operations\n\nRequires: trust, capital, data\nTime: 3–10 years\nCost: shared investment\nRisk: free-rider problem"]
-    end
+    Choice["Choose by<br/>speed · cost · scale · control"]
 
-    subgraph L3["Lever 3: Product Redesign"]
-        LS3["🛠️ Reduce material intensity\nor switch material types\n\nRequires: engineering investment\nTime: 2–5 year cycles\nCost: R and D + retooling\nRisk: performance, acceptance"]
-    end
+    L1 --> Choice
+    L2 --> Choice
+    L3 --> Choice
+    L4 --> Choice
+    L5 --> Choice
 
-    subgraph L4["Lever 4: Green Procurement Specs"]
-        LS4["📋 Require low-carbon certifications\nas procurement criteria\n(e.g. SSAB Fossil-free steel)\n\nRequires: certification infrastructure\nTime: immediate if supply exists\nCost: 10–100% material premium\nRisk: supply shortage at scale"]
-    end
-
-    subgraph L5["Lever 5: Demand Reduction"]
-        LS5["📉 Reduce absolute material\nconsumption through efficiency\nor volume reduction\n\nRequires: business model change\nTime: multi-year\nCost: revenue impact\nRisk: competitive disadvantage"]
-    end
-
-    subgraph Matrix["Lever Selection Matrix"]
-        M["Speed · Cost · Scale · Control\n\nSwitching — Medium · Medium · Limited · Medium\nImprovement — Slow · High · Large · Low\nRedesign — Slow · High · Large · High\nGreen specs — Fast · High · Limited · High\nDemand cut — Slow · Very High · Large · High"]
-    end
-
-    LS1 --> M
-    LS2 --> M
-    LS3 --> M
-    LS4 --> M
-    LS5 --> M
-
-    class L1,L2,L3,L4,L5,LS1,LS2,LS3,LS4,LS5 info;
-    class Matrix,M warn;
+    class LS1,LS2,LS3,LS4,LS5 info;
+    class Choice warn;
 ```
 
 ### Category 11 (Use Phase) Levers
@@ -133,14 +127,14 @@ The most common Scope 3 abatement strategy deployed by large companies is "suppl
 
 ```mermaid
 flowchart TD
-    classDef info fill:#d0ebff,stroke:#1971c2,color:#1864ab;
-    classDef bad fill:#ff6b6b,stroke:#e03131,color:#fff;
+    classDef info fill:#e7f5ff,stroke:#1971c2,color:#0b3a5e;
+    classDef bad fill:#fff5f5,stroke:#e03131,color:#5c0f0f;
 
-    Step1["Step 1: Survey suppliers\n\nSend questionnaire asking for\nScope 1 and 2 emissions data.\nTypical response rate: 20–40%"]
-    Step2["Step 2: Set engagement target\n\n'65% of suppliers by spend\nhave set SBTi targets by 2025'"]
-    Step3["Step 3: Report engagement\n\nPublish % of suppliers engaged,\n% with targets, % with plans"]
-    Step4["Step 4: Claim progress\n\n'We engaged X suppliers representing\nY% of spend on Scope 3 reduction'"]
-    Problem["⚠️ What engagement targets\ndo NOT measure\n\n• Whether supplier emissions fell\n• Whether targets are credible\n• Whether engagement caused change\n• Whether reduction is additional to BAU"]
+    Step1["1 · Survey suppliers<br/>response rate 20–40%"]
+    Step2["2 · Set engagement target<br/>'65% of suppliers with targets'"]
+    Step3["3 · Report engagement<br/>% engaged · % with plans"]
+    Step4["4 · Claim progress<br/>'engaged X suppliers'"]
+    Problem["⚠️ Engagement targets don't measure<br/>actual reductions · causality · additionality"]
 
     Step1 --> Step2 --> Step3 --> Step4 --> Problem
 
@@ -168,32 +162,25 @@ When companies cannot reduce Scope 3 emissions through supply chain intervention
 
 ```mermaid
 flowchart LR
-    classDef bad fill:#ff6b6b,stroke:#e03131,color:#fff;
-    classDef good fill:#69db7c,stroke:#2f9e44,color:#0b2e13;
-    classDef muted fill:#f1f3f5,stroke:#ced4da,color:#343a40;
+    classDef bad fill:#fff5f5,stroke:#e03131,color:#5c0f0f;
+    classDef good fill:#ebfbee,stroke:#2f9e44,color:#0b2e1d;
+    classDef muted fill:#f8f9fa,stroke:#dee2e6,color:#495057;
 
-    subgraph Offsetting["Traditional Carbon Offsetting"]
+    subgraph Offsetting["Offsetting"]
         direction TB
-        O1["Company A has 100t\nresidual Scope 3 emissions"]
-        O2["Buys 100 voluntary market\noffsets from:\n• REDD+ forest protection (Brazil)\n• Cookstove distribution (Kenya)\n• Methane destruction (India)"]
-        O3["Company A claims\n'carbon neutral' for\nthat reporting period"]
-        Problem_O["Problems\n\n• External to value chain\n• Additionality hard to prove\n• Permanence risk (forests burn)\n• No attribution to a specific\n  Scope 3 category reduction\n• VCMI/SBTi restrict use\n  for target claims\n• Quality variable ($1 to $300+/tCO₂)"]
+        O1["100 t residual emissions"] --> O2["Buy external offsets"] --> O3["Claim 'carbon neutral'"]
+        O3 --> Problem_O["❌ External · additionality risk<br/>no Scope 3 attribution"]
     end
 
-    subgraph Insetting["Supply Chain Insetting"]
+    subgraph Insetting["Insetting"]
         direction TB
-        I1["Company B has 100t\nresidual Scope 3 emissions"]
-        I2["Finances emission reductions\nin its own supply chain:\n• Supplier fuel switching\n• Regenerative agriculture\n• Green logistics"]
-        I3["Verified reductions become\ninset credits attributable\nto Company B's Scope 3\ncategory reduction"]
-        Advantage_I["Advantages\n\n• Within the value chain\n• Directly addresses source\n• Counterfactual clearer\n• Strengthens supplier ties\n• GHG Protocol revision\n  likely to validate\n• Creates commercial incentive\n  for supplier decarbonization"]
+        I1["100 t residual emissions"] --> I2["Fund cuts in your own chain"] --> I3["Verified inset credits"]
+        I3 --> Advantage_I["✅ In-chain · attributable<br/>strengthens the supplier"]
     end
 
-    O1 --> O2 --> O3 --> Problem_O
-    I1 --> I2 --> I3 --> Advantage_I
-
-    class Offsetting,Problem_O bad;
-    class Insetting,Advantage_I good;
     class O1,O2,O3,I1,I2,I3 muted;
+    class Problem_O bad;
+    class Advantage_I good;
 ```
 
 ### The Additionality Test: The Make-or-Break Question
@@ -202,17 +189,17 @@ Both offsets and insets must demonstrate **additionality** — the emission redu
 
 ```mermaid
 flowchart TD
-    classDef info fill:#d0ebff,stroke:#1971c2,color:#1864ab;
-    classDef dark fill:#212529,stroke:#101113,color:#fff;
-    classDef good fill:#69db7c,stroke:#2f9e44,color:#0b2e13;
-    classDef bad fill:#ff6b6b,stroke:#e03131,color:#fff;
-    classDef warn fill:#ffc078,stroke:#f08c00,color:#212529;
+    classDef info fill:#e7f5ff,stroke:#1971c2,color:#0b3a5e;
+    classDef dark fill:#1f2937,stroke:#111827,color:#fff;
+    classDef good fill:#ebfbee,stroke:#2f9e44,color:#0b2e1d;
+    classDef bad fill:#fff5f5,stroke:#e03131,color:#5c0f0f;
+    classDef warn fill:#fff9db,stroke:#f08c00,color:#5c4400;
 
-    Scenario["Supplier installs solar panels\nreducing Scope 1 emissions\nby 500t CO₂e/year"]
-    Q1["Would this have happened\nwithout credit financing?"]
-    Add["ADDITIONAL ✓\n\nIf payback > 5 years\nwithout credit revenue,\nor a capital-constrained SME\ncould not raise funds,\nor no regulatory mandate\nexisted for this action"]
-    NotAdd["NOT ADDITIONAL ✗\n\nIf a regulatory mandate\nalready required it,\nor payback < 3 years\nwithout credits,\nor the supplier planned to\ndo this regardless,\nor a government subsidy\nalready covers it"]
-    Challenge["The Challenge\n\nAdditionality requires\ncounterfactual reasoning.\nWe cannot observe the world\nwhere the credit did not exist.\n\nVerifiers use proxies:\nfinancial analysis, policy\nscans, barrier assessments.\nBut gaming is possible."]
+    Scenario["Supplier installs solar<br/>−500 t CO₂e/yr"]
+    Q1["Would this have happened<br/>without credit financing?"]
+    Add["✓ ADDITIONAL<br/>long payback · capital-constrained · unmandated"]
+    NotAdd["✗ NOT ADDITIONAL<br/>mandated · quick payback · already planned"]
+    Challenge["Counterfactual is unobservable —<br/>verifiers rely on proxies"]
 
     Scenario --> Q1
     Q1 --> Add
@@ -297,26 +284,23 @@ Even when a company identifies an abatement lever, multiple governance questions
 
 ```mermaid
 flowchart TD
-    classDef dark fill:#212529,stroke:#101113,color:#fff;
-    classDef info fill:#d0ebff,stroke:#1971c2,color:#1864ab;
-    classDef bad fill:#ff6b6b,stroke:#e03131,color:#fff;
+    classDef dark fill:#1f2937,stroke:#111827,color:#fff;
+    classDef info fill:#e7f5ff,stroke:#1971c2,color:#0b3a5e;
+    classDef bad fill:#fff5f5,stroke:#e03131,color:#5c0f0f;
 
-    Q1["Company wants to claim\nScope 3 Cat 1 reduction\nfrom supplier investment"]
+    Q1["Claim a Scope 3 Cat 1 reduction<br/>from supplier investment"]
 
-    G1["GHG Protocol\n\nQ: Does this reduce the buyer's\nScope 3 under current rules?\n\n→ Ambiguous — Cat 1 is allocated\nby attribution period. Supplier\nScope 1+2 cuts reduce the buyer's\nCat 1 if recalculated, but that\nneeds consistent methodology"]
-
-    G2["SBTi\n\nQ: Does this count toward the\ncompany's Scope 3 target?\n\n→ Yes, if the supplier's reduction\nis traced to the buyer's purchased\ngoods and represents a structural,\nadditional change"]
-
-    G3["Regulator (CSRD/ISSB)\n\nQ: Can this be disclosed as a\n'Scope 3 reduction'?\n\n→ Emerging guidance. ESRS E1\nrequires disclosing actions and\ntheir verified impact. Verification\nstandards not yet set"]
-
-    G4["Credit Market\n\nQ: Can the supplier issue verified\ncredits for the reduction and\nsell them?\n\n→ Depends on methodology —\nVCS, Gold Standard, ISO 14064-2\nall differ in requirements"]
+    G1["GHG Protocol<br/>Ambiguous under current rules"]
+    G2["SBTi<br/>Yes, if traced and additional"]
+    G3["CSRD / ISSB<br/>Emerging guidance, no standard yet"]
+    G4["Credit market<br/>VCS / Gold Standard / ISO differ"]
 
     Q1 --> G1
     Q1 --> G2
     Q1 --> G3
     Q1 --> G4
 
-    Result["These four frameworks\nare not fully aligned\n\nA single supplier intervention\ncan be 'valid' under one and\n'not valid' under another.\n\nThis is a primary reason\ncompanies under-invest in\nsupply chain decarbonization:\nthe credit cannot be\nreliably claimed"]
+    Result["Frameworks are not aligned —<br/>a reduction can be valid under one<br/>and invalid under another"]
 
     G1 --> Result
     G2 --> Result

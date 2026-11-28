@@ -61,16 +61,16 @@ The challenge compounds itself: the entities that produce the most emissions oft
 
 ```mermaid
 flowchart LR
-    classDef dark fill:#212529,stroke:#101113,color:#fff;
-    classDef bad fill:#ff6b6b,stroke:#e03131,color:#fff;
+    classDef dark fill:#1f2937,stroke:#111827,color:#fff;
+    classDef bad fill:#fff5f5,stroke:#e03131,color:#5c0f0f;
 
-    Root["⚠️ Scope 3<br/>Failure Modes"]
+    Root["⚠️ Scope 3<br/>failure modes"]
 
-    D["📂 Data Gaps<br/>• Suppliers lack capacity<br/>• Primary data is expensive<br/>• Spend-based proxies hide intensity"]
-    A["⚖️ Attribution Conflicts<br/>• Who owns shared emissions?<br/>• Double-counting across chains<br/>• Allocation disputes"]
-    I["💸 Incentive Misalignment<br/>• Suppliers bear disclosure cost<br/>• Buyers capture the benefit<br/>• No enforcement"]
-    B["🔲 Boundary Ambiguity<br/>• Categories overlap<br/>• Boundaries undefined<br/>• Downstream use speculative"]
-    S["📋 Standard Fragmentation<br/>• GHG Protocol vs PCAF vs ISO<br/>• Sector vs cross-sector<br/>• Divergent regulation"]
+    D["📂 Data Gaps"]
+    A["⚖️ Attribution Conflicts"]
+    I["💸 Incentive Misalignment"]
+    B["🔲 Boundary Ambiguity"]
+    S["📋 Standard Fragmentation"]
 
     Root --> D
     Root --> A

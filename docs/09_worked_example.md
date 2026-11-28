@@ -70,10 +70,10 @@ Not all categories get the same treatment. The GHG Protocol offers four methods,
 
 ```mermaid
 flowchart TD
-    classDef good fill:#69db7c,stroke:#2f9e44,color:#0b2e13;
-    classDef mid fill:#a9e34b,stroke:#5c940d,color:#0b2e13;
-    classDef warn fill:#ffc078,stroke:#f08c00,color:#212529;
-    classDef bad fill:#ff6b6b,stroke:#e03131,color:#fff;
+    classDef good fill:#ebfbee,stroke:#2f9e44,color:#0b2e1d;
+    classDef mid fill:#f4fce3,stroke:#5c940d,color:#2b3a09;
+    classDef warn fill:#fff9db,stroke:#f08c00,color:#5c4400;
+    classDef bad fill:#fff5f5,stroke:#e03131,color:#5c0f0f;
 
     A["Supplier-specific (primary)\n±10–20% error\nBest, rarest"]
     B["Hybrid\n±25–50% error\nPrimary + averages"]
